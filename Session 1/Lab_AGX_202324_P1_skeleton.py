@@ -2,6 +2,7 @@ import networkx as nx
 import pandas as pd
 import spotipy
 import credentials as cr
+import numpy as np
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 def search_artist(sp: spotipy.client.Spotify, artist_name: str) -> str:
@@ -80,8 +81,8 @@ def get_track_data(sp: spotipy.client.Spotify, graphs: list, out_filename: str) 
     trackdata = pd.DataFrame(data)
     trackdata.to_csv(out_filename, index=False)
     return trackdata
-    # ----------------- END OF FUNCTION --------------------- #
-
+    
+# ----------------- END OF FUNCTION --------------------- #
 
 if __name__ == "__main__":
     # ------- IMPLEMENT HERE THE MAIN FOR THIS SESSION ------- #
@@ -117,7 +118,6 @@ if __name__ == "__main__":
     print(f"Order gD: {order_gD}, Size gD: {size_gD}")
 
     #EX 2:
-    import numpy as np
 
     in_degrees_gB = [d for n, d in gB.in_degree()]
     out_degrees_gB = [d for n, d in gB.out_degree()]
