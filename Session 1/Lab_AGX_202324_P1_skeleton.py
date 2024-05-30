@@ -111,7 +111,7 @@ if __name__ == "__main__":
     pastel_ghost = search_artist(cr.sp, "Pastel Ghost")
     hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/hB.graphml")
     """
-    # Reading generated GraphML files and calculating statistics
+    #EXERCISE 1
     gB = nx.read_graphml("Session 1/gB.graphml")
     gD = nx.read_graphml("Session 1/gD.graphml")
 
@@ -123,7 +123,7 @@ if __name__ == "__main__":
     print(f"Order gB: {order_gB}, Size gB: {size_gB}")
     print(f"Order gD: {order_gD}, Size gD: {size_gD}")
 
-    # Calculating in-degrees and out-degrees statistics
+    #EXERCISE 2
     in_degrees_gB = [d for n, d in gB.in_degree()]
     out_degrees_gB = [d for n, d in gB.out_degree()]
     in_degrees_gD = [d for n, d in gD.in_degree()]
@@ -142,7 +142,7 @@ if __name__ == "__main__":
     print(f"gB In-Degree: {stats_gB['in_degree']}, Out-Degree: {stats_gB['out_degree']}")
     print(f"gD In-Degree: {stats_gD['in_degree']}, Out-Degree: {stats_gD['out_degree']}")
 
-    # Reading CSV file and calculating the number of songs, artists, and albums
+    #EXERCISE 3
     D = pd.read_csv("Session 1/songs.csv")
     num_songs = D.shape[0]
     num_artists = D['Artist ID'].nunique()
