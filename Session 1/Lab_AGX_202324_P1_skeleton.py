@@ -36,7 +36,9 @@ def crawler(sp: spotipy.client.Spotify, seed: str, max_nodes_to_crawl: int, stra
         current_id = queue.pop(0) if strategy == "BFS" else queue.pop()
         if current_id not in visited:
             visited.add(current_id)
-            graph.add_node(current_id)
+            artist_info = sp.artist(current_id)
+            graph.add_node(current_id, name=artist_info['name'], followers=artist_info['followers']['total'],
+                           popularity=artist_info['popularity'], genres=", ".join(artist_info['genres']))
             related_artists = sp.artist_related_artists(current_id)['artists']
             for artist in related_artists:
                 artist_id = artist['id']
