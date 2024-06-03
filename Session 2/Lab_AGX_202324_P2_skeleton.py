@@ -1,9 +1,8 @@
 import networkx as nx
 import pandas as pd
-
+from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
+import numpy as np
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
-
-
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
 def retrieve_bidirectional_edges(g: nx.DiGraph, out_filename: str) -> nx.Graph:
@@ -15,7 +14,18 @@ def retrieve_bidirectional_edges(g: nx.DiGraph, out_filename: str) -> nx.Graph:
     :return: a networkx undirected graph.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
+    undirected_g = nx.Graph()
+
+    added_edges = 0
+    for u, v in g.edges():
+        if g.has_edge(v, u):
+            undirected_g.add_edge(u, v)
+            added_edges += 1
+
+    print(f"Total bidirectional edges added: {added_edges}")
+
+    nx.write_graphml(undirected_g, out_filename)
+    return undirected_g
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -29,7 +39,13 @@ def prune_low_degree_nodes(g: nx.Graph, min_degree: int, out_filename: str) -> n
     :return: a pruned networkx graph.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
+    pruned_g = g.copy()
+    low_degree_nodes = [node for node, degree in pruned_g.degree() if degree < min_degree]
+    pruned_g.remove_nodes_from(low_degree_nodes)
+    pruned_g.remove_nodes_from(list(nx.isolates(pruned_g)))
+    
+    nx.write_graphml(pruned_g, out_filename)
+    return pruned_g
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -44,7 +60,21 @@ def prune_low_weight_edges(g: nx.Graph, min_weight=None, min_percentile=None, ou
     :return: a pruned networkx graph.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
+    if min_weight is None and min_percentile is None:
+        raise ValueError("min_weight or min_percentile must be specified")
+    if min_weight is not None and min_percentile is not None:
+        raise ValueError("Specify only one of min_weight or min_percentile")
+
+    if min_percentile is not None:
+        weights = [data['weight'] for u, v, data in g.edges(data=True)]
+        min_weight = np.percentile(weights, min_percentile)
+
+    edges_to_remove = [(u, v) for u, v, data in g.edges(data=True) if data['weight'] < min_weight]
+    g.remove_edges_from(edges_to_remove)
+    g.remove_nodes_from(list(nx.isolates(g)))
+
+    nx.write_graphml(g, out_filename)
+    return g
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -56,7 +86,9 @@ def compute_mean_audio_features(tracks_df: pd.DataFrame) -> pd.DataFrame:
     :return: artist dataframe (with mean audio features per each artist).
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
+    audio_characteristic = ['Danceability', 'Energy', 'Loudness', 'Speechiness', 'Acousticness', 'Instrumentalness', 'Liveness', 'Valence', 'Tempo']
+    artist = tracks_df.groupby(['Artist ID', 'Artist Name'])[audio_characteristic].mean().reset_index()
+    return artist
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -71,11 +103,41 @@ def create_similarity_graph(artist_audio_features_df: pd.DataFrame, similarity: 
     :return: a networkx graph with the similarity between artists as edge weights.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
+    graph = nx.Graph()
+
+    artist_ids = artist_audio_features_df['Artist ID'].tolist()
+    features = artist_audio_features_df.drop(columns=['Artist ID', 'Artist Name']).values
+
+    if similarity == 'cosine':
+        sim_matrix = cosine_similarity(features)
+    elif similarity == 'euclidean':
+        sim_matrix = euclidean_distances(features)
+        sim_matrix = 1 - (sim_matrix / sim_matrix.max())
+
+    for idx, artist_id in enumerate(artist_ids):
+        graph.add_node(artist_id, name=artist_audio_features_df.iloc[idx]['Artist Name'])
+
+    for i in range(len(artist_ids)):
+        for j in range(i + 1, len(artist_ids)):  
+            if sim_matrix[i, j] > 0:  
+                graph.add_edge(artist_ids[i], artist_ids[j], weight=sim_matrix[i, j])
+
+    nx.write_graphml(graph, out_filename)
+    return graph
     # ----------------- END OF FUNCTION --------------------- #
 
 
 if __name__ == "__main__":
     # ------- IMPLEMENT HERE THE MAIN FOR THIS SESSION ------- #
-    pass
+    gB = nx.read_graphml('Session 1/gB.graphml')
+    gD = nx.read_graphml('Session 1/gD.graphml')
+    songs = pd.read_csv('Session 1/songs.csv')
+
+    #Part a)
+    gBp = retrieve_bidirectional_edges(gB, "Session 2/gBp.graphml")
+    gDp = retrieve_bidirectional_edges(gD, "Session 2/gDp.graphml")
+    
+    #Part b)
+    artist_audio = compute_mean_audio_features(songs)
+    gw = create_similarity_graph(artist_audio, similarity='cosine', out_filename="Session 2/gw.graphml")
     # ------------------- END OF MAIN ------------------------ #
