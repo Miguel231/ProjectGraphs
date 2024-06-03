@@ -136,8 +136,11 @@ if __name__ == "__main__":
     #Part a)
     gBp = retrieve_bidirectional_edges(gB, "Session 2/gBp.graphml")
     gDp = retrieve_bidirectional_edges(gD, "Session 2/gDp.graphml")
-    
+
     #Part b)
     artist_audio = compute_mean_audio_features(songs)
     gw = create_similarity_graph(artist_audio, similarity='cosine', out_filename="Session 2/gw.graphml")
+    
+
+    
     # ------------------- END OF MAIN ------------------------ #
