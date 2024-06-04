@@ -39,11 +39,11 @@ def crawler(sp: spotipy.client.Spotify, seed: str, max_nodes_to_crawl: int, stra
             artist_info = sp.artist(current_id)
             graph.add_node(current_id, name=artist_info['name'], followers=artist_info['followers']['total'],
                            popularity=artist_info['popularity'], genres=", ".join(artist_info['genres']))
-            related_artists = sp.artist_related_artists(current_id)['artists']
-            for artist in related_artists:
-                artist_id = artist['id']
-                if artist_id not in visited:
-                    graph.add_edge(current_id, artist_id)
+            related_artists = sp.artist_related_artists(current_id)['artists'] # all related artist from a curent artist
+            for artist in related_artists: # iterate over them
+                artist_id = artist['id'] # take id of each of them
+                graph.add_edge(current_id, artist_id)
+                if artist_id not in visited: # if not in visited
                     queue.append(artist_id)
     
     nx.write_graphml(graph, out_filename)
@@ -92,11 +92,7 @@ def get_track_data(sp: spotipy.client.Spotify, graphs: list, out_filename: str) 
     return trackdata
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-    '''
-=======
-    """
->>>>>>> 66745e3f242aff32ff4d9f7427fbd3a2f7f4b947
+
     # Search for Taylor Swift's artist ID
     taylor_swift = search_artist(cr.sp, "Taylor Swift")
     
@@ -115,16 +111,16 @@ if __name__ == "__main__":
 
     # Part d) Additional crawling for another artist (example: Pastel Ghost)
     pastel_ghost = search_artist(cr.sp, "Pastel Ghost")
-<<<<<<< HEAD
+
     hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="hB.graphml")
-    '''
+
     
     # Reading generated GraphML files and calculating statistics
-=======
+
     hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/hB.graphml")
-    """
+
     #EXERCISE 1
->>>>>>> 66745e3f242aff32ff4d9f7427fbd3a2f7f4b947
+
     gB = nx.read_graphml("Session 1/gB.graphml")
     gD = nx.read_graphml("Session 1/gD.graphml")
 
