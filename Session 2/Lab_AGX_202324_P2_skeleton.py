@@ -3,6 +3,21 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
 import numpy as np
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
+
+def find_most_similar_artists(gw):
+  """
+  Finds the most similar artist pairs in the graph gw.
+
+  :param gw: networkx graph with artist nodes and similarity weights on edges.
+  :return: a tuple containing artist names and their similarity weight.
+  """
+  all_edges = gw.edges(data=True)
+  most_similar_edges = []
+  for edge in all_edges:
+    artist1, artist2, weight = edge
+    if artist1 != artist2:  # Avoid self-similarity
+      most_similar_edges.append(edge)
+  return max(most_similar_edges, key=lambda edge: edge[2]['weight'])
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
 def retrieve_bidirectional_edges(g: nx.DiGraph, out_filename: str) -> nx.Graph:
@@ -141,6 +156,27 @@ if __name__ == "__main__":
     artist_audio = compute_mean_audio_features(songs)
     gw = create_similarity_graph(artist_audio, similarity='cosine', out_filename="Session 2/gw.graphml")
     
+    #EXERCICE 3
+    print('EXERCICE 3 \n')
+
+    # Get all edges and their weights
+    all_edges = gw.edges(data=True)
+
+    most_similar_edge = find_most_similar_artists(gw)
+    print(most_similar_edge)
+    artist1, artist2, weight = most_similar_edge
+
+    print("Least Similar Artists (based on cosine similarity):")
+    print(f"  - {gw.nodes[artist1]['name']} and {gw.nodes[artist2]['name']} (weight: {weight})")
+
+
+    least_similar_edge = min(all_edges, key=lambda edge: edge[2]['weight'])
+    artist3, artist4, weight = least_similar_edge
+
+
+    print("Least Similar Artists (based on cosine similarity):")
+    print(f"  - {gw.nodes[artist3]['name']} and {gw.nodes[artist4]['name']} (weight: {weight})")
+
 
     
     # ------------------- END OF MAIN ------------------------ #
