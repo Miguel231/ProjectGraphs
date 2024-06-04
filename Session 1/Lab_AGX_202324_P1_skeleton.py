@@ -36,7 +36,9 @@ def crawler(sp: spotipy.client.Spotify, seed: str, max_nodes_to_crawl: int, stra
         current_id = queue.pop(0) if strategy == "BFS" else queue.pop()
         if current_id not in visited:
             visited.add(current_id)
-            graph.add_node(current_id)
+            artist_info = sp.artist(current_id)
+            graph.add_node(current_id, name=artist_info['name'], followers=artist_info['followers']['total'],
+                           popularity=artist_info['popularity'], genres=", ".join(artist_info['genres']))
             related_artists = sp.artist_related_artists(current_id)['artists']
             for artist in related_artists:
                 artist_id = artist['id']
@@ -90,29 +92,39 @@ def get_track_data(sp: spotipy.client.Spotify, graphs: list, out_filename: str) 
     return trackdata
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     '''
+=======
+    """
+>>>>>>> 66745e3f242aff32ff4d9f7427fbd3a2f7f4b947
     # Search for Taylor Swift's artist ID
     taylor_swift = search_artist(cr.sp, "Taylor Swift")
     
     # Part a) Crawl using BFS
     print('BFS Crawler...')
-    gB = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="BFS", out_filename="gB.graphml")
+    gB = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/gB.graphml")
     
     print('DFS Crawler...')
     # Part b) Crawl using DFS
-    gD = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="DFS", out_filename="gD.graphml")
+    gD = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="DFS", out_filename="Session 1/gD.graphml")
     
     # Part c) Intersect the nodes from both graphs and get track data
     artists = set(gB.nodes()).intersection(set(gD.nodes()))
     g = [gB.subgraph(artists)]
-    D = get_track_data(cr.sp, g, "songs.csv")
+    D = get_track_data(cr.sp, g, "Session 1/songs.csv")
 
     # Part d) Additional crawling for another artist (example: Pastel Ghost)
     pastel_ghost = search_artist(cr.sp, "Pastel Ghost")
+<<<<<<< HEAD
     hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="hB.graphml")
     '''
     
     # Reading generated GraphML files and calculating statistics
+=======
+    hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/hB.graphml")
+    """
+    #EXERCISE 1
+>>>>>>> 66745e3f242aff32ff4d9f7427fbd3a2f7f4b947
     gB = nx.read_graphml("Session 1/gB.graphml")
     gD = nx.read_graphml("Session 1/gD.graphml")
 
@@ -124,7 +136,7 @@ if __name__ == "__main__":
     print(f"Order gB: {order_gB}, Size gB: {size_gB}")
     print(f"Order gD: {order_gD}, Size gD: {size_gD}")
 
-    # Calculating in-degrees and out-degrees statistics
+    #EXERCISE 2
     in_degrees_gB = [d for n, d in gB.in_degree()]
     out_degrees_gB = [d for n, d in gB.out_degree()]
     in_degrees_gD = [d for n, d in gD.in_degree()]
@@ -143,7 +155,7 @@ if __name__ == "__main__":
     print(f"gB In-Degree: {stats_gB['in_degree']}, Out-Degree: {stats_gB['out_degree']}")
     print(f"gD In-Degree: {stats_gD['in_degree']}, Out-Degree: {stats_gD['out_degree']}")
 
-    # Reading CSV file and calculating the number of songs, artists, and albums
+    #EXERCISE 3
     D = pd.read_csv("Session 1/songs.csv")
     num_songs = D.shape[0]
     num_artists = D['Artist ID'].nunique()
