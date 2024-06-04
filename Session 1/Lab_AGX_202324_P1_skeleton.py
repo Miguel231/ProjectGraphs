@@ -3,7 +3,7 @@ import pandas as pd
 import spotipy
 import credentials as cr
 import numpy as np
-
+import os
 def search_artist(sp: spotipy.client.Spotify, artist_name: str) -> str:
     """
     Search for an artist on Spotify.
@@ -90,6 +90,7 @@ def get_track_data(sp: spotipy.client.Spotify, graphs: list, out_filename: str) 
     return trackdata
 
 if __name__ == "__main__":
+    '''
     # Search for Taylor Swift's artist ID
     taylor_swift = search_artist(cr.sp, "Taylor Swift")
     
@@ -109,6 +110,7 @@ if __name__ == "__main__":
     # Part d) Additional crawling for another artist (example: Pastel Ghost)
     pastel_ghost = search_artist(cr.sp, "Pastel Ghost")
     hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="hB.graphml")
+    '''
     
     # Reading generated GraphML files and calculating statistics
     gB = nx.read_graphml("Session 1/gB.graphml")
@@ -150,3 +152,6 @@ if __name__ == "__main__":
     print(f"Num of songs: {num_songs}")
     print(f"Num of artists: {num_artists}")
     print(f"Num of albums: {num_albums}")
+
+os.chdir('C:/GitHub Repositories/ProjectGraphs/Session 1')
+
