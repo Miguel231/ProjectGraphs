@@ -41,8 +41,8 @@ def prune_low_degree_nodes(g: nx.Graph, min_degree: int, out_filename: str) -> n
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
     pruned_g = g.copy()
     low_degree_nodes = [node for node, degree in pruned_g.degree() if degree < min_degree]
-    pruned_g.remove_nodes_from(low_degree_nodes)
-    pruned_g.remove_nodes_from(list(nx.isolates(pruned_g)))
+    pruned_g.remove_nodes_from(low_degree_nodes) # remove nodes with low especified degree
+    pruned_g.remove_nodes_from(list(nx.isolates(pruned_g))) #remove remaining isolated nodes
     
     nx.write_graphml(pruned_g, out_filename)
     return pruned_g
@@ -65,13 +65,13 @@ def prune_low_weight_edges(g: nx.Graph, min_weight=None, min_percentile=None, ou
     if min_weight is not None and min_percentile is not None:
         raise ValueError("Specify only one of min_weight or min_percentile")
 
-    if min_percentile is not None:
+    if min_percentile is not None: # process the percentile value to obtain the min_weight
         weights = [data['weight'] for u, v, data in g.edges(data=True)]
         min_weight = np.percentile(weights, min_percentile)
 
     edges_to_remove = [(u, v) for u, v, data in g.edges(data=True) if data['weight'] < min_weight]
-    g.remove_edges_from(edges_to_remove)
-    g.remove_nodes_from(list(nx.isolates(g)))
+    g.remove_edges_from(edges_to_remove) #
+    g.remove_nodes_from(list(nx.isolates(g))) # remove remaining isolated nodes
 
     nx.write_graphml(g, out_filename)
     return g

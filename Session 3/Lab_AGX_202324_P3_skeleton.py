@@ -13,7 +13,17 @@ def num_common_nodes(*arg):
     :return: an integer, number of common nodes.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
+    if not arg:
+        return 0
+    
+    # Start with the node set of the first graph
+    common_nodes = set(arg[0].nodes)
+    
+    # Intersect with the node sets of all other graphs
+    for g in arg[1:]:
+        common_nodes.intersection_update(g.nodes)
+    
+    return len(common_nodes)
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -25,7 +35,14 @@ def get_degree_distribution(g: nx.Graph) -> dict:
     :return: dictionary with degree distribution (keys are degrees, values are number of occurrences).
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
+    
+    degree_distribution = {}
+    for _, degree in g.degree():
+        if degree not in degree_distribution:
+            degree_distribution[degree] = 0
+        degree_distribution[degree] += 1
+    return degree_distribution
+
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -39,7 +56,27 @@ def get_k_most_central(g: nx.Graph, metric: str, num_nodes: int) -> list:
     :return: list with the top num_nodes nodes.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
+
+     # Calculate the centrality depending on the specified metric
+    if metric == 'degree':
+        centrality_measure = nx.degree_centrality(g)
+    elif metric == 'betweenness':
+        centrality_measure = nx.betweenness_centrality(g)
+    elif metric == 'closeness':
+        centrality_measure = nx.closeness_centrality(g)
+    elif metric == 'eigenvector':
+        centrality_measure = nx.eigenvector_centrality(g)
+    else:
+        raise ValueError("Invalid centrality metric specified.")
+
+    # Sort in descending order through the items of the centrality_measure output
+    sorted_nodes = sorted(centrality_measure.items(), key=lambda item: item[1], reverse=True)
+
+    # take the desired top nodes
+    top_nodes = [node for node, _ in sorted_nodes[:num_nodes]]
+    
+    return top_nodes
+    
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -52,9 +89,19 @@ def find_cliques(g: nx.Graph, min_size_clique: int) -> tuple:
     :return: two-element tuple, list of cliques (each clique is a list of nodes) and
         list of nodes in any of the cliques.
     """
-    # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
-    # ----------------- END OF FUNCTION --------------------- #
+    # Find all maximal cliques in the graph
+    all_cliques = list(nx.find_cliques(g))
+    
+    # Filter cliques by minimum size
+    filtered_cliques = [clique for clique in all_cliques if len(clique) >= min_size_clique]
+    
+    # Collect all nodes that are part of any filtered clique
+    nodes_in_cliques = set()
+    for clique in filtered_cliques:
+        for node in clique:
+            nodes_in_cliques.add(node)
+    
+    return filtered_cliques, list(nodes_in_cliques)
 
 
 def detect_communities(g: nx.Graph, method: str) -> tuple:
