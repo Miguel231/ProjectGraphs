@@ -102,7 +102,7 @@ def compute_mean_audio_features(tracks_df: pd.DataFrame) -> pd.DataFrame:
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
     audio_characteristic = ['Danceability', 'Energy', 'Loudness', 'Speechiness', 'Acousticness', 'Instrumentalness', 'Liveness', 'Valence', 'Tempo']
-    artist = tracks_df.groupby(['Artist ID', 'Artist Name'])[audio_characteristic].mean().reset_index()
+    artist = tracks_df.groupby(['Artist Name'])[audio_characteristic].mean().reset_index()
     return artist
     # ----------------- END OF FUNCTION --------------------- #
 
@@ -120,8 +120,8 @@ def create_similarity_graph(artist_audio_features_df: pd.DataFrame, similarity: 
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
     graph = nx.Graph()
 
-    artist_ids = artist_audio_features_df['Artist ID'].tolist()
-    features = artist_audio_features_df.drop(columns=['Artist ID', 'Artist Name']).values
+    artist_ids = artist_audio_features_df['Artist Name'].tolist()
+    features = artist_audio_features_df.drop(columns=['Artist Name']).values
 
     if similarity == 'cosine':
         sim_matrix = cosine_similarity(features)

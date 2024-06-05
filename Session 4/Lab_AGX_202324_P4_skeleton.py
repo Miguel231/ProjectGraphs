@@ -3,7 +3,11 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+import sys
 from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
+import sys
+sys.path.insert(0, 'Session 3')
+import Lab_AGX_202324_P3_skeleton as Lab3
 
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
@@ -78,19 +82,30 @@ def plot_similarity_heatmap(artist_audio_features_df: pd.DataFrame, similarity: 
     :param out_filename: name of the file to save the plot. If None, the plot is not saved.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    features = artist_audio_features_df.drop(['Artist ID', 'Artist 이름'], axis=1).values
+    features = artist_audio_features_df.drop(['Artist ID', 'Artist Name'], axis=1).values
+    artists = artist_audio_features_df['Artist Name'].values
+    
     if similarity == 'cosine':
         sim_matrix = cosine_similarity(features)
     elif similarity == 'euclidean':
-        sim_matrix = 1 / (1 + euclidean_distances(features))  # Convert distances to similarities
+        sim_matrix = euclidean_distances(features)
+        sim_matrix = 1 - (sim_matrix / np.max(sim_matrix))  # Normalize distances to [0, 1] range
+
+    # Increase figure size dynamically based on the number of artists
+    fig_size = max(10, len(artists) * 0.3)
+    plt.figure(figsize=(fig_size, fig_size))
     
-    plt.figure(figsize=(10, 8))
-    sns.heatmap(sim_matrix, annot=True, cmap='coolwarm', xticklabels=artist_audio_features_df['Artist Name'], yticklabels=artist_audio_features_df['Artist Name'])
+    sns.heatmap(sim_matrix, annot=True, cmap='coolwarm', 
+                xticklabels=artist_audio_features_df['Artist Name'], 
+                yticklabels=artist_audio_features_df['Artist Name'])
+    
     plt.title('Artist Similarity Heatmap')
-    
+    plt.xticks(rotation=90)
+    plt.yticks(rotation=0)  # Ensure y labels are horizontal for readability
+
     if out_filename:
         plt.savefig(out_filename)
-    plt.show()
+    #plt.show()
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -99,4 +114,32 @@ if __name__ == "__main__":
     gB_p = nx.read_graphml('Session 2/gBp.graphml')
     gD_p = nx.read_graphml('Session 2/gDp.graphml')
     gw = nx.read_graphml('Session 2/gw.graphml')
+    songs_mean = pd.read_csv('Session 2/songs_mean.csv')
+
+    #Part a)
+    gB_p_degree_dict = Lab3.get_degree_distribution(gB_p)
+    #plot_degree_distribution(gB_p_degree_dict, normalized=True, loglog=False)
+
+    gD_p_degree_dict = Lab3.get_degree_distribution(gD_p)
+    #plot_degree_distribution(gB_p_degree_dict, normalized=True, loglog=False)
+    
+    gw_degree_dict = Lab3.get_degree_distribution(gw)
+    #plot_degree_distribution(gB_p_degree_dict, normalized=True, loglog=False)
+    
+    #Part b)
+    #similarity_scores = {node: nx.get_node_attributes(gw, 'weight')[node] for node in gw.nodes}
+    #most_similar_artist = max(similarity_scores, key=similarity_scores.get)
+    #least_similar_artist = min(similarity_scores, key=similarity_scores.get)
+    
+    #plot_audio_features(songs_mean, 'Taylor Swift ID', most_similar_artist)
+    
+    #Part c)
+    #plot_audio_features(songs_mean, 'Taylor Swift ID', least_similar_artist)
+    
+    #Part d)
+    plot_similarity_heatmap(songs_mean, similarity='cosine', out_filename = 'Session 4/heatmap.png')
+    plot_similarity_heatmap(songs_mean, similarity='euclidean', out_filename = 'Session 4/heatmap2.png')
+    #Part e)
+
+
     # ------------------- END OF MAIN ------------------------ #
