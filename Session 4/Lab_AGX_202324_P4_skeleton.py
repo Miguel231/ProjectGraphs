@@ -53,20 +53,20 @@ def plot_audio_features(artists_audio_feat: pd.DataFrame, artist1_id: str, artis
     :return: None
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    feat1 = artists_audio_feat[artists_audio_feat['Artist ID'] == artist1_id]
-    feat2 = artists_audio_feat[artists_audio_feat['Artist ID'] == artist2_id]
+    feat1 = artists_audio_feat[artists_audio_feat['Artist Name'] == artist1_id]
+    feat2 = artists_audio_feat[artists_audio_feat['Artist Name'] == artist2_id]
     
-    ind = np.arange(len(feat1.columns) - 2)  # Skip 'Artist ID' and 'Artist Name'
+    ind = np.arange(len(feat1.columns) - 1)  #skip 'Artist Name'
     width = 0.35
     
     fig, ax = plt.subplots()
-    bars1 = ax.bar(ind - width/2, feat1.iloc[0, 2:], width, label=feat1['Artist Name'].iloc[0])
-    bars2 = ax.bar(ind + width/2, feat2.iloc[0, 2:], width, label=feat2['Artist Name'].iloc[0])
+    bars1 = ax.bar(ind - width/2, feat1.iloc[0, 1:], width, label=feat1['Artist Name'].iloc[0])
+    bars2 = ax.bar(ind + width/2, feat2.iloc[0, 1:], width, label=feat2['Artist Name'].iloc[0])
     
     ax.set_ylabel('Feature Value')
     ax.set_title('Audio Features Comparison')
     ax.set_xticks(ind)
-    ax.set_xticklabels(feat1.columns[2:], rotation=90)
+    ax.set_xticklabels(feat1.columns[1:], rotation=90)
     ax.legend()
     
     plt.show()
@@ -82,7 +82,7 @@ def plot_similarity_heatmap(artist_audio_features_df: pd.DataFrame, similarity: 
     :param out_filename: name of the file to save the plot. If None, the plot is not saved.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    features = artist_audio_features_df.drop(['Artist ID', 'Artist Name'], axis=1).values
+    features = artist_audio_features_df.drop(['Artist Name'], axis=1).values
     artists = artist_audio_features_df['Artist Name'].values
     
     if similarity == 'cosine':
