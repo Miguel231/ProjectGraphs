@@ -9,6 +9,8 @@ import sys
 sys.path.insert(0, 'Session 3')
 import Lab_AGX_202324_P3_skeleton as Lab3
 
+sys.path.insert(0, 'Session 2')
+import Lab_AGX_202324_P2_skeleton as Lab2
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
@@ -137,9 +139,15 @@ if __name__ == "__main__":
     #plot_audio_features(songs_mean, 'Taylor Swift ID', least_similar_artist)
     
     #Part d)
-    plot_similarity_heatmap(songs_mean, similarity='cosine', out_filename = 'Session 4/heatmap.png')
-    plot_similarity_heatmap(songs_mean, similarity='euclidean', out_filename = 'Session 4/heatmap2.png')
-    #Part e)
+    #plot_similarity_heatmap(songs_mean, similarity='cosine', out_filename = 'Session 4/heatmap.png')
+    #plot_similarity_heatmap(songs_mean, similarity='euclidean', out_filename = 'Session 4/heatmap2.png')
+    
+    #Part e)  
+    pruned_gw = Lab2.prune_low_weight_edges(gw, min_weight=0.1)  # Adjust `min_weight` as needed
+
+    largest_cc = max(nx.connected_components(pruned_gw), key=len)
+    plot_degree_distribution({node: len(largest_cc) for node in largest_cc}, normalized=False, loglog=False)
+
 
 
     # ------------------- END OF MAIN ------------------------ #
