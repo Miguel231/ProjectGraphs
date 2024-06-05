@@ -12,6 +12,20 @@ import Lab_AGX_202324_P3_skeleton as Lab3
 sys.path.insert(0, 'Session 2')
 import Lab_AGX_202324_P2_skeleton as Lab2
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
+def get_degree_distribution(graph):
+    """
+    Generate a degree distribution dictionary from a graph.
+    
+    :param graph: NetworkX graph object
+    :return: Dictionary with degree counts
+    """
+    degree_dict = {}
+    for degree in dict(nx.degree(graph)).values():
+        if degree in degree_dict:
+            degree_dict[degree] += 1
+        else:
+            degree_dict[degree] = 1
+    return degree_dict
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
 def plot_degree_distribution(degree_dict: dict, normalized: bool = False, loglog: bool = False) -> None:
@@ -30,8 +44,8 @@ def plot_degree_distribution(degree_dict: dict, normalized: bool = False, loglog
         total = sum(counts)
         counts = [x / total for x in counts]
     
-    plt.figure(figsize=(10, 5))
-    plt.bar(degrees, counts, color='red')
+    plt.figure(figsize=(15, 7))  
+    plt.bar(degrees, counts, width=0.8)
     
     if loglog:
         plt.xscale('log')
@@ -110,6 +124,32 @@ def plot_similarity_heatmap(artist_audio_features_df: pd.DataFrame, similarity: 
     #plt.show()
     # ----------------- END OF FUNCTION --------------------- #
 
+def plot_graph_components(g: nx.Graph):
+    """
+    Plot the graph with its components highlighted.
+    
+    :param g: NetworkX graph
+    """
+    # Set the figure size
+    plt.figure(figsize=(12, 8))
+    
+    # Generate layout for the graph
+    pos = nx.spring_layout(g)
+    
+    # Draw nodes and edges
+    nx.draw_networkx_edges(g, pos, alpha=0.3)
+    nx.draw_networkx_nodes(g, pos, node_size=20, cmap=plt.cm.jet)
+    
+    # Draw labels for the largest connected components
+    largest_components = sorted(nx.connected_components(g), key=len, reverse=True)
+    if len(largest_components) > 0:
+        largest_component = largest_components[0]
+        nx.draw_networkx_labels(g.subgraph(largest_component), pos, labels={n: str(n) for n in largest_component}, font_size=12, font_color='red')
+
+    plt.title('Graph Visualization with Highlighted Largest Component')
+    plt.axis('off')  # Turn off the axis
+    plt.show()
+
 
 if __name__ == "__main__":
     # ------- IMPLEMENT HERE THE MAIN FOR THIS SESSION ------- #
@@ -144,10 +184,7 @@ if __name__ == "__main__":
     
     #Part e)  
     pruned_gw = Lab2.prune_low_weight_edges(gw, min_weight=0.1)  # Adjust `min_weight` as needed
-
-    largest_cc = max(nx.connected_components(pruned_gw), key=len)
-    plot_degree_distribution({node: len(largest_cc) for node in largest_cc}, normalized=False, loglog=False)
-
-
-
+    #no saleee
+    
+    
     # ------------------- END OF MAIN ------------------------ #
