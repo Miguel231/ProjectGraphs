@@ -1,8 +1,8 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
-
-
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
 def plot_degree_distribution(degree_dict: dict, normalized: bool = False, loglog: bool = False) -> None:
@@ -14,7 +14,25 @@ def plot_degree_distribution(degree_dict: dict, normalized: bool = False, loglog
     :param loglog: boolean indicating whether to plot in log-log scale.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
+    degrees = list(degree_dict.keys())
+    counts = list(degree_dict.values())
+    
+    if normalized:
+        total = sum(counts)
+        counts = [x / total for x in counts]
+    
+    plt.figure(figsize=(10, 5))
+    plt.bar(degrees, counts, color='red')
+    
+    if loglog:
+        plt.xscale('log')
+        plt.yscale('log')
+    
+    plt.title('Degree Distribution')
+    plt.xlabel('Degree')
+    plt.ylabel('Probability' if normalized else 'Count')
+    plt.grid(True)
+    plt.show()
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -28,7 +46,23 @@ def plot_audio_features(artists_audio_feat: pd.DataFrame, artist1_id: str, artis
     :return: None
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
+    feat1 = artists_audio_feat[artists_audio_feat['Artist ID'] == artist1_id]
+    feat2 = artists_audio_feat[artists_audio_feat['Artist ID'] == artist2_id]
+    
+    ind = np.arange(len(feat1.columns) - 2)  # Skip 'Artist ID' and 'Artist Name'
+    width = 0.35
+    
+    fig, ax = plt.subplots()
+    bars1 = ax.bar(ind - width/2, feat1.iloc[0, 2:], width, label=feat1['Artist Name'].iloc[0])
+    bars2 = ax.bar(ind + width/2, feat2.iloc[0, 2:], width, label=feat2['Artist Name'].iloc[0])
+    
+    ax.set_ylabel('Feature Value')
+    ax.set_title('Audio Features Comparison')
+    ax.set_xticks(ind)
+    ax.set_xticklabels(feat1.columns[2:], rotation=90)
+    ax.legend()
+    
+    plt.show()
     # ----------------- END OF FUNCTION --------------------- #
 
 
