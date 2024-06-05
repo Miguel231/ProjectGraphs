@@ -88,7 +88,9 @@ def prune_low_weight_edges(g: nx.Graph, min_weight=None, min_percentile=None, ou
     g.remove_edges_from(edges_to_remove) #
     g.remove_nodes_from(list(nx.isolates(g))) # remove remaining isolated nodes
 
-    nx.write_graphml(g, out_filename)
+    if out_filename:
+        nx.write_graphml(g, out_filename)
+        
     return g
     # ----------------- END OF FUNCTION --------------------- #
 
@@ -154,7 +156,7 @@ if __name__ == "__main__":
 
     #Part b)
     artist_audio = compute_mean_audio_features(songs)
-    artist_audio.to_csv('Session 2/songs_mean.csv')
+    #artist_audio.to_csv('Session 2/songs_mean.csv')
     gw = create_similarity_graph(artist_audio, similarity='cosine', out_filename="Session 2/gw.graphml")
     
     #EXERCICE 3
