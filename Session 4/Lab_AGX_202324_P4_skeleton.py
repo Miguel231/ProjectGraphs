@@ -1,6 +1,9 @@
 import pandas as pd
+import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
+from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
 
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
@@ -75,11 +78,25 @@ def plot_similarity_heatmap(artist_audio_features_df: pd.DataFrame, similarity: 
     :param out_filename: name of the file to save the plot. If None, the plot is not saved.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    pass
+    features = artist_audio_features_df.drop(['Artist ID', 'Artist 이름'], axis=1).values
+    if similarity == 'cosine':
+        sim_matrix = cosine_similarity(features)
+    elif similarity == 'euclidean':
+        sim_matrix = 1 / (1 + euclidean_distances(features))  # Convert distances to similarities
+    
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(sim_matrix, annot=True, cmap='coolwarm', xticklabels=artist_audio_features_df['Artist Name'], yticklabels=artist_audio_features_df['Artist Name'])
+    plt.title('Artist Similarity Heatmap')
+    
+    if out_filename:
+        plt.savefig(out_filename)
+    plt.show()
     # ----------------- END OF FUNCTION --------------------- #
 
 
 if __name__ == "__main__":
     # ------- IMPLEMENT HERE THE MAIN FOR THIS SESSION ------- #
-    pass
+    gB_p = nx.read_graphml('Session 2/gBp.graphml')
+    gD_p = nx.read_graphml('Session 2/gDp.graphml')
+    gw = nx.read_graphml('Session 2/gw.graphml')
     # ------------------- END OF MAIN ------------------------ #
