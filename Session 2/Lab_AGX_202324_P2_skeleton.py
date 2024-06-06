@@ -208,7 +208,7 @@ if __name__ == "__main__":
 
     #Part b)
     artist_audio = compute_mean_audio_features(songs)
-    artist_audio.to_csv('Session 2/artist_mean.csv')
+    #artist_audio.to_csv('Session 2/artist_mean.csv')
     gw = create_similarity_graph(artist_audio, similarity='cosine', out_filename="Session 2/gw.graphml")
     
     #EXERCISE 1
