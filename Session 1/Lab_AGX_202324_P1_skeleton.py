@@ -112,7 +112,6 @@ if __name__ == "__main__":
 
     # Part d) Crawling for another artist -> Pastel Ghost
     pastel_ghost = search_artist(cr.sp, "Pastel Ghost")
-
     hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/hB.graphml")
     '''
     
