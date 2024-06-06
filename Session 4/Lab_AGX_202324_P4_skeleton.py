@@ -115,7 +115,7 @@ def plot_similarity_heatmap(artist_audio_features_df: pd.DataFrame, similarity: 
     :param out_filename: name of the file to save the plot. If None, the plot is not saved.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    features = artist_audio_features_df.drop(['Artist Name'], axis=1).values
+    features = artist_audio_features_df.drop(['Artist ID','Artist Name'], axis=1).values
     artists = artist_audio_features_df['Artist Name'].values
     
     if similarity == 'cosine':
@@ -140,32 +140,6 @@ def plot_similarity_heatmap(artist_audio_features_df: pd.DataFrame, similarity: 
         plt.savefig(out_filename)
     #plt.show()
     # ----------------- END OF FUNCTION --------------------- #
-
-def plot_graph_components(g: nx.Graph):
-    """
-    Plot the graph with its components highlighted.
-    
-    :param g: NetworkX graph
-    """
-    # Set the figure size
-    plt.figure(figsize=(12, 8))
-    
-    # Generate layout for the graph
-    pos = nx.spring_layout(g)
-    
-    # Draw nodes and edges
-    nx.draw_networkx_edges(g, pos, alpha=0.3)
-    nx.draw_networkx_nodes(g, pos, node_size=20, cmap=plt.cm.jet)
-    
-    # Draw labels for the largest connected components
-    largest_components = sorted(nx.connected_components(g), key=len, reverse=True)
-    if len(largest_components) > 0:
-        largest_component = largest_components[0]
-        nx.draw_networkx_labels(g.subgraph(largest_component), pos, labels={n: str(n) for n in largest_component}, font_size=12, font_color='red')
-
-    plt.title('Graph Visualization with Highlighted Largest Component')
-    plt.axis('off')  # Turn off the axis
-    plt.show()
 
 
 if __name__ == "__main__":
@@ -194,8 +168,8 @@ if __name__ == "__main__":
     #plot_audio_features(artists_mean, 'Taylor Swift', less_similar)
     
     #Part d)
-    #plot_similarity_heatmap(artists_mean, similarity='cosine', out_filename = 'Session 4/heatmap.png')
-    #plot_similarity_heatmap(artists_mean, similarity='euclidean', out_filename = 'Session 4/heatmap2.png')
+    plot_similarity_heatmap(artists_mean, similarity='cosine', out_filename = 'Session 4/heatmap.png')
+    plot_similarity_heatmap(artists_mean, similarity='euclidean', out_filename = 'Session 4/heatmap2.png')
     
     #Part e)  
     pruned_gw = Lab2.prune_low_weight_edges(gw, min_weight=0.1)  # Adjust `min_weight` as needed
