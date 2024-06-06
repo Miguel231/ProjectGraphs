@@ -21,11 +21,13 @@ def find_extreme_similarity_artists(gw):
     for u, v, data in gw.edges(data=True):
         weight = data['weight'] #extract the weight
         if weight > max_weight:
-            max_weight = weight #update the max weight if it's greater
-            max_pair = (u, v, weight) #update the artist pair
+            if u != v:
+                max_weight = weight #update the max weight if it's greater
+                max_pair = (u, v, weight) #update the artist pair
         if weight < min_weight:
-            min_weight = weight #the same with the min weight
-            min_pair = (u, v, weight)
+            if u != v:
+                min_weight = weight #the same with the min weight
+                min_pair = (u, v, weight)
     
     return max_pair, min_pair
 
@@ -51,6 +53,8 @@ def artist_similarity_to_others(gw):
     least_similar = min(scores, key=scores.get)#artist with the lowest value
     
     return most_similar, scores[most_similar], least_similar, scores[least_similar]
+
+
 
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
@@ -145,7 +149,7 @@ def compute_mean_audio_features(tracks_df: pd.DataFrame) -> pd.DataFrame:
     audio_characteristic = ['Danceability', 'Energy', 'Loudness', 'Speechiness', 'Acousticness', 'Instrumentalness', 'Liveness', 'Valence', 'Tempo']
     
     #group by artist and compute mean for each feature
-    artist = tracks_df.groupby(['Artist Name'])[audio_characteristic].mean().reset_index()
+    artist = tracks_df.groupby(['Artist ID','Artist Name'])[audio_characteristic].mean().reset_index()
     return artist
     # ----------------- END OF FUNCTION --------------------- #
 
@@ -166,11 +170,12 @@ def create_similarity_graph(artist_audio_features_df: pd.DataFrame, similarity: 
     #list of names of each artist
     artist_names = artist_audio_features_df['Artist Name'].tolist()
     #features values
-    features = artist_audio_features_df.drop(columns=['Artist Name']).values
+    features = artist_audio_features_df.drop(columns=['Artist ID','Artist Name']).values
 
     #similarity matrix based on selected metric
     if similarity == 'cosine':
         sim_matrix = cosine_similarity(features)
+
     elif similarity == 'euclidean':
         sim_matrix = euclidean_distances(features)
         sim_matrix = 1 - (sim_matrix / sim_matrix.max()) #to normalize euclidean to similarity range
@@ -203,7 +208,7 @@ if __name__ == "__main__":
 
     #Part b)
     artist_audio = compute_mean_audio_features(songs)
-    #artist_audio.to_csv('Session 2/songs_mean.csv')
+    artist_audio.to_csv('Session 2/artist_mean.csv')
     gw = create_similarity_graph(artist_audio, similarity='cosine', out_filename="Session 2/gw.graphml")
     
     #EXERCISE 1
