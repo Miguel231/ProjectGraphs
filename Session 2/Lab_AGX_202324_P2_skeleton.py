@@ -4,34 +4,53 @@ from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
 import numpy as np
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
 def find_extreme_similarity_artists(gw):
-        max_weight = -float('inf')
-        min_weight = float('inf')
-        max_pair = None
-        min_pair = None
+    """
+    Finds the pairs of artists who are the most and the least similar based on the weight of the edges between them.
 
-        # Traverse through all edges and find the max and min weighted edges
-        for u, v, data in gw.edges(data=True):
-            weight = data['weight']
-            if weight > max_weight:
-                max_weight = weight
-                max_pair = (u, v, weight)
-            if weight < min_weight:
-                min_weight = weight
-                min_pair = (u, v, weight)
-        
-        return max_pair, min_pair
+    :param gw: networkx graph where nodes represent artists and edges contain 'weight' attributes
+    :return: A tuple containing:
+             - The most similar artists with their similarity score.
+             - The least similar artists with their similarity score.
+    """
+    max_weight = 0  #to ensure any weight is larger
+    min_weight = 1  #to ensure any weight is smaller
+    max_pair = None #to store the artist with the highest similarity
+    min_pair = None #to store the artist with the lowest similarity
+
+    #loop through all edges and find the max and min edges
+    for u, v, data in gw.edges(data=True):
+        weight = data['weight'] #extract the weight
+        if weight > max_weight:
+            max_weight = weight #update the max weight if it's greater
+            max_pair = (u, v, weight) #update the artist pair
+        if weight < min_weight:
+            min_weight = weight #the same with the min weight
+            min_pair = (u, v, weight)
+    
+    return max_pair, min_pair
 
 def artist_similarity_to_others(gw):
-    similarity_scores = {}
+    """
+    Calculates the average similarity each artist has to all other artists in the graph
+    and identifies the most and least similar artist.
+
+    :param gw: networkx graph where nodes represent artists and edges contain 'weight' attributes
+    :return: a tuple containing:
+             - ID of the most similar artist and their score
+             - ID of the least similar artist and their score
+    """
+    scores = {} #dict to store the avg scores for each artist
+    #loop through each node in the graph
     for node in gw.nodes():
-        connected_edges = gw.edges(node, data=True)
+        connected_edges = gw.edges(node, data=True) #all edges for the node
         total_weight = sum(data['weight'] for _, _, data in connected_edges)
-        similarity_scores[node] = total_weight / gw.degree(node) if gw.degree(node) > 0 else 0
+        #avg by dividing the total weight by the degree of this node
+        scores[node] = total_weight / gw.degree(node)
     
-    most_similar = max(similarity_scores, key=similarity_scores.get)
-    least_similar = min(similarity_scores, key=similarity_scores.get)
+    most_similar = max(scores, key=scores.get) #artist with the max value
+    least_similar = min(scores, key=scores.get)#artist with the lowest value
     
-    return most_similar, similarity_scores[most_similar], least_similar, similarity_scores[least_similar]
+    return most_similar, scores[most_similar], least_similar, scores[least_similar]
 
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
@@ -216,16 +235,14 @@ if __name__ == "__main__":
         #a)
     most_similar, least_similar = find_extreme_similarity_artists(gw)
     print("Most similar artists:")
-    print(f"{most_similar[0]} and {most_similar[1]} with a similarity of {most_similar[2]}")
+    print(f"{most_similar[0]} and {most_similar[1]}, score: {most_similar[2]}")
     print("\nLeast similar artists:")
-    print(f"{least_similar[0]} and {least_similar[1]} with a similarity of {least_similar[2]}")
+    print(f"{least_similar[0]} and {least_similar[1]}, score: {least_similar[2]}")
         
         #b)
-    most_similar_artist, most_sim_score, least_similar_artist, least_sim_score = artist_similarity_to_others(gw)
-    print("\nArtist most similar to others")
-    print(f"{most_similar_artist} with an average similarity of {most_sim_score}")
+    most_similar_artist, most_score, least_similar_artist, least_score = artist_similarity_to_others(gw)
+    print("\nArtist most similar to others:")
+    print(f"{most_similar_artist} with an average score of {most_score}")
     print("\nArtist least similar to others:")
-    print(f"{least_similar_artist} with an average similarity of {least_sim_score}")
-    
-    
+    print(f"{least_similar_artist} with an average score of {least_score}")
     # ------------------- END OF MAIN ------------------------ #
