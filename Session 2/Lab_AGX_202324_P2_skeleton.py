@@ -151,6 +151,7 @@ def compute_mean_audio_features(tracks_df: pd.DataFrame) -> pd.DataFrame:
     #group by artist and compute mean for each feature
     artist = tracks_df.groupby(['Artist ID','Artist Name'])[audio_characteristic].mean().reset_index()
     return artist
+
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -208,7 +209,7 @@ if __name__ == "__main__":
 
     #Part b)
     artist_audio = compute_mean_audio_features(songs)
-    #artist_audio.to_csv('Session 2/artist_mean.csv', index=False)
+    artist_audio.to_csv('Session 2/artist_mean.csv', index=False)
     gw = create_similarity_graph(artist_audio, similarity='cosine', out_filename="Session 2/gw.graphml")
     
     #EXERCISE 1

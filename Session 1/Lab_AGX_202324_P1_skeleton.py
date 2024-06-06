@@ -60,33 +60,43 @@ def get_track_data(sp: spotipy.client.Spotify, graphs: list, out_filename: str) 
     :return: Pandas DataFrame with track data.
     """
     data = []
+    visited_artists = set()
+    
     for graph in graphs:
         for artist_id in graph.nodes:
-            tracks = sp.artist_top_tracks(artist_id, country='ES')['tracks'] #Get top tracks for the artist (Spain)
-            for track in tracks:
-                track_id = track['id']
-                audio_features = sp.audio_features(track_id)[0] #audio features for the track
-                album = track['album']
-                data.append({
-                    'Artist ID': artist_id,
-                    'Artist Name': track['artists'][0]['name'],
-                    'Track ID': track_id,
-                    'Track Name': track['name'],
-                    'Track Duration': track['duration_ms'],
-                    'Track Popularity': track['popularity'],
-                    'Danceability': audio_features['danceability'],
-                    'Energy': audio_features['energy'],
-                    'Loudness': audio_features['loudness'],
-                    'Speechiness': audio_features['speechiness'],
-                    'Acousticness': audio_features['acousticness'],
-                    'Instrumentalness': audio_features['instrumentalness'],
-                    'Liveness': audio_features['liveness'],
-                    'Valence': audio_features['valence'],
-                    'Tempo': audio_features['tempo'],
-                    'Album ID': album['id'],
-                    'Album Name': album['name'],
-                    'Album Release Date': album['release_date']
-                })
+            if artist_id not in visited_artists:
+                visited_artists.add(artist_id)
+                tracks = sp.artist_top_tracks(artist_id, country='ES')['tracks'] #Get top tracks for the artist (Spain)
+                for track in tracks:
+                    artist_info = None
+                    for artist in track['artists']:
+                        if artist['id'] == artist_id:
+                            artist_info = artist
+                            break
+                if artist_info:
+                    track_id = track['id']
+                    audio_features = sp.audio_features(track_id)[0] #audio features for the track
+                    album = track['album'] 
+                    data.append({
+                        'Artist ID': artist_id,
+                        'Artist Name': artist_info['name'],
+                        'Track ID': track_id,
+                        'Track Name': track['name'],
+                        'Track Duration': track['duration_ms'],
+                        'Track Popularity': track['popularity'],
+                        'Danceability': audio_features['danceability'],
+                        'Energy': audio_features['energy'],
+                        'Loudness': audio_features['loudness'],
+                        'Speechiness': audio_features['speechiness'],
+                        'Acousticness': audio_features['acousticness'],
+                        'Instrumentalness': audio_features['instrumentalness'],
+                        'Liveness': audio_features['liveness'],
+                        'Valence': audio_features['valence'],
+                        'Tempo': audio_features['tempo'],
+                        'Album ID': album['id'],
+                        'Album Name': album['name'],
+                        'Album Release Date': album['release_date']
+                    })
     
     trackdata = pd.DataFrame(data) #list of dictionaries to a DataFrame
     trackdata.to_csv(out_filename, index=False)
@@ -119,6 +129,10 @@ if __name__ == "__main__":
     #Read generated GraphML
     gB = nx.read_graphml("Session 1/gB.graphml")
     gD = nx.read_graphml("Session 1/gD.graphml")
+
+    artists = set(gB.nodes()).intersection(set(gD.nodes()))
+    g = [gB.subgraph(artists)]
+    D = get_track_data(cr.sp, g, "Session 1/songs4.csv")
 
     order_gB = gB.number_of_nodes()
     size_gB = gB.number_of_edges()
