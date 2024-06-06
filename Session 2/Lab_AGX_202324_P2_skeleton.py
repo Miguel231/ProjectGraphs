@@ -176,13 +176,12 @@ def create_similarity_graph(artist_audio_features_df: pd.DataFrame, similarity: 
         sim_matrix = 1 - (sim_matrix / sim_matrix.max()) #to normalize euclidean to similarity range
 
     #add nodes and weighted edges based
-    for i, artist in enumerate(artist_names):
-        graph.add_node(artist, name=artist_audio_features_df.iloc[i]['Artist Name'])
+    for artist in artist_names:
+        graph.add_node(artist, name=artist)
 
     for i in range(len(artist_names)):
         for j in range(i + 1, len(artist_names)):  
-            if sim_matrix[i, j] > 0:  
-                graph.add_edge(artist_names[i], artist_names[j], weight=sim_matrix[i, j])
+            graph.add_edge(artist_names[i], artist_names[j], weight=sim_matrix[i, j])
 
     if out_filename:
         nx.write_graphml(graph, out_filename)
