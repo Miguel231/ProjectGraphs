@@ -176,8 +176,8 @@ def create_similarity_graph(artist_audio_features_df: pd.DataFrame, similarity: 
         sim_matrix = 1 - (sim_matrix / sim_matrix.max()) #to normalize euclidean to similarity range
 
     #add nodes and weighted edges based
-    for idx, artist_id in enumerate(artist_names):
-        graph.add_node(artist_id, name=artist_audio_features_df.iloc[idx]['Artist Name'])
+    for i, artist in enumerate(artist_names):
+        graph.add_node(artist, name=artist_audio_features_df.iloc[i]['Artist Name'])
 
     for i in range(len(artist_names)):
         for j in range(i + 1, len(artist_names)):  
