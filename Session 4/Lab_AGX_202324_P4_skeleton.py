@@ -12,20 +12,32 @@ import Lab_AGX_202324_P3_skeleton as Lab3
 sys.path.insert(0, 'Session 2')
 import Lab_AGX_202324_P2_skeleton as Lab2
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
-def get_degree_distribution(graph):
+def most_and_less_similar_artist(graph, artist_name):
     """
-    Generate a degree distribution dictionary from a graph.
-    
-    :param graph: NetworkX graph object
-    :return: Dictionary with degree counts
+    Finds the most and least similar artists to the specified artist from gw.
+
+    :param graph: NetworkX graph with artists as nodes and similarity as edge weights.
+    :param artist_name: Name of the artist to find similarities for.
+    :return: Names of the most and least similar artists.
     """
-    degree_dict = {}
-    for degree in dict(nx.degree(graph)).values():
-        if degree in degree_dict:
-            degree_dict[degree] += 1
-        else:
-            degree_dict[degree] = 1
-    return degree_dict
+    neighbors = graph[artist_name]
+
+    most_similar_artist = None
+    less_similar_artist = None
+    max_similarity = 0  
+    min_similarity = 1  
+
+    #loop through all neighboring nodes to find the maximum and minimum similarities
+    for artist, weight in neighbors.items():
+        similarity = weight['weight']
+        if similarity > max_similarity:
+            max_similarity = similarity
+            most_similar_artist = artist
+        if similarity < min_similarity:
+            min_similarity = similarity
+            less_similar_artist = artist
+
+    return most_similar_artist, less_similar_artist
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
 def plot_degree_distribution(degree_dict: dict, normalized: bool = False, loglog: bool = False) -> None:
@@ -69,20 +81,25 @@ def plot_audio_features(artists_audio_feat: pd.DataFrame, artist1_id: str, artis
     :return: None
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    feat1 = artists_audio_feat[artists_audio_feat['Artist Name'] == artist1_id]
-    feat2 = artists_audio_feat[artists_audio_feat['Artist Name'] == artist2_id]
+    feature_columns = [
+        'Danceability', 'Energy', 'Speechiness', 
+        'Acousticness', 'Instrumentalness', 'Liveness', 'Valence'
+    ]
     
-    ind = np.arange(len(feat1.columns) - 1)  #skip 'Artist Name'
+    feat1 = artists_audio_feat.loc[artists_audio_feat['Artist Name'] == artist1_id, feature_columns]
+    feat2 = artists_audio_feat.loc[artists_audio_feat['Artist Name'] == artist2_id, feature_columns]
+
+    ind = np.arange(len(feature_columns))
     width = 0.35
     
     fig, ax = plt.subplots()
-    bars1 = ax.bar(ind - width/2, feat1.iloc[0, 1:], width, label=feat1['Artist Name'].iloc[0])
-    bars2 = ax.bar(ind + width/2, feat2.iloc[0, 1:], width, label=feat2['Artist Name'].iloc[0])
-    
+    bars1 = ax.bar(ind - width/2, feat1.iloc[0], width, label=artist1_id)
+    bars2 = ax.bar(ind + width/2, feat2.iloc[0], width, label=artist2_id)
+
     ax.set_ylabel('Feature Value')
     ax.set_title('Audio Features Comparison')
     ax.set_xticks(ind)
-    ax.set_xticklabels(feat1.columns[1:], rotation=90)
+    ax.set_xticklabels(feature_columns, rotation=45)
     ax.legend()
     
     plt.show()
@@ -156,31 +173,29 @@ if __name__ == "__main__":
     gB_p = nx.read_graphml('Session 2/gBp.graphml')
     gD_p = nx.read_graphml('Session 2/gDp.graphml')
     gw = nx.read_graphml('Session 2/gw.graphml')
-    songs_mean = pd.read_csv('Session 2/songs_mean.csv')
+    artists_mean = pd.read_csv('Session 2/artist_mean.csv')
 
     #Part a)
     gB_p_degree_dict = Lab3.get_degree_distribution(gB_p)
     #plot_degree_distribution(gB_p_degree_dict, normalized=True, loglog=False)
 
     gD_p_degree_dict = Lab3.get_degree_distribution(gD_p)
-    #plot_degree_distribution(gB_p_degree_dict, normalized=True, loglog=False)
+    #plot_degree_distribution(gD_p_degree_dict, normalized=True, loglog=False)
     
     gw_degree_dict = Lab3.get_degree_distribution(gw)
-    #plot_degree_distribution(gB_p_degree_dict, normalized=True, loglog=False)
+    #plot_degree_distribution(gw_degree_dict, normalized=True, loglog=False)
     
     #Part b)
-    #similarity_scores = {node: nx.get_node_attributes(gw, 'weight')[node] for node in gw.nodes}
-    #most_similar_artist = max(similarity_scores, key=similarity_scores.get)
-    #least_similar_artist = min(similarity_scores, key=similarity_scores.get)
-    
-    #plot_audio_features(songs_mean, 'Taylor Swift ID', most_similar_artist)
+    most_similar, less_similar = most_and_less_similar_artist(gw, 'Taylor Swift')
+
+    #plot_audio_features(artists_mean, 'Taylor Swift', most_similar)
     
     #Part c)
-    #plot_audio_features(songs_mean, 'Taylor Swift ID', least_similar_artist)
+    #plot_audio_features(artists_mean, 'Taylor Swift', less_similar)
     
     #Part d)
-    #plot_similarity_heatmap(songs_mean, similarity='cosine', out_filename = 'Session 4/heatmap.png')
-    #plot_similarity_heatmap(songs_mean, similarity='euclidean', out_filename = 'Session 4/heatmap2.png')
+    #plot_similarity_heatmap(artists_mean, similarity='cosine', out_filename = 'Session 4/heatmap.png')
+    #plot_similarity_heatmap(artists_mean, similarity='euclidean', out_filename = 'Session 4/heatmap2.png')
     
     #Part e)  
     pruned_gw = Lab2.prune_low_weight_edges(gw, min_weight=0.1)  # Adjust `min_weight` as needed

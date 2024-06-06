@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
 import numpy as np
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
-def find_extreme_similarity_artists(gw):
+def pair_similarity_artists(gw):
     """
     Finds the pairs of artists who are the most and the least similar based on the weight of the edges between them.
 
@@ -31,7 +31,7 @@ def find_extreme_similarity_artists(gw):
     
     return max_pair, min_pair
 
-def artist_similarity_to_others(gw):
+def artist_similarity(gw):
     """
     Calculates the average similarity each artist has to all other artists in the graph
     and identifies the most and least similar artist.
@@ -208,7 +208,7 @@ if __name__ == "__main__":
 
     #Part b)
     artist_audio = compute_mean_audio_features(songs)
-    #artist_audio.to_csv('Session 2/artist_mean.csv')
+    #artist_audio.to_csv('Session 2/artist_mean.csv', index=False)
     gw = create_similarity_graph(artist_audio, similarity='cosine', out_filename="Session 2/gw.graphml")
     
     #EXERCISE 1
@@ -237,14 +237,14 @@ if __name__ == "__main__":
     #EXERCISE 3
     print(f'\nEXERCICE 3\n')
         #a)
-    most_similar, least_similar = find_extreme_similarity_artists(gw)
+    most_similar, least_similar = pair_similarity_artists(gw)
     print("Most similar artists:")
     print(f"{most_similar[0]} and {most_similar[1]}, score: {most_similar[2]}")
     print("\nLeast similar artists:")
     print(f"{least_similar[0]} and {least_similar[1]}, score: {least_similar[2]}")
         
         #b)
-    most_similar_artist, most_score, least_similar_artist, least_score = artist_similarity_to_others(gw)
+    most_similar_artist, most_score, least_similar_artist, least_score = artist_similarity(gw)
     print("\nArtist most similar to others:")
     print(f"{most_similar_artist} with an average score of {most_score}")
     print("\nArtist least similar to others:")
