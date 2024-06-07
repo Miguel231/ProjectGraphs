@@ -186,6 +186,7 @@ def detect_communities(g: nx.Graph, method: str) -> tuple:
         modularity = nx.algorithms.community.modularity(g, communities)
 
     elif method == 'louvain':
+        # If the graph is directed, convert it to undirected
         if nx.is_directed(g):
             g = g.to_undirected()
         
@@ -193,19 +194,17 @@ def detect_communities(g: nx.Graph, method: str) -> tuple:
         partition = community_louvain.best_partition(g)
         communities = {}
         
-        for node, community_id in partition.items():
-            if community_id not in communities:
-                communities[community_id] = []
-            communities[community_id].append(node)
+        # Iterate through the partition to group nodes by community
+        for node, community in partition.items():
+            if community not in communities:
+                communities[community] = []
+            communities[community].append(node)
         
         # Convert communities to list of lists
         communities = list(communities.values())
         
         # Calculate modularity
         modularity = community_louvain.modularity(partition, g)
-
-    else:
-        raise ValueError("Method not supported. Use 'girvan-newman' or 'louvain'.")
 
     return communities, modularity
 
@@ -236,9 +235,6 @@ if __name__ == '__main__':
     
     degree_centrality =get_k_most_central(g= gBp, metric ='degree', num_nodes = 25)
     betweenness_centrality =get_k_most_central(g= gBp, metric ='betweenness', num_nodes = 25)
-
-    #print(f'Exe 2: Top_n Degree Centrality nodes {degree_centrality}; Top_n Betweenness Centrality nodes {betweenness_centrality}')
-
 
     common_nodes = len(set(degree_centrality).intersection(set(betweenness_centrality)))
 
@@ -293,7 +289,6 @@ if __name__ == '__main__':
     print('EXERCISE 6 \n')
 
     # a)
-
     sccs = list(nx.strongly_connected_components(gD))
     min_cost = len(sccs) * 100  # 100 euros per artist
     print(f'a) {min_cost}')
@@ -311,10 +306,11 @@ if __name__ == '__main__':
     artist_names_gD = get_artist_names(gD, betweenness_centrality_gD)
     artist_names_gB = get_artist_names(gB, betweenness_centrality_gB)
 
+    # Loop through each element in the betweenness centrality list
     for i in range(len(betweenness_centrality_gD)):
-        node_id = betweenness_centrality_gD[i]
-        artist_name = artist_names_gD[i]
-        print(f"Artist ID: {node_id}, Artist Name: {artist_name}")
+        node_id = betweenness_centrality_gD[i] 
+        artist_name = artist_names_gD[i]  
+        print(f"Artist ID: {node_id}, Artist Name: {artist_name}")  
 
 
 
@@ -338,23 +334,17 @@ if __name__ == '__main__':
     start_node = None
     target_node = None
     for node in gB.nodes:
-        if gB.nodes[node]['name'] == start_artist:
+        if gB.nodes[node]['name'] == start_artist: # confirm starting node
             start_node = node
-        if gB.nodes[node]['name'] == target_artist:
+        if gB.nodes[node]['name'] == target_artist: # confirm target node
             target_node = node
 
-    # Ensure both artists are in the graph
-    if start_node is None or target_node is None:
-        print("One or both artists are not in the graph.")
-    else:
-        # Use BFS to find the shortest path
-        try:
-            shortest_path = nx.shortest_path(gB, source=start_node, target=target_node)
-            shortest_path_names = [gB.nodes[node]['name'] for node in shortest_path]
-            print(f"Minimum number of hops: {len(shortest_path) - 1}")
-            print("Artists in the path:")
-            for artist in shortest_path_names:
-                print(artist)
-        except nx.NetworkXNoPath:
-            print(f"No path found from {start_artist} to {target_artist}.")
+
+    shortest_path = nx.shortest_path(gB, source=start_node, target=target_node)
+    shortest_path_names = [gB.nodes[node]['name'] for node in shortest_path]
+    print(f"Min  hops: {len(shortest_path)}")
+    print("Artists in the path:")
+    for artist in shortest_path_names:
+        print(artist)
+
 
