@@ -129,8 +129,6 @@ if __name__ == "__main__":
     gB = nx.read_graphml("Session 1/gB.graphml")
     gD = nx.read_graphml("Session 1/gD.graphml")
 
-    D = get_track_data(cr.sp, [gB,gD], "Session 1/songs2.csv")
-
     order_gB = gB.number_of_nodes()
     size_gB = gB.number_of_edges()
     order_gD = gD.number_of_nodes()
