@@ -59,42 +59,45 @@ def get_track_data(sp: spotipy.client.Spotify, graphs: list, out_filename: str) 
     :param out_filename: Name of the CSV output file.
     :return: Pandas DataFrame with track data.
     """
+    nodes_gB = set(graphs[0].nodes())
+    nodes_gD = set(graphs[1].nodes())
+    common_artists = nodes_gB.intersection(nodes_gD)
+
     data = []
     
-    for graph in graphs:
-        for artist_id in graph.nodes:
-            tracks = sp.artist_top_tracks(artist_id, country='ES')['tracks'] #Get top tracks for the artist (Spain)
-            for track in tracks:
-                artist_name = None
-                for artist in track['artists']:
-                    if artist['id'] == artist_id:
-                        artist_name = artist['name']
-                        break 
-                #if the artist is one of the contributors of the track
-                if artist_name:
-                    track_id = track['id']
-                    audio_feat = sp.audio_features(track_id)[0] #audio features for the track
-                    album = track['album'] 
-                    data.append({
-                        'Artist ID': artist_id,
-                        'Artist Name': artist_name,
-                        'Track ID': track_id,
-                        'Track Name': track['name'],
-                        'Track Duration': track['duration_ms'],
-                        'Track Popularity': track['popularity'],
-                        'Danceability': audio_feat['danceability'],
-                        'Energy': audio_feat['energy'],
-                        'Loudness': audio_feat['loudness'],
-                        'Speechiness': audio_feat['speechiness'],
-                        'Acousticness': audio_feat['acousticness'],
-                        'Instrumentalness': audio_feat['instrumentalness'],
-                        'Liveness': audio_feat['liveness'],
-                        'Valence': audio_feat['valence'],
-                        'Tempo': audio_feat['tempo'],
-                        'Album ID': album['id'],
-                        'Album Name': album['name'],
-                        'Album Release Date': album['release_date']
-                    })
+    for artist_id in common_artists:
+        tracks = sp.artist_top_tracks(artist_id, country='ES')['tracks'] #Get top tracks for the artist (Spain)
+        for track in tracks:
+            artist_name = None
+            for artist in track['artists']:
+                if artist['id'] == artist_id:
+                    artist_name = artist['name']
+                    break 
+            #if the artist is one of the contributors of the track
+            if artist_name:
+                track_id = track['id']
+                audio_feat = sp.audio_features(track_id)[0] #audio features for the track
+                album = track['album'] 
+                data.append({
+                    'Artist ID': artist_id,
+                    'Artist Name': artist_name,
+                    'Track ID': track_id,
+                    'Track Name': track['name'],
+                    'Track Duration': track['duration_ms'],
+                    'Track Popularity': track['popularity'],
+                    'Danceability': audio_feat['danceability'],
+                    'Energy': audio_feat['energy'],
+                    'Loudness': audio_feat['loudness'],
+                    'Speechiness': audio_feat['speechiness'],
+                    'Acousticness': audio_feat['acousticness'],
+                    'Instrumentalness': audio_feat['instrumentalness'],
+                    'Liveness': audio_feat['liveness'],
+                    'Valence': audio_feat['valence'],
+                    'Tempo': audio_feat['tempo'],
+                    'Album ID': album['id'],
+                    'Album Name': album['name'],
+                    'Album Release Date': album['release_date']
+                })
     
     trackdata = pd.DataFrame(data) #list of dictionaries to a DataFrame
     trackdata.to_csv(out_filename, index=False)
@@ -113,10 +116,8 @@ if __name__ == "__main__":
     # Part b) Crawl using DFS
     gD = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="DFS", out_filename="Session 1/gD.graphml")
     
-    # Part c) Intersect the nodes from both graphs and get track data
-    artists = set(gB.nodes()).intersection(set(gD.nodes()))
-    g = [gB.subgraph(artists)]
-    D = get_track_data(cr.sp, g, "Session 1/songs2.csv")
+    # Part c)
+    D = get_track_data(cr.sp, [gB,gD], "Session 1/songs2.csv")
 
     # Part d) Crawling for another artist -> Pastel Ghost
     pastel_ghost = search_artist(cr.sp, "Pastel Ghost")
@@ -127,6 +128,8 @@ if __name__ == "__main__":
     #Read generated GraphML
     gB = nx.read_graphml("Session 1/gB.graphml")
     gD = nx.read_graphml("Session 1/gD.graphml")
+
+    D = get_track_data(cr.sp, [gB,gD], "Session 1/songs2.csv")
 
     order_gB = gB.number_of_nodes()
     size_gB = gB.number_of_edges()
