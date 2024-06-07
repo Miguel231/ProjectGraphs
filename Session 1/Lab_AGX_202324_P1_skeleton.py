@@ -114,29 +114,24 @@ if __name__ == "__main__":
     
     # Part a) Crawl using BFS
     print('BFS Crawler...')
-    gB = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/gB2.graphml")
+    gB = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/gB.graphml")
     
     print('DFS Crawler...')
     # Part b) Crawl using DFS
-    gD = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="DFS", out_filename="Session 1/gD2.graphml")
+    gD = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="DFS", out_filename="Session 1/gD.graphml")
     
     # Part c)
-    D = get_track_data(cr.sp, [gB,gD], "Session 1/songs2.csv")
+    D = get_track_data(cr.sp, [gB,gD], "Session 1/songs.csv")
 
     # Part d) Crawling for another artist -> Pastel Ghost
     pastel_ghost = search_artist(cr.sp, "Pastel Ghost")
-    hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/hB2.graphml")
+    hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/hB.graphml")
     '''
     
-<<<<<<< HEAD
     #EXERCISE 1
-=======
-    '''
-    """#EXERCISE 1
->>>>>>> 0292196af27988a0bb03765859bb6f707907c402
     #Read generated GraphML
-    gB = nx.read_graphml("Session 1/gB2.graphml")
-    gD = nx.read_graphml("Session 1/gD2.graphml")
+    gB = nx.read_graphml("Session 1/gB.graphml")
+    gD = nx.read_graphml("Session 1/gD.graphml")
 
     order_gB = gB.number_of_nodes()
     size_gB = gB.number_of_edges()
@@ -186,7 +181,7 @@ if __name__ == "__main__":
     print(f"gD -> \nIn-Degree: {stats_gD['in_degree']}, Out-Degree: {stats_gD['out_degree']}")
 
     #EXERCISE 3
-    D = pd.read_csv("Session 1/songs2.csv")
+    D = pd.read_csv("Session 1/songs.csv")
     #number of songs
     num_songs = D.shape[0]
     #unique artists
