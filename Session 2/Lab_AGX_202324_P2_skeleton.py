@@ -214,9 +214,9 @@ def create_similarity_graph(artist_audio_features_df: pd.DataFrame, similarity: 
 if __name__ == "__main__":
     # ------- IMPLEMENT HERE THE MAIN FOR THIS SESSION ------- #
     #read the previous files
-    gB = nx.read_graphml('Session 1/gB.graphml')
-    gD = nx.read_graphml('Session 1/gD.graphml')
-    songs = pd.read_csv('Session 1/songs.csv')
+    gB = nx.read_graphml('Session 1/gB2.graphml')
+    gD = nx.read_graphml('Session 1/gD2.graphml')
+    songs = pd.read_csv('Session 1/songs2.csv')
 
     #Part a)
 
