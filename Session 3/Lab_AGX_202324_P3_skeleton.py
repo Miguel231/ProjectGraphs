@@ -34,6 +34,15 @@ def max_clique_size_with_min_2_cliques(g):
     # Return the maximum clique size that generates at least 2 cliques
     return max_clique
 
+# Function to get artist names from node IDs
+def get_artist_names(graph, node_ids):
+    artist_names = []
+    for node_id in node_ids:
+        if 'name' in graph.nodes[node_id]:
+            artist_names.append(graph.nodes[node_id]['name'])
+    return artist_names
+
+
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
 def num_common_nodes(*arg):
@@ -104,7 +113,9 @@ def get_k_most_central(g: nx.Graph, metric: str, num_nodes: int) -> list:
     sorted_nodes = sorted(centrality_measure.items(), key=lambda item: item[1], reverse=True)
 
     # take the desired top nodes
-    top_nodes = [node for node, _ in sorted_nodes[:num_nodes]]
+    top_nodes = []
+    for node, _ in sorted_nodes[:num_nodes]:
+        top_nodes.append(node)
     
     return top_nodes
     
@@ -124,7 +135,10 @@ def find_cliques(g: nx.Graph, min_size_clique: int) -> tuple:
     all_cliques = list(nx.find_cliques(g))
     
     # Filter cliques by minimum size
-    filtered_cliques = [clique for clique in all_cliques if len(clique) >= min_size_clique]
+    filtered_cliques = []
+    for clique in all_cliques:
+        if len(clique) >= min_size_clique:
+            filtered_cliques.append(clique)
     
     # Collect all nodes that are part of any filtered clique
     nodes_in_cliques = set()
@@ -176,6 +190,7 @@ if __name__ == '__main__':
     #___________________EXERCICE 1_________________________________________________________________________________________
     
     print('EXERCICE 1 \n')
+    
     gB = nx.read_graphml('Session 1/gB.graphml')
     gD = nx.read_graphml('Session 1/gD.graphml')
 
@@ -189,8 +204,9 @@ if __name__ == '__main__':
     print(f'Exe1 b) {common_nodes}\n')
 
     #___________________EXERCICE 2_________________________________________________________________________________________
-
+    print('________________________________________________________________')
     print('EXERCICE 2 \n')
+    
     degree_centrality =get_k_most_central(g= gBp, metric ='degree', num_nodes = 25)
     betweenness_centrality =get_k_most_central(g= gBp, metric ='betweenness', num_nodes = 25)
 
@@ -202,9 +218,9 @@ if __name__ == '__main__':
     print(f'Common nodes:{common_nodes}\n')
 
     #___________________EXERCICE 3_________________________________________________________________________________________
-
+    print('________________________________________________________________')
     print('EXERCISE 3 \n')
-
+    
     gDp = nx.read_graphml('Session 2/gDp.graphml')
 
     # Determine max clique size for gBp and gDp
@@ -228,18 +244,16 @@ if __name__ == '__main__':
     print(f"Total number of common nodes in all cliques in gBp and gDp: {len(common_nodes_in_cliques)}")
 
     #___________________EXERCICE 4_________________________________________________________________________________________
-
+    print('________________________________________________________________')
     print('EXERCISE 4 \n')
-
-    pd.set_option('display.max_rows', None)
 
     artist_info = pd.read_csv('Session 2/artist_mean.csv')
     artists_in_clique = artist_info[artist_info['Artist ID'].isin(cliques_gBp[1])]
 
-    print(artists_in_clique[['Artist Name','Danceability', 'Energy', 'Loudness', 'Speechiness', 'Acousticness', 'Instrumentalness', 'Liveness', 'Valence', 'Tempo']])
-
+    #print(artists_in_clique[['Artist Name','Danceability', 'Energy', 'Loudness', 'Speechiness', 'Acousticness', 'Instrumentalness', 'Liveness', 'Valence', 'Tempo']])
+    print(artists_in_clique[['Artist Name', 'Energy', 'Loudness', 'Valence', 'Tempo']])
     #___________________EXERCICE 5_________________________________________________________________________________________
-
+    print('________________________________________________________________')
     print('EXERCISE 5 \n')
 
     # Detect communities using Louvain method
@@ -248,35 +262,42 @@ if __name__ == '__main__':
     print(f"Number of communities detected: {len(communities_louvain)}")
 
     #___________________EXERCICE 6_________________________________________________________________________________________
-
+    print('________________________________________________________________')
     print('EXERCISE 6 \n')
 
     # a)
 
     sccs = list(nx.strongly_connected_components(gD))
     min_cost = len(sccs) * 100  # 100 euros per artist
-    print(f'a: {min_cost}')
+    print(f'a) {min_cost}')
 
-    '''
-    To ensure that a user who listens to music infinitely will hear your ad at some point, you need 
-    to place ads on a set of artists such that every strongly connected component (SCC) of the graph is covered.
-
-    '''
     # b)
+    print('b) \n')
+    print('gD)')
     budget = 400
     cost_per_artist = 100
     num_artists = budget // cost_per_artist
 
-    betweenness_centrality =get_k_most_central(g= gD, metric ='betweenness', num_nodes = num_artists)
+    betweenness_centrality_gD = get_k_most_central(g= gD, metric ='betweenness', num_nodes = num_artists)
+    betweenness_centrality_gB = get_k_most_central(g= gB, metric ='betweenness', num_nodes = num_artists)
 
-    print(betweenness_centrality)
+    artist_names_gD = get_artist_names(gD, betweenness_centrality_gD)
+    artist_names_gB = get_artist_names(gB, betweenness_centrality_gB)
 
-    '''
-    With a budget of 400 euros, you can select up to 4 artists (100 euros per artist). The goal is to
-    maximize the spread of your ad. One way to achieve this is by selecting artists with the highest out-degree centrality,
-    as they can reach the most other artists.
+    for i in range(len(betweenness_centrality_gD)):
+        node_id = betweenness_centrality_gD[i]
+        artist_name = artist_names_gD[i]
+        print(f"Artist ID: {node_id}, Artist Name: {artist_name}")
 
-    '''
-    
+
+
+    print('gB)')
+    for i in range(len(betweenness_centrality_gB)):
+        node_id = betweenness_centrality_gB[i]
+        artist_name = artist_names_gB[i]
+        print(f"Artist ID: {node_id}, Artist Name: {artist_name}")
+
+
+
      
     # ------------------- END OF MAIN ------------------------ #
