@@ -34,23 +34,6 @@ def max_clique_size_with_min_2_cliques(g):
     # Return the maximum clique size that generates at least 2 cliques
     return max_clique
 
-def select_artists_for_ad_spread(g: nx.DiGraph, budget: int) -> list:
-    """
-    Select artists to maximize ad spread within the given budget.
-
-    :param g: networkx directed graph.
-    :param budget: total budget in euros.
-    :return: list of selected artists.
-    """
-    cost_per_artist = 100
-    num_artists = budget // cost_per_artist
-
-    out_degree_centrality = nx.out_degree_centrality(g)
-    sorted_artists = sorted(out_degree_centrality.items(), key=lambda item: item[1], reverse=True)
-
-    selected_artists = [artist for artist, _ in sorted_artists[:num_artists]]
-    return selected_artists
-
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
 def num_common_nodes(*arg):
@@ -280,15 +263,20 @@ if __name__ == '__main__':
 
     '''
     # b)
+    budget = 400
+    cost_per_artist = 100
+    num_artists = budget // cost_per_artist
 
-    selected_artists_gD = select_artists_for_ad_spread(gD, 400)
-    print(selected_artists_gD)
+    betweenness_centrality =get_k_most_central(g= gD, metric ='betweenness', num_nodes = num_artists)
+
+    print(betweenness_centrality)
+
     '''
     With a budget of 400 euros, you can select up to 4 artists (100 euros per artist). The goal is to
     maximize the spread of your ad. One way to achieve this is by selecting artists with the highest out-degree centrality,
     as they can reach the most other artists.
 
     '''
-
+    
      
     # ------------------- END OF MAIN ------------------------ #
