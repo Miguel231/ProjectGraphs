@@ -72,7 +72,6 @@ def get_track_data(sp: spotipy.client.Spotify, graphs: list, out_filename: str) 
                         break 
                 #if the artist is one of the contributors of the track
                 if artist_name:
-                #if artist_id in [artist['id'] for artist in track['artists']]:
                     track_id = track['id']
                     audio_feat = sp.audio_features(track_id)[0] #audio features for the track
                     album = track['album'] 
