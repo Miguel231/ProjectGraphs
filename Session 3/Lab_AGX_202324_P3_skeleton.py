@@ -279,7 +279,7 @@ if __name__ == '__main__':
     print('________________________________________________________________')
     print('EXERCISE 5 \n')
 
-    # Detect communities using Louvain method
+    #detect communities using Louvain method
     communities_louvain, modularity_louvain = detect_communities(gD, 'louvain')
     print(f"Louvain Method: Modularity = {modularity_louvain}")
     print(f"Number of communities detected: {len(communities_louvain)}")
