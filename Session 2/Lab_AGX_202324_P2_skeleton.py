@@ -21,13 +21,11 @@ def pair_similarity_artists(gw):
     for u, v, data in gw.edges(data=True):
         weight = data['weight'] #extract the weight
         if weight > max_weight:
-            if u != v:
-                max_weight = weight #update the max weight if it's greater
-                max_pair = (u, v, weight) #update the artist pair
+            max_weight = weight #update the max weight if it's greater
+            max_pair = (u, v, weight) #update the artist pair
         if weight < min_weight:
-            if u != v:
-                min_weight = weight #the same with the min weight
-                min_pair = (u, v, weight)
+            min_weight = weight #the same with the min weight
+            min_pair = (u, v, weight)
     
     return max_pair, min_pair
 

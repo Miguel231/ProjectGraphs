@@ -60,39 +60,38 @@ def get_track_data(sp: spotipy.client.Spotify, graphs: list, out_filename: str) 
     :return: Pandas DataFrame with track data.
     """
     data = []
-    visited_artists = set()
     
     for graph in graphs:
         for artist_id in graph.nodes:
-            if artist_id not in visited_artists:
-                visited_artists.add(artist_id)
-                tracks = sp.artist_top_tracks(artist_id, country='ES')['tracks'] #Get top tracks for the artist (Spain)
-                for track in tracks:
-                    artist_info = None
-                    for artist in track['artists']:
-                        if artist['id'] == artist_id:
-                            artist_info = artist
-                            break
-                if artist_info:
+            tracks = sp.artist_top_tracks(artist_id, country='ES')['tracks'] #Get top tracks for the artist (Spain)
+            for track in tracks:
+                artist_name = None
+                for artist in track['artists']:
+                    if artist['id'] == artist_id:
+                        artist_name = artist['name']
+                        break 
+                #if the artist is one of the contributors of the track
+                if artist_name:
+                #if artist_id in [artist['id'] for artist in track['artists']]:
                     track_id = track['id']
-                    audio_features = sp.audio_features(track_id)[0] #audio features for the track
+                    audio_feat = sp.audio_features(track_id)[0] #audio features for the track
                     album = track['album'] 
                     data.append({
                         'Artist ID': artist_id,
-                        'Artist Name': artist_info['name'],
+                        'Artist Name': artist_name,
                         'Track ID': track_id,
                         'Track Name': track['name'],
                         'Track Duration': track['duration_ms'],
                         'Track Popularity': track['popularity'],
-                        'Danceability': audio_features['danceability'],
-                        'Energy': audio_features['energy'],
-                        'Loudness': audio_features['loudness'],
-                        'Speechiness': audio_features['speechiness'],
-                        'Acousticness': audio_features['acousticness'],
-                        'Instrumentalness': audio_features['instrumentalness'],
-                        'Liveness': audio_features['liveness'],
-                        'Valence': audio_features['valence'],
-                        'Tempo': audio_features['tempo'],
+                        'Danceability': audio_feat['danceability'],
+                        'Energy': audio_feat['energy'],
+                        'Loudness': audio_feat['loudness'],
+                        'Speechiness': audio_feat['speechiness'],
+                        'Acousticness': audio_feat['acousticness'],
+                        'Instrumentalness': audio_feat['instrumentalness'],
+                        'Liveness': audio_feat['liveness'],
+                        'Valence': audio_feat['valence'],
+                        'Tempo': audio_feat['tempo'],
                         'Album ID': album['id'],
                         'Album Name': album['name'],
                         'Album Release Date': album['release_date']
@@ -130,9 +129,9 @@ if __name__ == "__main__":
     gB = nx.read_graphml("Session 1/gB.graphml")
     gD = nx.read_graphml("Session 1/gD.graphml")
 
-    artists = set(gB.nodes()).intersection(set(gD.nodes()))
-    g = [gB.subgraph(artists)]
-    D = get_track_data(cr.sp, g, "Session 1/songs4.csv")
+    #artists = set(gB.nodes()).intersection(set(gD.nodes()))
+    #g = [gB.subgraph(artists)]
+    #D = get_track_data(cr.sp, g, "Session 1/songs4.csv")
 
     order_gB = gB.number_of_nodes()
     size_gB = gB.number_of_edges()
