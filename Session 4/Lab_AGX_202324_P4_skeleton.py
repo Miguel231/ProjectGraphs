@@ -162,18 +162,18 @@ if __name__ == "__main__":
     #Part b)
     most_similar, less_similar = most_and_less_similar_artist(gw, 'Taylor Swift')
 
-    plot_audio_features(artists_mean, 'Taylor Swift', most_similar)
+    #plot_audio_features(artists_mean, 'Taylor Swift', most_similar)
     
     #Part c)
-    plot_audio_features(artists_mean, 'Taylor Swift', less_similar)
+    #plot_audio_features(artists_mean, 'Taylor Swift', less_similar)
     
     #Part d)
     #plot_similarity_heatmap(artists_mean, similarity='cosine', out_filename = 'Session 4/heatmap.png')
+    
     #plot_similarity_heatmap(artists_mean, similarity='euclidean', out_filename = 'Session 4/heatmap2.png')
     
     #Part e)  
-    pruned_gw = Lab2.prune_low_weight_edges(gw, min_weight=0.1)  # Adjust `min_weight` as needed
-    #no saleee
-    
+    pruned_gw = Lab2.prune_low_weight_edges(gw, min_weight=0.1)
+
     
     # ------------------- END OF MAIN ------------------------ #

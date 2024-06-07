@@ -117,7 +117,7 @@ if __name__ == "__main__":
     # Part c) Intersect the nodes from both graphs and get track data
     artists = set(gB.nodes()).intersection(set(gD.nodes()))
     g = [gB.subgraph(artists)]
-    D = get_track_data(cr.sp, g, "Session 1/songs.csv")
+    D = get_track_data(cr.sp, g, "Session 1/songs2.csv")
 
     # Part d) Crawling for another artist -> Pastel Ghost
     pastel_ghost = search_artist(cr.sp, "Pastel Ghost")
@@ -128,10 +128,6 @@ if __name__ == "__main__":
     #Read generated GraphML
     gB = nx.read_graphml("Session 1/gB.graphml")
     gD = nx.read_graphml("Session 1/gD.graphml")
-
-    #artists = set(gB.nodes()).intersection(set(gD.nodes()))
-    #g = [gB.subgraph(artists)]
-    #D = get_track_data(cr.sp, g, "Session 1/songs4.csv")
 
     order_gB = gB.number_of_nodes()
     size_gB = gB.number_of_edges()
