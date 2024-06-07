@@ -250,16 +250,16 @@ if __name__ == '__main__':
 
     pd.set_option('display.max_rows', None)
 
-    artist_info = pd.read_csv('Session 1/songs.csv')
+    artist_info = pd.read_csv('Session 2/artist_mean.csv')
     artists_in_clique = artist_info[artist_info['Artist ID'].isin(cliques_gBp[1])]
 
-    print(artists_in_clique[['Danceability', 'Energy', 'Loudness', 'Speechiness', 'Acousticness', 'Instrumentalness', 'Liveness', 'Valence', 'Tempo']])
+    print(artists_in_clique[['Artist Name','Danceability', 'Energy', 'Loudness', 'Speechiness', 'Acousticness', 'Instrumentalness', 'Liveness', 'Valence', 'Tempo']])
 
     #___________________EXERCICE 5_________________________________________________________________________________________
 
     print('EXERCISE 5 \n')
 
-     # Detect communities using Louvain method
+    # Detect communities using Louvain method
     communities_louvain, modularity_louvain = detect_communities(gD, 'louvain')
     print(f"Louvain Method: Modularity = {modularity_louvain}")
     print(f"Number of communities detected: {len(communities_louvain)}")
