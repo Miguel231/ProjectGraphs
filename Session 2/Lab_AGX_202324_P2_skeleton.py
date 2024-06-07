@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
 import numpy as np
 
+from credentials import *
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
 def pair_similarity_artists(gw):
     """
@@ -57,27 +58,42 @@ def artist_similarity(gw):
 
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
-def retrieve_bidirectional_edges(g: nx.DiGraph, out_filename: str) -> nx.Graph:
+import networkx as nx
+import spotipy
+
+def retrieve_bidirectional_edges(sp: spotipy.client.Spotify, g: nx.DiGraph, out_filename: str) -> nx.Graph:
     """
     Convert a directed graph into an undirected graph by considering bidirectional edges only.
+    Also, add attributes to nodes (name, followers, popularity, genres).
 
+    :param sp: Spotipy client object
     :param g: a networkx digraph.
     :param out_filename: name of the file that will be saved.
     :return: a networkx undirected graph.
     """
-    # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
     undirected_g = nx.Graph()
 
     added_edges = 0
     for u, v in g.edges():
-        if g.has_edge(v, u): #if the opposite edge exists, makes it bidirectional
+        if g.has_edge(v, u): # if the opposite edge exists, makes it bidirectional
+            # Add nodes with their attributes if they don't already exist in the undirected graph
+            if u not in undirected_g:
+                artist_info_u = sp.artist(u)
+                undirected_g.add_node(u, name=artist_info_u['name'], followers=artist_info_u['followers']['total'],
+                                      popularity=artist_info_u['popularity'], genres=", ".join(artist_info_u['genres']))
+            if v not in undirected_g:
+                artist_info_v = sp.artist(v)
+                undirected_g.add_node(v, name=artist_info_v['name'], followers=artist_info_v['followers']['total'],
+                                      popularity=artist_info_v['popularity'], genres=", ".join(artist_info_v['genres']))
+
             undirected_g.add_edge(u, v)
             added_edges += 1
 
-    print(f"Total bidirectional edges added: {added_edges}") #to check if it works
+    print(f"Total bidirectional edges added: {added_edges}") # to check if it works
 
     nx.write_graphml(undirected_g, out_filename)
     return undirected_g
+
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -204,8 +220,9 @@ if __name__ == "__main__":
 
     #Part a)
 
-    gBp = retrieve_bidirectional_edges(gB, "Session 2/gBp.graphml")
-    gDp = retrieve_bidirectional_edges(gD, "Session 2/gDp.graphml")
+    gBp = retrieve_bidirectional_edges(sp,gB, "Session 2/gBp.graphml")
+    gDp = retrieve_bidirectional_edges(sp,gD, "Session 2/gDp.graphml")
+
 
 
     #Part b)
