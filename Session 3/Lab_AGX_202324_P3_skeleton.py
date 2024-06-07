@@ -3,6 +3,8 @@ import pandas as pd
 import community.community_louvain as community_louvain
 
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
+
+
 def max_clique_size_with_min_2_cliques(g):
     """
     Determine the maximum clique size that generates at least 2 cliques in the graph g.
@@ -13,22 +15,23 @@ def max_clique_size_with_min_2_cliques(g):
     max_clique = 2
     
     # Find all cliques in the graph
-    all_cliques = list(nx.find_cliques(g))
+    cliques = list(nx.find_cliques(g))
     
     # Length of the maximal clique in g
-    max_clique_length = len(max(all_cliques, key=len))
+    max_lenght_clique= len(max(cliques, key=len))
     
-    # Iterate clique sizes from 2 to the size of the largest clique
-    for size in range(2, max_clique_length + 1):
+    # Iterate clique sizes from 2 to max_lenght_clique
+    for size in range(2, max_lenght_clique + 1):
+
         # Filter cliques by the current size
         filtered_cliques = []
-        for clique in all_cliques:
+        for clique in cliques:
             if len(clique) >= size:
                 filtered_cliques.append(clique)
         
-        # Check if there are at least 2 cliques of the current size
+        # Check if there are min 2 cliques oof the given size
         if len(filtered_cliques) >= 2:
-            # Update the maximum clique size
+            # Update the max_clique size 
             max_clique = size
     
     # Return the maximum clique size that generates at least 2 cliques
@@ -53,17 +56,16 @@ def num_common_nodes(*arg):
     :return: an integer, number of common nodes.
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    if not arg:
-        return 0
+
+    # Start with set of nodes in the first graph
+    first_graph = set(arg[0].nodes)
     
-    # Start with the node set of the first graph
-    common_nodes = set(arg[0].nodes)
-    
-    # Intersect with the node sets of all other graphs
+    # Intersect all the graphs passed to the function
     for g in arg[1:]:
-        common_nodes.intersection_update(g.nodes)
+        first_graph.intersection_update(g.nodes)
     
-    return len(common_nodes)
+     # Return 'count' of intersected nodes with len
+    return len(first_graph)
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -77,10 +79,19 @@ def get_degree_distribution(g: nx.Graph) -> dict:
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
     
     degree_distribution = {}
-    for _, degree in g.degree():
+
+    # Iterate over the degrees of each node in the graph
+    for nodes, degree in g.degree():
+
+        # Check if degree is in the dictionary
         if degree not in degree_distribution:
+
+            # Add the degree as a key and initialize with 0
             degree_distribution[degree] = 0
+
+        # Update the count for the degree +1 
         degree_distribution[degree] += 1
+    
     return degree_distribution
 
     # ----------------- END OF FUNCTION --------------------- #
@@ -109,12 +120,12 @@ def get_k_most_central(g: nx.Graph, metric: str, num_nodes: int) -> list:
     else:
         raise ValueError("Invalid centrality metric specified.")
 
-    # Sort in descending order through the items of the centrality_measure output
-    sorted_nodes = sorted(centrality_measure.items(), key=lambda item: item[1], reverse=True)
+    # Sort in descending order through the items of the desired centrality_measure
+    sort_nodes = sorted(centrality_measure.items(), key=lambda item: item[1], reverse=True) # reverse set to true to do descending order
 
-    # take the desired top nodes
+    # Take the desired top nodes specified in the parameters of the function
     top_nodes = []
-    for node, _ in sorted_nodes[:num_nodes]:
+    for node, _ in sort_nodes[:num_nodes]:
         top_nodes.append(node)
     
     return top_nodes
@@ -132,15 +143,15 @@ def find_cliques(g: nx.Graph, min_size_clique: int) -> tuple:
         list of nodes in any of the cliques.
     """
     # Find all maximal cliques in the graph
-    all_cliques = list(nx.find_cliques(g))
+    cliques = list(nx.find_cliques(g))
     
-    # Filter cliques by minimum size
+    # Filter cliques by minimum size returned by max_clique_size_with_min_2_cliques function
     filtered_cliques = []
-    for clique in all_cliques:
+    for clique in cliques:
         if len(clique) >= min_size_clique:
             filtered_cliques.append(clique)
     
-    # Collect all nodes that are part of any filtered clique
+    # Get nodes that are part of all the filtered cliques in a set
     nodes_in_cliques = set()
     for clique in filtered_cliques:
         for node in clique:
@@ -159,29 +170,45 @@ def detect_communities(g: nx.Graph, method: str) -> tuple:
     :return: two-element tuple, list of communities (each community is a list of nodes) and modularity of the partition.
     """
     if method == 'girvan-newman':
-        import itertools
+        # Generate communities using the Girvan-Newman algorithm
         communities_generator = nx.algorithms.community.girvan_newman(g)
-        limited = itertools.takewhile(lambda c: len(c) <= 10, communities_generator)
-        communities = list(limited)[-1]
+        
+        # Find communities with size <= 10
+        communities = None
+        for communities in communities_generator:
+            if len(communities) > 10:
+                break
+        
+        # Convert to nested list
         communities = [list(c) for c in communities]
+        
+        # Calculate modularity
         modularity = nx.algorithms.community.modularity(g, communities)
 
     elif method == 'louvain':
         if nx.is_directed(g):
             g = g.to_undirected()
+        
+        # Generate communities using the Louvain algorithm
         partition = community_louvain.best_partition(g)
         communities = {}
+        
         for node, community_id in partition.items():
             if community_id not in communities:
                 communities[community_id] = []
             communities[community_id].append(node)
+        
+        # Convert communities to list of lists
         communities = list(communities.values())
+        
+        # Calculate modularity
         modularity = community_louvain.modularity(partition, g)
 
     else:
         raise ValueError("Method not supported. Use 'girvan-newman' or 'louvain'.")
 
     return communities, modularity
+
 
 
 if __name__ == '__main__':
