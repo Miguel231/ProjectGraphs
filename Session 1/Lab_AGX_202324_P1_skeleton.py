@@ -108,7 +108,7 @@ def get_track_data(sp: spotipy.client.Spotify, graphs: list, out_filename: str) 
     return trackdata
 
 if __name__ == "__main__":
-    
+    '''
     #search for Taylor Swift's artist ID
     taylor_swift = search_artist(cr.sp, "Taylor Swift")
     
@@ -127,7 +127,7 @@ if __name__ == "__main__":
     pastel_ghost = search_artist(cr.sp, "Pastel Ghost")
     hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/hB2.graphml")
     
-    
+    '''
     """#EXERCISE 1
     #Read generated GraphML
     gB = nx.read_graphml("Session 1/gB.graphml")
