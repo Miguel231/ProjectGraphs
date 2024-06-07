@@ -201,4 +201,5 @@ if __name__ == "__main__":
     distances = nx.single_source_shortest_path_length(gD, "06HL4z0CvFAxyc27GXpf02")
     nx.set_node_attributes(gD, distances, 'distance_from_taylor_swift')
     nx.write_graphml(gD, "Session 4/gD_with_distance.graphml")
+    
     # ------------------- END OF MAIN ------------------------ #

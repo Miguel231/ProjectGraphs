@@ -43,6 +43,10 @@ def crawler(sp: spotipy.client.Spotify, seed: str, max_nodes_to_crawl: int, stra
             related_artists = sp.artist_related_artists(current_id)['artists'] # all related artist from a curent artist
             for artist in related_artists: # iterate over them
                 artist_id = artist['id'] # take id of each of them
+                if artist_id not in graph:
+                    graph.add_node(artist_id, name=artist['name'], followers=artist['followers']['total'],
+                            popularity=artist['popularity'], genres=", ".join(artist['genres']))
+
                 graph.add_edge(current_id, artist_id)
                 if artist_id not in visited: # if not in visited
                     queue.append(artist_id)
@@ -104,27 +108,27 @@ def get_track_data(sp: spotipy.client.Spotify, graphs: list, out_filename: str) 
     return trackdata
 
 if __name__ == "__main__":
-    '''
+    
     #search for Taylor Swift's artist ID
     taylor_swift = search_artist(cr.sp, "Taylor Swift")
     
     # Part a) Crawl using BFS
     print('BFS Crawler...')
-    gB = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/gB.graphml")
+    gB = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/gB2.graphml")
     
     print('DFS Crawler...')
     # Part b) Crawl using DFS
-    gD = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="DFS", out_filename="Session 1/gD.graphml")
+    gD = crawler(cr.sp, taylor_swift, max_nodes_to_crawl=100, strategy="DFS", out_filename="Session 1/gD2.graphml")
     
     # Part c)
     D = get_track_data(cr.sp, [gB,gD], "Session 1/songs2.csv")
 
     # Part d) Crawling for another artist -> Pastel Ghost
     pastel_ghost = search_artist(cr.sp, "Pastel Ghost")
-    hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/hB.graphml")
-    '''
+    hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/hB2.graphml")
     
-    #EXERCISE 1
+    
+    """#EXERCISE 1
     #Read generated GraphML
     gB = nx.read_graphml("Session 1/gB.graphml")
     gD = nx.read_graphml("Session 1/gD.graphml")
@@ -187,4 +191,4 @@ if __name__ == "__main__":
 
     print(f"\nNum of songs: {num_songs}")
     print(f"Num of artists: {num_artists}")
-    print(f"Num of albums: {num_albums}")
+    print(f"Num of albums: {num_albums}")"""
