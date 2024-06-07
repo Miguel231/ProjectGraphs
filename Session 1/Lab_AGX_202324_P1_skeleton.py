@@ -128,7 +128,12 @@ if __name__ == "__main__":
     hb = crawler(cr.sp, pastel_ghost, max_nodes_to_crawl=100, strategy="BFS", out_filename="Session 1/hB2.graphml")
     '''
     
+<<<<<<< HEAD
     #EXERCISE 1
+=======
+    '''
+    """#EXERCISE 1
+>>>>>>> 0292196af27988a0bb03765859bb6f707907c402
     #Read generated GraphML
     gB = nx.read_graphml("Session 1/gB2.graphml")
     gD = nx.read_graphml("Session 1/gD2.graphml")

@@ -297,7 +297,37 @@ if __name__ == '__main__':
         artist_name = artist_names_gB[i]
         print(f"Artist ID: {node_id}, Artist Name: {artist_name}")
 
+    
+    #___________________EXERCICE 7_________________________________________________________________________________________
+    print('________________________________________________________________')
+    print('EXERCISE 7 \n')
 
+        
+    # Define the start and target artists
+    start_artist = 'Taylor Swift'
+    target_artist = 'THE DRIVER ERA'
 
-     
-    # ------------------- END OF MAIN ------------------------ #
+    # Find the node IDs for the start and target artists
+    start_node = None
+    target_node = None
+    for node in gB.nodes:
+        if gB.nodes[node]['name'] == start_artist:
+            start_node = node
+        if gB.nodes[node]['name'] == target_artist:
+            target_node = node
+
+    # Ensure both artists are in the graph
+    if start_node is None or target_node is None:
+        print("One or both artists are not in the graph.")
+    else:
+        # Use BFS to find the shortest path
+        try:
+            shortest_path = nx.shortest_path(gB, source=start_node, target=target_node)
+            shortest_path_names = [gB.nodes[node]['name'] for node in shortest_path]
+            print(f"Minimum number of hops: {len(shortest_path) - 1}")
+            print("Artists in the path:")
+            for artist in shortest_path_names:
+                print(artist)
+        except nx.NetworkXNoPath:
+            print(f"No path found from {start_artist} to {target_artist}.")
+

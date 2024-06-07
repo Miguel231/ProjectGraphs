@@ -2,6 +2,7 @@ import networkx as nx
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
 import numpy as np
+
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
 def pair_similarity_artists(gw):
     """
@@ -202,8 +203,10 @@ if __name__ == "__main__":
     songs = pd.read_csv('Session 1/songs2.csv')
 
     #Part a)
+
     gBp = retrieve_bidirectional_edges(gB, "Session 2/gBp.graphml")
     gDp = retrieve_bidirectional_edges(gD, "Session 2/gDp.graphml")
+
 
     #Part b)
     artist_audio = compute_mean_audio_features(songs)

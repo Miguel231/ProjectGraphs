@@ -7,976 +7,2836 @@
   <graph edgedefault="directed">
     <node id="06HL4z0CvFAxyc27GXpf02">
       <data key="d0">Taylor Swift</data>
-      <data key="d1">111925418</data>
+      <data key="d1">112051648</data>
       <data key="d2">100</data>
       <data key="d3">pop</data>
     </node>
     <node id="0C8ZW7ezQVs4URX5aX7Kqx">
       <data key="d0">Selena Gomez</data>
-      <data key="d1">49569791</data>
+      <data key="d1">49597135</data>
       <data key="d2">79</data>
       <data key="d3">pop, post-teen pop</data>
     </node>
     <node id="1McMsnEElThX1knmY4oliG">
       <data key="d0">Olivia Rodrigo</data>
-      <data key="d1">36434482</data>
+      <data key="d1">36474286</data>
       <data key="d2">87</data>
       <data key="d3">pop</data>
     </node>
     <node id="6jJ0s89eD6GaHleKKya26X">
       <data key="d0">Katy Perry</data>
-      <data key="d1">33246685</data>
+      <data key="d1">33258700</data>
       <data key="d2">82</data>
       <data key="d3">pop</data>
     </node>
     <node id="66CXWjxzNUsdJxJ2JdwvnR">
       <data key="d0">Ariana Grande</data>
-      <data key="d1">96740953</data>
+      <data key="d1">96771834</data>
       <data key="d2">90</data>
       <data key="d3">pop</data>
     </node>
     <node id="6KImCVD70vtIoJWnq6nGn3">
       <data key="d0">Harry Styles</data>
-      <data key="d1">32212760</data>
+      <data key="d1">32227453</data>
       <data key="d2">83</data>
       <data key="d3">pop</data>
     </node>
     <node id="4nDoRrQiYLoBzwC5BhVJzF">
       <data key="d0">Camila Cabello</data>
-      <data key="d1">33088730</data>
+      <data key="d1">33103045</data>
       <data key="d2">79</data>
       <data key="d3">dance pop, pop</data>
     </node>
     <node id="4AK6F7OLvEQ5QYCBNiQWHq">
       <data key="d0">One Direction</data>
-      <data key="d1">35108220</data>
+      <data key="d1">35124192</data>
       <data key="d2">82</data>
       <data key="d3">boy band, pop, post-teen pop, talent show</data>
     </node>
     <node id="6S2OmqARrzebs0tKUEyXyp">
       <data key="d0">Demi Lovato</data>
-      <data key="d1">26420930</data>
+      <data key="d1">26428768</data>
       <data key="d2">75</data>
       <data key="d3">pop, post-teen pop</data>
     </node>
     <node id="6JL8zeS1NmiOftqZTRgdTz">
       <data key="d0">Meghan Trainor</data>
-      <data key="d1">14992860</data>
+      <data key="d1">15003059</data>
       <data key="d2">76</data>
       <data key="d3">hip pop, pop</data>
     </node>
     <node id="74KM79TiuVKeVCqs8QtB0B">
       <data key="d0">Sabrina Carpenter</data>
-      <data key="d1">8799913</data>
+      <data key="d1">8845461</data>
       <data key="d2">85</data>
       <data key="d3">pop</data>
     </node>
     <node id="5YGY8feqx7naU7z4HrwZM6">
       <data key="d0">Miley Cyrus</data>
-      <data key="d1">24017642</data>
+      <data key="d1">24028694</data>
       <data key="d2">82</data>
       <data key="d3">pop</data>
     </node>
     <node id="7n2wHs1TKAczGzO7Dd2rGr">
       <data key="d0">Shawn Mendes</data>
-      <data key="d1">42678920</data>
+      <data key="d1">42687732</data>
       <data key="d2">79</data>
       <data key="d3">canadian pop, pop, viral pop</data>
     </node>
     <node id="6M2wZ9GZgrQXHCFfjv46we">
       <data key="d0">Dua Lipa</data>
-      <data key="d1">43542407</data>
+      <data key="d1">43556848</data>
       <data key="d2">87</data>
       <data key="d3">dance pop, pop, uk pop</data>
     </node>
     <node id="1uNFoZAHBGtllmzznpCI3s">
       <data key="d0">Justin Bieber</data>
-      <data key="d1">75250353</data>
+      <data key="d1">75273790</data>
       <data key="d2">87</data>
       <data key="d3">canadian pop, pop</data>
     </node>
     <node id="00FQb4jTyendYWaN8pK0wa">
       <data key="d0">Lana Del Rey</data>
-      <data key="d1">35623838</data>
+      <data key="d1">35666058</data>
       <data key="d2">88</data>
       <data key="d3">art pop, pop</data>
     </node>
     <node id="6qqNVTkY8uBg9cP3Jd7DAH">
       <data key="d0">Billie Eilish</data>
-      <data key="d1">94995518</data>
+      <data key="d1">95047743</data>
       <data key="d2">93</data>
       <data key="d3">art pop, pop</data>
     </node>
     <node id="26VFTg2z8YR0cCuwLzESi2">
       <data key="d0">Halsey</data>
-      <data key="d1">21495610</data>
+      <data key="d1">21501744</data>
       <data key="d2">78</data>
       <data key="d3">electropop, etherpop, indie poptimism, pop</data>
     </node>
     <node id="6VuMaDnrHyPL1p4EHjYLi7">
       <data key="d0">Charlie Puth</data>
-      <data key="d1">22727066</data>
+      <data key="d1">22735771</data>
       <data key="d2">79</data>
       <data key="d3">pop, viral pop</data>
     </node>
     <node id="5ZsFI1h6hIdQRw2ti0hz81">
       <data key="d0">ZAYN</data>
-      <data key="d1">22948853</data>
+      <data key="d1">22954779</data>
       <data key="d2">75</data>
       <data key="d3">pop, uk pop</data>
     </node>
     <node id="4Uc8Dsxct0oMqx0P6i60ea">
       <data key="d0">Conan Gray</data>
-      <data key="d1">9666824</data>
+      <data key="d1">9672071</data>
       <data key="d2">76</data>
       <data key="d3">bedroom pop, pop, pov: indie</data>
     </node>
     <node id="6dJeKm76NjfXBNTpHmOhfO">
       <data key="d0">Selena Gomez &amp; The Scene</data>
-      <data key="d1">9675375</data>
+      <data key="d1">9679478</data>
       <data key="d2">65</data>
       <data key="d3">pop</data>
     </node>
     <node id="1l8Fu6IkuTP0U5QetQJ5Xt">
       <data key="d0">Fifth Harmony</data>
-      <data key="d1">16105410</data>
+      <data key="d1">16108936</data>
       <data key="d2">66</data>
       <data key="d3">girl group, pop, talent show</data>
     </node>
     <node id="4Rxn7Im3LGfyRkY2FlHhWi">
       <data key="d0">Nick Jonas</data>
-      <data key="d1">9891878</data>
+      <data key="d1">9896178</data>
       <data key="d2">61</data>
       <data key="d3">dance pop, pop</data>
     </node>
     <node id="64M6ah0SkkRsnPGtGiRAbb">
       <data key="d0">Bebe Rexha</data>
-      <data key="d1">9115309</data>
+      <data key="d1">9119393</data>
       <data key="d2">78</data>
       <data key="d3">dance pop, pop</data>
     </node>
     <node id="1zNqDE7qDGCsyzJwohVaoX">
       <data key="d0">Anne-Marie</data>
-      <data key="d1">11878331</data>
+      <data key="d1">11882868</data>
       <data key="d2">76</data>
       <data key="d3">pop</data>
     </node>
     <node id="3e7awlrlDSwF3iM0WBjGMp">
       <data key="d0">Little Mix</data>
-      <data key="d1">11885282</data>
+      <data key="d1">11888525</data>
       <data key="d2">71</data>
       <data key="d3">girl group, pop, talent show, uk pop</data>
     </node>
     <node id="1Xylc3o4UrD53lo9CvFvVg">
       <data key="d0">Zara Larsson</data>
-      <data key="d1">10436518</data>
+      <data key="d1">10438865</data>
       <data key="d2">75</data>
       <data key="d3">pop, scandipop, swedish electropop, swedish pop</data>
     </node>
     <node id="5p7f24Rk5HkUZsaS3BLG5F">
       <data key="d0">Hailee Steinfeld</data>
-      <data key="d1">8794597</data>
+      <data key="d1">8795684</data>
       <data key="d2">65</data>
       <data key="d3">pop</data>
     </node>
     <node id="2wUjUUtkb5lvLKcGKsKqsR">
       <data key="d0">Alessia Cara</data>
-      <data key="d1">11770440</data>
+      <data key="d1">11771565</data>
       <data key="d2">70</data>
       <data key="d3">canadian contemporary r&amp;b, canadian pop, pop</data>
     </node>
     <node id="6sCbFbEjbYepqswM1vWjjs">
       <data key="d0">Zendaya</data>
-      <data key="d1">4673110</data>
+      <data key="d1">4675799</data>
       <data key="d2">66</data>
       <data key="d3">pop, post-teen pop</data>
     </node>
     <node id="45dkTj5sMRSjrmBSBeiHym">
       <data key="d0">Tate McRae</data>
-      <data key="d1">5389111</data>
+      <data key="d1">5394740</data>
       <data key="d2">82</data>
       <data key="d3">pop</data>
     </node>
     <node id="2kRfqPViCqYdSGhYSM9R0Q">
       <data key="d0">Madison Beer</data>
-      <data key="d1">6592170</data>
+      <data key="d1">6597455</data>
       <data key="d2">72</data>
       <data key="d3">pop</data>
     </node>
     <node id="5cj0lLjcoR7YOSnhnX0Po5">
       <data key="d0">Doja Cat</data>
-      <data key="d1">29993847</data>
+      <data key="d1">30008056</data>
       <data key="d2">84</data>
       <data key="d3">dance pop, pop</data>
     </node>
     <node id="4tuJ0bMpJh08umKkEXKUI5">
       <data key="d0">Gracie Abrams</data>
-      <data key="d1">1823058</data>
+      <data key="d1">1830730</data>
       <data key="d2">73</data>
       <data key="d3">alt z</data>
     </node>
     <node id="2W8yFh0Ga6Yf3jiayVxwkE">
       <data key="d0">Dove Cameron</data>
-      <data key="d1">4972568</data>
+      <data key="d1">4975920</data>
       <data key="d2">68</data>
       <data key="d3">pop</data>
     </node>
     <node id="63yrD80RY3RNEM2YDpUpO8">
       <data key="d0">Melanie Martinez</data>
-      <data key="d1">20343119</data>
+      <data key="d1">20358453</data>
       <data key="d2">80</data>
       <data key="d3">alt z, electropop, pop</data>
     </node>
     <node id="4VdV2qRAYBLINR6uU72V1J">
       <data key="d0">Joshua Bassett</data>
-      <data key="d1">1073562</data>
+      <data key="d1">1073854</data>
       <data key="d2">57</data>
       <data key="d3">singer-songwriter pop</data>
     </node>
     <node id="7tYKF4w9nC0nq9CsPZTHyP">
       <data key="d0">SZA</data>
-      <data key="d1">20400441</data>
+      <data key="d1">20435148</data>
       <data key="d2">88</data>
       <data key="d3">pop, r&amp;b, rap</data>
     </node>
     <node id="3uwAm6vQy7kWPS2bciKWx9">
       <data key="d0">girl in red</data>
-      <data key="d1">7217811</data>
+      <data key="d1">7221464</data>
       <data key="d2">72</data>
       <data key="d3">bedroom pop, indie pop, norwegian indie, pov: indie</data>
     </node>
     <node id="26dSoYclwsYLMAKD3tpOr4">
       <data key="d0">Britney Spears</data>
-      <data key="d1">14545309</data>
+      <data key="d1">14554971</data>
       <data key="d2">78</data>
       <data key="d3">dance pop, pop</data>
     </node>
     <node id="1HY2Jd0NmPuamShAr6KMms">
       <data key="d0">Lady Gaga</data>
-      <data key="d1">30006519</data>
+      <data key="d1">30019634</data>
       <data key="d2">83</data>
       <data key="d3">art pop, dance pop, pop</data>
     </node>
     <node id="6LqNN22kT3074XbTVUrhzX">
       <data key="d0">Kesha</data>
-      <data key="d1">7872070</data>
+      <data key="d1">7875228</data>
       <data key="d2">76</data>
       <data key="d3">dance pop, pop</data>
     </node>
     <node id="0p4nmQO2msCgU4IF37Wi3j">
       <data key="d0">Avril Lavigne</data>
-      <data key="d1">10923815</data>
+      <data key="d1">10929336</data>
       <data key="d2">74</data>
       <data key="d3">canadian pop, candy pop, dance pop, pop</data>
     </node>
     <node id="2gsggkzM5R49q6jpPvazou">
       <data key="d0">Jessie J</data>
-      <data key="d1">11612947</data>
+      <data key="d1">11615670</data>
       <data key="d2">69</data>
       <data key="d3">dance pop, pop</data>
     </node>
     <node id="3BmGtnKgCSGYIUhmivXKWX">
       <data key="d0">Kelly Clarkson</data>
-      <data key="d1">10409834</data>
+      <data key="d1">10413321</data>
       <data key="d2">71</data>
       <data key="d3">dance pop, pop, talent show</data>
     </node>
     <node id="1l7ZsJRRS8wlW3WfJfPfNS">
       <data key="d0">Christina Aguilera</data>
-      <data key="d1">8234762</data>
+      <data key="d1">8238694</data>
       <data key="d2">75</data>
       <data key="d3">dance pop, pop</data>
     </node>
     <node id="0X2BH1fck6amBIoJhDVmmJ">
       <data key="d0">Ellie Goulding</data>
-      <data key="d1">12394204</data>
+      <data key="d1">12397436</data>
       <data key="d2">77</data>
       <data key="d3">indietronica, metropopolis, pop, uk pop</data>
     </node>
     <node id="1KCSPY1glIKqW2TotWuXOR">
       <data key="d0">P!nk</data>
-      <data key="d1">16634432</data>
+      <data key="d1">16640189</data>
       <data key="d2">78</data>
       <data key="d3">dance pop, pop</data>
     </node>
     <node id="5WUlDfRSoLAfcVSX1WnrxN">
       <data key="d0">Sia</data>
-      <data key="d1">27949293</data>
+      <data key="d1">27958639</data>
       <data key="d2">82</data>
       <data key="d3">australian dance, australian pop, pop</data>
     </node>
     <node id="0hCNtLu0JehylgoiP8L4Gh">
       <data key="d0">Nicki Minaj</data>
-      <data key="d1">31276761</data>
+      <data key="d1">31289879</data>
       <data key="d2">84</data>
       <data key="d3">hip pop, pop, queens hip hop, rap</data>
     </node>
     <node id="4kYSro6naA4h99UJvo89HB">
       <data key="d0">Cardi B</data>
-      <data key="d1">23891698</data>
+      <data key="d1">23902010</data>
       <data key="d2">78</data>
       <data key="d3">pop, rap</data>
     </node>
     <node id="5pKCCKE2ajJHZ9KAiaK11H">
       <data key="d0">Rihanna</data>
-      <data key="d1">60230052</data>
+      <data key="d1">60255555</data>
       <data key="d2">88</data>
       <data key="d3">barbadian pop, pop, urban contemporary</data>
     </node>
     <node id="57WHJIHrjOE3iAxpihhMnp">
       <data key="d0">Louis Tomlinson</data>
-      <data key="d1">7060699</data>
+      <data key="d1">7061907</data>
       <data key="d2">64</data>
       <data key="d3">pop</data>
     </node>
     <node id="1Hsdzj7Dlq2I7tHP7501T4">
       <data key="d0">Niall Horan</data>
-      <data key="d1">9865600</data>
+      <data key="d1">9867434</data>
       <data key="d2">73</data>
       <data key="d3">pop</data>
     </node>
     <node id="5pUo3fmmHT8bhCyHE52hA6">
       <data key="d0">Liam Payne</data>
-      <data key="d1">10032745</data>
+      <data key="d1">10033332</data>
       <data key="d2">60</data>
       <data key="d3">pop</data>
     </node>
     <node id="5Rl15oVamLq7FbSb0NNBNy">
       <data key="d0">5 Seconds of Summer</data>
-      <data key="d1">9924444</data>
+      <data key="d1">9927267</data>
       <data key="d2">74</data>
       <data key="d3">boy band, pop</data>
     </node>
     <node id="7gOdHgIoIKoe4i9Tta6qdD">
       <data key="d0">Jonas Brothers</data>
-      <data key="d1">7571044</data>
+      <data key="d1">7573319</data>
       <data key="d2">73</data>
       <data key="d3">boy band, pop</data>
     </node>
     <node id="3WGpXCj9YhhfX11TToZcXP">
       <data key="d0">Troye Sivan</data>
-      <data key="d1">8151712</data>
+      <data key="d1">8153982</data>
       <data key="d2">75</data>
       <data key="d3">australian pop, pop, viral pop</data>
     </node>
     <node id="7gAppWoH7pcYmphCVTXkzs">
       <data key="d0">The Vamps</data>
-      <data key="d1">5814689</data>
+      <data key="d1">5817703</data>
       <data key="d2">63</data>
       <data key="d3">boy band, pop</data>
     </node>
     <node id="5CCwRZC6euC8Odo6y9X8jr">
       <data key="d0">Rita Ora</data>
-      <data key="d1">8286162</data>
+      <data key="d1">8288235</data>
       <data key="d2">69</data>
       <data key="d3">dance pop, pop, uk pop</data>
     </node>
     <node id="4npEfmQ6YuiwW1GpUmaq3F">
       <data key="d0">Ava Max</data>
-      <data key="d1">6842030</data>
+      <data key="d1">6846370</data>
       <data key="d2">78</data>
       <data key="d3">pop</data>
     </node>
     <node id="4IWBUUAFIplrNtaOHcJPRM">
       <data key="d0">James Arthur</data>
-      <data key="d1">17043722</data>
+      <data key="d1">17061965</data>
       <data key="d2">79</data>
       <data key="d3">pop, talent show, uk pop</data>
     </node>
     <node id="7nU4hB040gTmHm45YYMvqc">
       <data key="d0">Hannah Montana</data>
-      <data key="d1">4705215</data>
+      <data key="d1">4707090</data>
       <data key="d2">60</data>
       <data key="d3">pop, post-teen pop</data>
     </node>
     <node id="5yG7ZAZafVaAlMTeBybKAL">
       <data key="d0">Iggy Azalea</data>
-      <data key="d1">6523009</data>
+      <data key="d1">6524517</data>
       <data key="d2">66</data>
       <data key="d3">australian hip hop, dance pop, pop</data>
     </node>
     <node id="7bp2lSdh12wcA8LyB1srfJ">
       <data key="d0">Sofia Carson</data>
-      <data key="d1">3592934</data>
+      <data key="d1">3593807</data>
       <data key="d2">64</data>
       <data key="d3">pop</data>
     </node>
     <node id="2hUYKu1x0UZQXvzCmggvSn">
       <data key="d0">Reneé Rapp</data>
-      <data key="d1">857687</data>
+      <data key="d1">859552</data>
       <data key="d2">69</data>
       <data key="d3">alt z, singer-songwriter pop</data>
     </node>
     <node id="4UxLFBvSr4xMDpHe1lrLrH">
       <data key="d0">Ross Lynch</data>
-      <data key="d1">1025477</data>
+      <data key="d1">1025869</data>
       <data key="d2">57</data>
       <data key="d3">post-teen pop</data>
     </node>
     <node id="7pwufEBGfggjoI8twqlsmQ">
       <data key="d0">Nessa Barrett</data>
-      <data key="d1">1305567</data>
+      <data key="d1">1306374</data>
       <data key="d2">63</data>
       <data key="d3">alt z, social media pop</data>
     </node>
     <node id="188VINPQh5dyNfLUkevKqf">
       <data key="d0">Olivia Holt</data>
-      <data key="d1">1113707</data>
+      <data key="d1">1113827</data>
       <data key="d2">42</data>
       <data key="d3">post-teen pop</data>
     </node>
     <node id="2DlGxzQSjYe5N6G9nkYghR">
       <data key="d0">Jennifer Lopez</data>
-      <data key="d1">12958440</data>
+      <data key="d1">12964344</data>
       <data key="d2">74</data>
       <data key="d3">dance pop, pop, urban contemporary</data>
     </node>
     <node id="6MDME20pz9RveH9rEXvrOM">
       <data key="d0">Clean Bandit</data>
-      <data key="d1">5429076</data>
+      <data key="d1">5431006</data>
       <data key="d2">72</data>
       <data key="d3">pop, uk dance, uk funky</data>
     </node>
     <node id="7vk5e3vY1uw9plTHJAMwjN">
       <data key="d0">Alan Walker</data>
-      <data key="d1">38646067</data>
+      <data key="d1">38657338</data>
       <data key="d2">78</data>
       <data key="d3">electro house</data>
     </node>
     <node id="6eUKZXaKkcviH0Ku9w2n3V">
       <data key="d0">Ed Sheeran</data>
-      <data key="d1">114245814</data>
+      <data key="d1">114264682</data>
       <data key="d2">85</data>
       <data key="d3">pop, singer-songwriter pop, uk pop</data>
     </node>
     <node id="04gDigrS5kc9YWfZHwBETP">
       <data key="d0">Maroon 5</data>
-      <data key="d1">41586061</data>
+      <data key="d1">41598289</data>
       <data key="d2">83</data>
       <data key="d3">pop</data>
     </node>
     <node id="77SW9BnxLY8rJ0RciFqkHh">
       <data key="d0">The Neighbourhood</data>
-      <data key="d1">16458869</data>
+      <data key="d1">16473151</data>
       <data key="d2">82</data>
       <data key="d3">modern alternative rock, modern rock, pop</data>
     </node>
     <node id="2uYWxilOVlUdk4oV9DvwqK">
       <data key="d0">Mitski</data>
-      <data key="d1">7946850</data>
+      <data key="d1">7958307</data>
       <data key="d2">81</data>
       <data key="d3">brooklyn indie, pov: indie</data>
     </node>
     <node id="1QAJqy2dA3ihHBFIHRphZj">
       <data key="d0">Cigarettes After Sex</data>
-      <data key="d1">11249040</data>
+      <data key="d1">11265005</data>
       <data key="d2">80</data>
       <data key="d3">ambient pop, dream pop, el paso indie, shoegaze</data>
     </node>
     <node id="0Y6dVaC9DZtPNH4591M42W">
       <data key="d0">TV Girl</data>
-      <data key="d1">6518950</data>
+      <data key="d1">6533719</data>
       <data key="d2">80</data>
       <data key="d3">pov: indie</data>
     </node>
     <node id="7Ln80lUS6He07XvHI8qqHH">
       <data key="d0">Arctic Monkeys</data>
-      <data key="d1">24845418</data>
+      <data key="d1">24861468</data>
       <data key="d2">83</data>
       <data key="d3">garage rock, modern rock, permanent wave, rock, sheffield indie</data>
     </node>
     <node id="6CwfuxIqcltXDGjfZsMd9A">
       <data key="d0">MARINA</data>
-      <data key="d1">5449689</data>
+      <data key="d1">5452960</data>
       <data key="d2">70</data>
       <data key="d3">metropopolis, pop, pov: indie, uk alternative pop</data>
     </node>
     <node id="7cYEt1pqMgXJdq00hAwVpT">
       <data key="d0">Chase Atlantic</data>
-      <data key="d1">7309996</data>
+      <data key="d1">7317982</data>
       <data key="d2">77</data>
       <data key="d3">alternative r&amp;b</data>
     </node>
     <node id="1U1el3k54VvEUzo3ybLPlM">
       <data key="d0">Kali Uchis</data>
-      <data key="d1">7226840</data>
+      <data key="d1">7234123</data>
       <data key="d2">82</data>
       <data key="d3">colombian pop</data>
     </node>
     <node id="3l0CmX0FuQjFxr8SK7Vqag">
       <data key="d0">Clairo</data>
-      <data key="d1">4825205</data>
+      <data key="d1">4830400</data>
       <data key="d2">75</data>
       <data key="d3">bedroom pop, indie pop, pov: indie</data>
     </node>
     <node id="163tK9Wjr9P9DmM0AVK7lm">
       <data key="d0">Lorde</data>
-      <data key="d1">9959774</data>
+      <data key="d1">9960959</data>
       <data key="d2">73</data>
       <data key="d3">art pop, metropopolis, nz pop, pop</data>
     </node>
     <node id="35l9BRT7MXmM8bv2WDQiyB">
       <data key="d0">beabadoobee</data>
-      <data key="d1">3561012</data>
+      <data key="d1">3567205</data>
       <data key="d2">75</data>
       <data key="d3">bedroom pop, bubblegrunge, indie pop, pov: indie</data>
     </node>
     <node id="3Sz7ZnJQBIHsXLUSo0OQtM">
       <data key="d0">Mac DeMarco</data>
-      <data key="d1">5887330</data>
+      <data key="d1">5894187</data>
       <data key="d2">77</data>
       <data key="d3">edmonton indie, lo-fi indie, pov: indie, slacker rock</data>
     </node>
     <node id="3yY2gUcIsjMr8hjo51PoJ8">
       <data key="d0">The Smiths</data>
-      <data key="d1">5751601</data>
+      <data key="d1">5757792</data>
       <data key="d2">75</data>
       <data key="d3">madchester, new wave, permanent wave, rock, uk post-punk</data>
     </node>
     <node id="1Xyo4u8uXC1ZmMpatF05PJ">
       <data key="d0">The Weeknd</data>
-      <data key="d1">84264119</data>
+      <data key="d1">84331033</data>
       <data key="d2">92</data>
       <data key="d3">canadian contemporary r&amp;b, canadian pop, pop</data>
     </node>
     <node id="4dpARuHxo51G3z768sgnrY">
       <data key="d0">Adele</data>
-      <data key="d1">55641346</data>
+      <data key="d1">55668024</data>
       <data key="d2">82</data>
       <data key="d3">british soul, pop, pop soul, uk pop</data>
     </node>
     <node id="0ZED1XzwlLHW4ZaG4lOT6m">
       <data key="d0">Julia Michaels</data>
-      <data key="d1">5042178</data>
+      <data key="d1">5042662</data>
       <data key="d2">70</data>
       <data key="d3">pop</data>
     </node>
     <node id="4NHQUGzhtTLFvgF5SZesLK">
       <data key="d0">Tove Lo</data>
-      <data key="d1">3565093</data>
+      <data key="d1">3565908</data>
       <data key="d2">71</data>
       <data key="d3">dance pop, metropopolis, pop, swedish electropop, swedish pop, swedish synthpop</data>
     </node>
     <node id="3LjhVl7GzYsza1biQjTpaN">
       <data key="d0">Hayley Kiyoko</data>
-      <data key="d1">1657634</data>
+      <data key="d1">1657810</data>
       <data key="d2">55</data>
       <data key="d3">alt z, indie poptimism, pop</data>
     </node>
     <node id="1o2NpYGqHiCq7FoiYdyd1x">
       <data key="d0">Bea Miller</data>
-      <data key="d1">3109883</data>
+      <data key="d1">3110095</data>
       <data key="d2">62</data>
       <data key="d3">alt z, pop, talent show</data>
     </node>
     <node id="2wY79sveU1sp5g7SokKOiI">
       <data key="d0">Sam Smith</data>
-      <data key="d1">23713128</data>
+      <data key="d1">23719497</data>
       <data key="d2">80</data>
       <data key="d3">pop, uk pop</data>
     </node>
     <node id="69GGBxA162lTqCwzJG5jLp">
       <data key="d0">The Chainsmokers</data>
-      <data key="d1">20147593</data>
+      <data key="d1">20152511</data>
       <data key="d2">80</data>
       <data key="d3">pop</data>
     </node>
     <node id="5JZ7CnR6gTvEMKX4g70Amv">
       <data key="d0">Lauv</data>
-      <data key="d1">6188761</data>
+      <data key="d1">6190930</data>
       <data key="d2">73</data>
       <data key="d3">pop</data>
     </node>
     <node id="4GvEc3ANtPPjt1ZJllr5Zl">
       <data key="d0">Bazzi</data>
-      <data key="d1">5447913</data>
+      <data key="d1">5448466</data>
       <data key="d2">68</data>
       <data key="d3">pop</data>
     </node>
     <node id="0ZUvK7zGdXLd78mQr3t1Tw">
       <data key="d0">Ricky Montgomery</data>
-      <data key="d1">1847066</data>
+      <data key="d1">1848637</data>
       <data key="d2">66</data>
       <data key="d3">la indie, pop, pov: indie</data>
     </node>
     <node id="2hR4h1Cao2ueuI7Cx9c7V8">
       <data key="d0">Cavetown</data>
-      <data key="d1">4102966</data>
+      <data key="d1">4104361</data>
       <data key="d2">67</data>
       <data key="d3">bedroom pop, indie pop, pov: indie</data>
     </node>
-    <node id="0HthCchcL0kVLHTr113Vk1" />
-    <node id="0NIPkIjTV8mB795yEIiPYL" />
-    <node id="37M5pPGs6V1fchFJSgCguX" />
-    <node id="2vnB6tuQMaQpORiRdvXF9H" />
-    <node id="5IH6FPUwQTxPSXurCrcIov" />
-    <node id="6P5NO5hzJbuOqSdyPB7SJM" />
-    <node id="0e86yPdC41PGRkLp2Q1Bph" />
-    <node id="1r1uxoy19fzMxunt3ONAkG" />
-    <node id="6G9bygHlCyPgNGxK2l3YdE" />
-    <node id="2ddxtfC0oS8LoktXUHE7YL" />
-    <node id="3SYGWAHCe31oykdeUPpoJp" />
-    <node id="7rPQ2z1ji1ctJ6oGYBAo6M" />
-    <node id="2S9W9aSAd7e5mp8WqWxN2h" />
-    <node id="7gbmX8SsfjEjxDMzBi1ZOL" />
-    <node id="58AqJv0sDFPFnnBcLT8eeX" />
-    <node id="4vRSocKbGh7PsQrYRDVMEF" />
-    <node id="4ntkql3f3ect7NDRUJ7aAY" />
-    <node id="6dse9FDodKw65ZQoLjE5F1" />
-    <node id="1KYszkVzlhV3rAqmAcYIgd" />
-    <node id="3AoFRPmkjP1WTi2Zu7gbZV" />
-    <node id="3J0BpFVUc9LeOIVeN5uNhU" />
-    <node id="6T5tfhQCknKG4UnH90qGnz" />
-    <node id="4m4SfDVbF5wxrwEjDKgi4k" />
-    <node id="04abdnqPQe2N4fjztDea6z" />
-    <node id="6Dd3NScHWwnW6obMFbl1BH" />
-    <node id="1MIVXf74SZHmTIp4V4paH4" />
-    <node id="25uiPmTg16RbhZWAqwLBy5" />
-    <node id="4ScCswdRlyA23odg9thgIO" />
-    <node id="1HBjj22wzbscIZ9sEb5dyf" />
-    <node id="3whuHq0yGx60atvA2RCVRW" />
-    <node id="1BhWF9W2PngtPSyobKg0rP" />
-    <node id="3AVfmawzu83sp94QW7CEGm" />
-    <node id="2qxJFvFYMEDqd7ui6kSAcq" />
-    <node id="28y6CyJNkGNjJQKrlx4AmN" />
-    <node id="0uGk2czvcpWQA383Im6ajf" />
-    <node id="1QRj3hoop9Mv5VvHQkwPEp" />
-    <node id="2OTfr6S2kuHRYStjt1IkY6" />
-    <node id="2ftL3sXW7KDOBfVda7IXyA" />
-    <node id="6SvFyXN6qzhw95Bj4HoevV" />
-    <node id="6oW9KRAZbC1xOlmg2RRyFL" />
-    <node id="6U1dBXJhC8gXFjamvFTmHg" />
-    <node id="4gWAItIMhYCdD82T8tvv3T" />
-    <node id="1eBGyqw9kLsidL0q2dimWF" />
-    <node id="1xVYxkSq6IWhFpSW1OMe41" />
-    <node id="60wslYioiBcxSTInM4nIy2" />
-    <node id="79AyR6ATpj2LTPxfb6FX50" />
-    <node id="22wbnEMDvgVIAGdFeek6ET" />
-    <node id="2WzaAvm2bBCf4pEhyuDgCY" />
-    <node id="3GxKJzJK4LpsYGXQrw77wz" />
-    <node id="4xnihxcoXWK3UqryOSnbw5" />
-    <node id="2yLzlEFtIS0Q9UkyBZdQA7" />
-    <node id="3QSQFmccmX81fWCUSPTS7y" />
-    <node id="0sMAHzxguan2KpnKFZPW2d" />
-    <node id="7LImGq5KnzQobZciDJpeJb" />
-    <node id="181bsRPaVXVlUKXrxwZfHK" />
-    <node id="3LZZPxNDGDFVSIPqf4JuEf" />
-    <node id="0cGUm45nv7Z6M6qdXYQGTX" />
-    <node id="6cK3NBO6uP7hh0oyuVELFl" />
-    <node id="57LYzLEk2LcFghVwuWbcuS" />
-    <node id="3PyJHH2wyfQK3WZrk9rpmP" />
-    <node id="78rUTD7y6Cy67W1RVzYs7t" />
-    <node id="3Y7RZ31TRPVadSFVy1o8os" />
-    <node id="1GmsPCcpKgF9OhlNXjOsbS" />
-    <node id="1hLiboQ98IQWhpKeP9vRFw" />
-    <node id="69761NObDw2KwmmFgZmxzC" />
-    <node id="2RVvqRBon9NgaGXKfywDSs" />
-    <node id="7Lk9V7E1u5gqSHmtcKlOqH" />
-    <node id="5GGJosGMs08YEmKTZJe1fL" />
-    <node id="7GlBOeep6PqTfFi59PTUUN" />
-    <node id="2RQXRUsr4IW1f3mKyKsy4B" />
-    <node id="0nnYdIpahs41QiZ9MWp5Wx" />
-    <node id="0uqrdF1UCmMshSk6veOa5K" />
-    <node id="4uBD3fsHzb3IpOTGpicsbH" />
-    <node id="4A6cd63FWHbCLqk9mtGUZZ" />
-    <node id="0jcl46xRBm9LKIwrKGQPE6" />
-    <node id="43niWwvn8OX1HmJLXu4aLV" />
-    <node id="6blEmsLU25ewy8hHtgZaSL" />
-    <node id="1yNIb413Bmfs2ZBVuPp9kC" />
-    <node id="3u6lPufHw4Oww6D88rv6sB" />
-    <node id="7M5pDtJpCdnftEQZtczYco" />
-    <node id="1oYXEVbGh1L7EWGm9C68cN" />
-    <node id="7ITMCzIU9uII8gwRg8JAhc" />
-    <node id="1YWJ1WjMkBCB1X3QOJ1Wdn" />
-    <node id="0K0YUvOFH3TVILvIPBfeYN" />
-    <node id="5aTwY2xyrJy4cS1jlFg1oG" />
-    <node id="6fu9TecMw6TInkRRyXObeu" />
-    <node id="61lrTfBVPrE3DOTu9MGmhQ" />
-    <node id="4c1j4vQueDvjOFPNr2aJ2e" />
-    <node id="3kVNx1UKVbk2KGkFECQRf0" />
-    <node id="7BtVR5EyH1mjLM5bjXUD5s" />
-    <node id="5iEmISzYjAAPXDheLBOmM2" />
-    <node id="3R5yFx0z6UkzAiNHCeBqUY" />
-    <node id="5wcXTMooUetMp8uUNqC03W" />
-    <node id="3aHe9rMa5HFTjXHw8tEz0A" />
-    <node id="5bmqhxWk9SEFDGIzWpSjVJ" />
-    <node id="52OQXvCMAJ0zqE2ZQrBTqC" />
-    <node id="6aX6KqXgEcARRHwvWxHcFW" />
-    <node id="5ZS223C6JyBfXasXxrRqOk" />
-    <node id="3tlXnStJ1fFhdScmQeLpuG" />
-    <node id="20wkVLutqVOYrc0kxFs7rA" />
-    <node id="2h93pZq0e7k5yf4dywlkpM" />
-    <node id="2EMAnMvWE2eb56ToJVfCWs" />
-    <node id="2HPaUgqeutzr3jx5a9WyDV" />
-    <node id="57vWImR43h4CaDao012Ofp" />
-    <node id="7HkdQ0gt53LP4zmHsL0nap" />
-    <node id="4fxd5Ee7UefO4CUXgwJ7IP" />
-    <node id="4V8LLVI7PbaPR0K2TGSxFF" />
-    <node id="360IAlyVv4PCEVjgyMZrxK" />
-    <node id="2ICR2m4hOBPhaYiZB3rnLW" />
-    <node id="6rniTPs9zN26kYnkPdFl1U" />
-    <node id="3P4vW5tzQvmuoNaFQqzy9q" />
-    <node id="3XxNRirzbjfLdDli06zMaB" />
-    <node id="0m5FakHKCQdA7UN0PIzMcL" />
-    <node id="0pg0Zm8FsGAYy5kdHuBnSo" />
-    <node id="0uq5PttqEjj3IH1bzwcrXF" />
-    <node id="4yiQZ8tQPux8cPriYMWUFP" />
-    <node id="6wPhSqRtPu1UhRCDX5yaDJ" />
-    <node id="3r17AfJCCUqC9Lf0OAc73G" />
-    <node id="2jw70GZXlAI8QzWeY2bgRc" />
-    <node id="6tbjWDEIzxoDsBA1FuhfPW" />
-    <node id="1Y8cdNmUJH7yBTd9yOvr5i" />
-    <node id="6Ff53KvcvAj5U7Z1vojB5o" />
-    <node id="2tFN9ubMXEhdAQvdQxcsma" />
-    <node id="1yxSLGMDHlW21z4YXirZDS" />
-    <node id="6vWDO969PvNqNYHIOW5v0m" />
-    <node id="6sFIWsNpZYqfjUpaCgueju" />
-    <node id="085pc2PYOi8bGKj0PNjekA" />
-    <node id="0FWzNDaEu9jdgcYTbcOa4F" />
-    <node id="6MF9fzBmfXghAz953czmBC" />
-    <node id="74XFHRwlV6OrjEM0A2NCMF" />
-    <node id="1dIdBZaaHRW2bDTkHNfWln" />
-    <node id="7H55rcKCfwqkyDFH9wpKM6" />
-    <node id="2p4FqHnazRucYQHyDCdBrJ" />
-    <node id="5xuNBZoM7z1Vv8IQ6uM0p6" />
-    <node id="4hqDqHtBlgxXpLXVYf7c8L" />
-    <node id="5lKZWd6HiSCLfnDGrq9RAm" />
-    <node id="40xbWSB4JPdOkRyuTDy1oP" />
-    <node id="2AQjGvtT0pFYfxR3neFcvz" />
-    <node id="4xFUf1FHVy696Q1JQZMTRj" />
-    <node id="7o95ZoZt5ZYn31e9z1Hc0a" />
-    <node id="6aZyMrc4doVtZyKNilOmwu" />
-    <node id="25NQNriVT2YbSW80ILRWJa" />
-    <node id="72OaDtakiy6yFqkt4TsiFt" />
-    <node id="6prmLEyn4LfHlD9NnXWlf7" />
-    <node id="31TPClRtHm23RisEBtV3X7" />
-    <node id="2NdeV5rLm47xAvogXrYhJX" />
-    <node id="37hAfseJWi0G3Scife12Il" />
-    <node id="2cWZOOzeOm4WmBJRnD5R7I" />
-    <node id="7DuTB6wdzqFJGFLSH17k8e" />
-    <node id="3MdXrJWsbVzdn6fe5JYkSQ" />
-    <node id="56oDRnqbIiwx4mymNEv7dS" />
-    <node id="3nViOFa3kZW8OMSNOzwr98" />
-    <node id="2ExGrw6XpbtUAJHTLtUXUD" />
-    <node id="3u579Gdap91lMptBSdXTpf" />
-    <node id="3DiDSECUqqY1AuBP8qtaIa" />
-    <node id="23zg3TcAtWQy7J6upgbUnj" />
-    <node id="4UFShyUQuA8dguoZrqX0jQ" />
-    <node id="3zOKGDS77tYdGFQ6UJMC4E" />
-    <node id="2jnIB6XdLvnJUeNTy5A0J2" />
-    <node id="2WuKU0SYZOQyY3MmE4vtez" />
-    <node id="46gyXjRIvN1NL1eCB8GBxo" />
-    <node id="2gUMs9PE8XZVQyzCDqaYmW" />
-    <node id="2Hjj68yyUPiC0HKEOigcEp" />
-    <node id="0GWCNkPi54upO9WLlwjAHd" />
-    <node id="5xkAtLTf309LAGZTbvULBn" />
-    <node id="3gIRvgZssIb9aiirIg0nI3" />
-    <node id="3mIj9lX2MWuHmhNCA7LSCW" />
-    <node id="5vBSrE1xujD2FXYRarbAXc" />
-    <node id="49tQo2QULno7gxHutgccqF" />
-    <node id="1INuLZXjjVbcJRyWvD1iSq" />
-    <node id="0kkxsdcaWmWU2yWAqclDh4" />
-    <node id="5Y8eJDj37KhaEeqbVO7Ag1" />
-    <node id="6dn6x1XOng3LOAnfTjUn77" />
-    <node id="2l35CQqtYRh3d8ZIiBep4v" />
-    <node id="79Xp2rRN7wdsaTJgttdX3K" />
-    <node id="2NhdGz9EDv2FeUw6udu2g1" />
-    <node id="7nDsS0l5ZAzMedVRKPP8F1" />
-    <node id="4Q6nIcaBED8qUel8bBx6Cr" />
-    <node id="6ydoSd3N2mwgwBHtF6K7eX" />
-    <node id="543ccHFPnZfJMD8tRGPtu7" />
-    <node id="4GNC7GD6oZMSxPGyXy4MNB" />
-    <node id="4EzkuveR9pLvDVFNx6foYD" />
-    <node id="3AQRLZ9PuTAozP28Skbq8V" />
-    <node id="0B3N0ZINFWvizfa8bKiz4v" />
-    <node id="5GuEFqVXxQsqJtjGqoFWvf" />
-    <node id="6kUQJlewgd3UFKVYrrmILh" />
-    <node id="3IcF2f5vEkY6HPQfLlQDlw" />
-    <node id="0NIIxcxNHmOoyBx03SfTCD" />
-    <node id="2wIVse2owClT7go1WT98tk" />
-    <node id="5Y5TRrQiqgUO4S36tzjIRZ" />
-    <node id="6aBoKzSTjuIi0sY69XHLk3" />
-    <node id="2uTXJwJ1Q9PA2ji51RWeQm" />
-    <node id="1Yq3rS7K1SQKqjMOHXpqqt" />
-    <node id="5qa31A9HySw3T7MKWI9bGg" />
-    <node id="6Ve5oEOT8RbNXWHfsZpICN" />
-    <node id="6xdRb2GypJ7DqnWAI2mHGn" />
-    <node id="07D1Bjaof0NFlU32KXiqUP" />
-    <node id="4e9vQfyvvDlcQAkjSdFE4x" />
-    <node id="0avMDS4HyoCEP6RqZJWpY2" />
-    <node id="7poQNrOwZoUcoqihg4Xex0" />
-    <node id="3gBjSrNsYzzbeo0nwsL21J" />
-    <node id="12zbUHbPHL5DGuJtiUfsip" />
-    <node id="5dtPlx7yKOo7KdZGyrfFIq" />
-    <node id="542yUd4rGzUEOLd1diV94f" />
-    <node id="5aptPwTkTKmlPx6csmNJLA" />
-    <node id="4VhL8KLjVso4vLfOLVViTb" />
-    <node id="2Zi3RrdQqk63Xj0914STkS" />
-    <node id="6Y64EaNqpqcZYTgs4c76gF" />
-    <node id="3BxsweDMcgp9gNWmG40u6f" />
-    <node id="0wrbaNL900CWaR5DYERLze" />
-    <node id="4NFJfKlf2A6rkLag0MesjU" />
-    <node id="3DKkhRCGOG4e8IUPYFPfWs" />
-    <node id="7j6liwxutWe54EZmbPylkB" />
-    <node id="49gybyXyHSReIroJ8CpriJ" />
-    <node id="5Hz3IW691fbgGqLk4yvlNN" />
-    <node id="0ZdLS8EfYknjiTEBHbJt9n" />
-    <node id="4gvjmrtzydbMpyJaXUtwvP" />
-    <node id="2TvEkqxJRNAZ2XLqKVQMld" />
-    <node id="6oWOHAOyBUn6aJlKIPJK9r" />
-    <node id="2S054G7qnCK45KY0XzpX30" />
-    <node id="0HPOJQqAEKEXOrGUaoRlsH" />
-    <node id="4Xt0mNxZEZWjgJwsZKDuvQ" />
-    <node id="2FYOI01brbNN7gtT58DElr" />
-    <node id="1tOfjxtFVtMBiJeI5ccH8o" />
-    <node id="4bDyYcqEkVNwrHfljpOtLV" />
-    <node id="0TnOYISbd1XYRBk9myaseg" />
-    <node id="4eAOcbAXIF4BmbN6E1QIlw" />
-    <node id="7DMveApC7UnC2NPfPvlHSU" />
-    <node id="1IueXOQyABrMOprrzwQJWN" />
-    <node id="4WN5naL3ofxrVBgFpguzKo" />
-    <node id="4sTQVOfp9vEMCemLw50sbu" />
-    <node id="23fqKkggKUBHNkbKtXEls4" />
-    <node id="64KEffDW9EtZ1y2vBYgq8T" />
-    <node id="60d24wfXkVzDSfLS6hyCjZ" />
-    <node id="540vIaP2JwjQb9dm3aArA4" />
-    <node id="1vCWHaC5f2uS3yhpwWbIA6" />
-    <node id="2xW3pBjCngD69hC1wIUgjA" />
-    <node id="6lB8vOoI4DRrrVxXwuV19c" />
-    <node id="53XhwfbYqKCa1cC15pYq2q" />
-    <node id="7CajNmpbOovFoOoasH2HaY" />
-    <node id="5Pwc4xIPtQLFEnJriah9YJ" />
-    <node id="0du5cEVh5yTK9QJze8zA0C" />
-    <node id="4gzpq5DPGxSnKTe4SA8HAU" />
-    <node id="4phGZZrJZRo4ElhRtViYdl" />
-    <node id="3FUY2gzHeIiaesXtOAdB7A" />
-    <node id="0jnsk9HBra6NMjO2oANoPY" />
-    <node id="07YZf4WDAMNwqr4jfgOZ8y" />
-    <node id="7I3bkknknQkIiatWiupQgD" />
-    <node id="5arKwJZEvT5uKq4o0JfqR4" />
-    <node id="5nvWOyAkfNgVLKESq4fOj2" />
-    <node id="6lcwlkAjBPSKnFBZjjZFJs" />
-    <node id="7gW0r5CkdEUMm42w9XpyZO" />
-    <node id="5szilpXHcwOqnyKLqGco5j" />
-    <node id="5jTtGLk1mGFMY5lQOvJYUj" />
-    <node id="7dIpKWlEeAljA20vFJ82RD" />
-    <node id="0rFHElzeddB9ymDjgpBENX" />
-    <node id="1AbJ2cmwK400LSvdvBL5Jc" />
-    <node id="3zmfs9cQwzJl575W1ZYXeT" />
-    <node id="56ZTgzPBDge0OvCGgMO3OY" />
-    <node id="0bC6e2YtIRLbKx2txHFmEo" />
-    <node id="5AyEXCtu3xnnsTGCo4RVZh" />
-    <node id="0U7iI0Dk4Ojvi17nZboNO4" />
-    <node id="02vrwnrNEeDRV96o9iPSYP" />
-    <node id="0epOFNiUfyON9EYx7Tpr6V" />
-    <node id="26T3LtbuGT1Fu9m0eRq5X3" />
-    <node id="5INjqkS1o8h1imAzPqGZBb" />
-    <node id="1GLtl8uqKmnyCWxHmw9tL4" />
-    <node id="2Z7UcsdweVlRbAk5wH5fsf" />
-    <node id="1ctkBmvz80MGyi72Ix055S" />
-    <node id="3AA28KZvwAUcZuOKwyblJQ" />
-    <node id="4Z8W4fKeB5YxbusRsdQVPb" />
-    <node id="6olE6TJLqED3rqDCT0FyPh" />
-    <node id="5mlbvTfWUOfDrUIK6dkNzv" />
-    <node id="2KEqzdPS7M5YwGmiuPTdr5" />
-    <node id="053q0ukIDRgzwTr4vNSwab" />
-    <node id="0wnYgCeP013HkKoOyC5V32" />
-    <node id="1vVHevk2PD45epYnDi9CCc" />
-    <node id="4vo5IKFugn33ytkc7xHvEk" />
-    <node id="25jJ6vyXwTRa0e6XCcdR6U" />
-    <node id="3pc0bOVB5whxmD50W79wwO" />
-    <node id="3rWZHrfrsPBxVy692yAIxF" />
-    <node id="2sSGPbdZJkaSE2AbcGOACx" />
-    <node id="5FxD8fkQZ6KcsSYupDVoSO" />
-    <node id="7GN9PivdemQRKjDt4z5Zv8" />
-    <node id="2Tglaf8nvDzwSQnpSrjLHP" />
-    <node id="73sIBHcqh3Z3NyqHKZ7FOL" />
-    <node id="77mJc3M7ZT5oOVM7gNdXim" />
-    <node id="7wbkl3zgDZEoZer357mVIw" />
-    <node id="6eJa3zG1QZLRB3xgRuyxbm" />
-    <node id="1moxjboGR7GNWYIMWsRjgG" />
-    <node id="4Ui2kfOqGujY81UcPrb5KE" />
-    <node id="6beUvFUlKliUYJdLOXNj9C" />
-    <node id="0bdfiayQAKewqEvaU6rXCv" />
-    <node id="2FXC3k01G6Gw61bmprjgqS" />
-    <node id="13saZpZnCDWOI9D4IJhp1f" />
-    <node id="1KP6TWI40m7p3QBTU6u2xo" />
-    <node id="6nB0iY1cjSY1KyhYyuIIKH" />
-    <node id="2WX2uTcsvV5OnS0inACecP" />
-    <node id="5069JTmv5ZDyPeZaCCXiCg" />
-    <node id="73BLwSX6gsNeVzS7DgI4xe" />
-    <node id="30gZlVVUt3gwNXlLorZjuq" />
-    <node id="12j6dJrPXanCBwY599pZxf" />
-    <node id="6ignRjbPmLvKdtMLj9a5Xs" />
-    <node id="3iTsJGG39nMg9YiolUgLMQ" />
-    <node id="432R46LaYsJZV2Gmc4jUV5" />
-    <node id="7bu3H8JO7d0UbMoVzbo70s" />
-    <node id="6zvul52xwTWzilBZl6BUbT" />
-    <node id="72X6FHxaShda0XeQw3vbeF" />
-    <node id="0yNLKJebCb8Aueb54LYya3" />
-    <node id="3G3Gdm0ZRAOxLrbyjfhii5" />
-    <node id="5Wabl1lPdNOeIn0SQ5A1mp" />
-    <node id="0fgYKF9Avljex0L9Wt5b8Z" />
-    <node id="1n65zfwYIj5kKEtNgxUlWb" />
-    <node id="37w38cCSGgKLdayTRjna4W" />
-    <node id="5UqTO8smerMvxHYA5xsXb6" />
-    <node id="1nJvji2KIlWSseXRSlNYsC" />
-    <node id="7MhMgCo0Bl0Kukl93PZbYS" />
-    <node id="3TVXtAsR1Inumwj472S9r4" />
-    <node id="2YZyLoL8N0Wb9xBt1NhZWg" />
-    <node id="0Y5tJX1MQlPlqiwlOH1tJY" />
-    <node id="246dkjvS1zLTtiykXe5h60" />
-    <node id="5K4W6rqBFWDnAN6FQUkS6x" />
-    <node id="13ubrt8QOOCPljQ2FL1Kca" />
-    <node id="0iEtIxbK0KxaSlF7G42ZOp" />
-    <node id="66W9LaWS0DPdL7Sz8iYGYe" />
-    <node id="55fhWPvDiMpLnE4ZzNXZyW" />
-    <node id="2xe8IXgCTpwHE3eA9hTs4n" />
-    <node id="4u5smJBskI6Adzv08PuiUP" />
-    <node id="3Xt3RrJMFv5SZkCfUE8C1J" />
-    <node id="7qRll6DYV06u2VuRPAVqug" />
-    <node id="7nnTzZ5tZrPx14iDnmjksU" />
-    <node id="4JNfz6aO9ZFz0gp5GY88am" />
-    <node id="21TinSsF5ytwsfdyz5VSVS" />
-    <node id="5Ev7qjDIU1wvhqt8nSsPrl" />
-    <node id="2AmfMGi3WZMxqFDHissIAe" />
-    <node id="5DD5GZd4ElmQTy9NleMvKJ" />
-    <node id="245PKF3hKjtxJKIG153kF0" />
-    <node id="4XX9YjNQrHTZfZz3DCX6DP" />
-    <node id="06vRrrjT3DBRkhBlXoBdYj" />
-    <node id="0tRFWXqKBBQcu5oFVOgVzX" />
-    <node id="5JSXWmQO8csVUy6hSRu8TA" />
-    <node id="5vBrKGOjN10BMwB0cJADj4" />
-    <node id="2FovgCfOwN9iqbkCBlKFdT" />
-    <node id="1eMmoIprPDWeFdB1FxU6ZV" />
-    <node id="3mPc8WGusz2XF3Tvs3AKCR" />
-    <node id="2y9j8qUwBMGPYPQJJxmYzD" />
-    <node id="5y2Xq6xcjJb2jVM54GHK3t" />
-    <node id="6LuN9FCkKOj5PcnpouEgny" />
-    <node id="4AVFqumd2ogHFlRbKIjp1t" />
-    <node id="738wLrAtLtCtFOLvQBXOXp" />
-    <node id="2XnBwblw31dfGnspMIwgWz" />
-    <node id="4D75GcNG95ebPtNvoNVXhz" />
-    <node id="0Vw76uk7P8yVtTClWyOhac" />
-    <node id="1W7FNibLa0O0b572tB2w7t" />
-    <node id="5JMLG56F1X5mFmWNmS0iAp" />
-    <node id="1bqxdqvUtPWZri43cKHac8" />
-    <node id="73eAAfRkS2Vi4hx68oTJJE" />
-    <node id="3sKeaby6GMSJWgYueZaSjE" />
-    <node id="2kxP07DLgs4xlWz8YHlvfh" />
-    <node id="3iri9nBFs9e4wN7PLIetAw" />
-    <node id="5CiGnKThu5ctn9pBxv7DGa" />
-    <node id="2cFrymmkijnjDg9SS92EPM" />
-    <node id="2BL3PP6aTKJ1jqbRgfQa71" />
-    <node id="6zQlhM6cyJRrzuqAbB8PlB" />
-    <node id="0Raaw7kr1Vzat4ZvHzjsJR" />
-    <node id="1VQ8riQ31zVHtlxiCC9EZE" />
-    <node id="7lqaPghwYv2mE9baz5XQmL" />
-    <node id="4llAOeA6kEF4ytaB2fsmcW" />
-    <node id="33tFkBLsl6f8TjKkV0uF0C" />
-    <node id="2XzXLjXRSeFtsic4ieyLJy" />
-    <node id="7s3OoIocX1gTOnEvCg2VV8" />
-    <node id="2Waw2sSbqvAwK8NwACNjVo" />
+    <node id="0HthCchcL0kVLHTr113Vk1">
+      <data key="d0">mxmtoon</data>
+      <data key="d1">1924632</data>
+      <data key="d2">61</data>
+      <data key="d3">alt z, bedroom pop, indie pop, pov: indie</data>
+    </node>
+    <node id="0NIPkIjTV8mB795yEIiPYL">
+      <data key="d0">Wallows</data>
+      <data key="d1">2733119</data>
+      <data key="d2">72</data>
+      <data key="d3">pov: indie</data>
+    </node>
+    <node id="37M5pPGs6V1fchFJSgCguX">
+      <data key="d0">FINNEAS</data>
+      <data key="d1">1956583</data>
+      <data key="d2">64</data>
+      <data key="d3">alt z, la indie, pop, pov: indie</data>
+    </node>
+    <node id="2vnB6tuQMaQpORiRdvXF9H">
+      <data key="d0">Beach Bunny</data>
+      <data key="d1">1438328</data>
+      <data key="d2">67</data>
+      <data key="d3">bubblegrunge, chicago indie, indie pop, pov: indie</data>
+    </node>
+    <node id="5IH6FPUwQTxPSXurCrcIov">
+      <data key="d0">Alec Benjamin</data>
+      <data key="d1">5068193</data>
+      <data key="d2">74</data>
+      <data key="d3">alt z, pop, pov: indie</data>
+    </node>
+    <node id="6P5NO5hzJbuOqSdyPB7SJM">
+      <data key="d0">Ashe</data>
+      <data key="d1">1571741</data>
+      <data key="d2">66</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="0e86yPdC41PGRkLp2Q1Bph">
+      <data key="d0">Mother Mother</data>
+      <data key="d1">4010952</data>
+      <data key="d2">70</data>
+      <data key="d3">canadian indie rock, pov: indie, vancouver indie</data>
+    </node>
+    <node id="1r1uxoy19fzMxunt3ONAkG">
+      <data key="d0">Phoebe Bridgers</data>
+      <data key="d1">2391391</data>
+      <data key="d2">75</data>
+      <data key="d3">indie pop, la indie, pov: indie</data>
+    </node>
+    <node id="6G9bygHlCyPgNGxK2l3YdE">
+      <data key="d0">Vanessa Hudgens</data>
+      <data key="d1">1958796</data>
+      <data key="d2">59</data>
+      <data key="d3">dance pop, pop, post-teen pop</data>
+    </node>
+    <node id="2ddxtfC0oS8LoktXUHE7YL">
+      <data key="d0">Ashley Tisdale</data>
+      <data key="d1">1333716</data>
+      <data key="d2">49</data>
+      <data key="d3">dance pop, pop, post-teen pop</data>
+    </node>
+    <node id="3SYGWAHCe31oykdeUPpoJp">
+      <data key="d0">Miranda Cosgrove</data>
+      <data key="d1">1235536</data>
+      <data key="d2">43</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="7rPQ2z1ji1ctJ6oGYBAo6M">
+      <data key="d0">Emily Osment</data>
+      <data key="d1">772954</data>
+      <data key="d2">40</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="2S9W9aSAd7e5mp8WqWxN2h">
+      <data key="d0">Hilary Duff</data>
+      <data key="d1">2337541</data>
+      <data key="d2">53</data>
+      <data key="d3">dance pop, pop, post-teen pop</data>
+    </node>
+    <node id="7gbmX8SsfjEjxDMzBi1ZOL">
+      <data key="d0">Joe Jonas</data>
+      <data key="d1">1696805</data>
+      <data key="d2">53</data>
+      <data key="d3">pop, post-teen pop</data>
+    </node>
+    <node id="58AqJv0sDFPFnnBcLT8eeX">
+      <data key="d0">Bella Thorne</data>
+      <data key="d1">1107998</data>
+      <data key="d2">39</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="4vRSocKbGh7PsQrYRDVMEF">
+      <data key="d0">Lindsay Lohan</data>
+      <data key="d1">1064939</data>
+      <data key="d2">43</data>
+      <data key="d3">dance pop, post-teen pop</data>
+    </node>
+    <node id="4ntkql3f3ect7NDRUJ7aAY">
+      <data key="d0">The Cheetah Girls</data>
+      <data key="d1">837557</data>
+      <data key="d2">45</data>
+      <data key="d3">girl group, movie tunes, post-teen pop</data>
+    </node>
+    <node id="6dse9FDodKw65ZQoLjE5F1">
+      <data key="d0">Nick Jonas &amp; The Administration</data>
+      <data key="d1">714193</data>
+      <data key="d2">28</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="1KYszkVzlhV3rAqmAcYIgd">
+      <data key="d0">Victorious Cast</data>
+      <data key="d1">2015975</data>
+      <data key="d2">56</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="3AoFRPmkjP1WTi2Zu7gbZV">
+      <data key="d0">Jennette McCurdy</data>
+      <data key="d1">648989</data>
+      <data key="d2">20</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="3J0BpFVUc9LeOIVeN5uNhU">
+      <data key="d0">Lauren Jauregui</data>
+      <data key="d1">1279674</data>
+      <data key="d2">49</data>
+      <data key="d3">r&amp;b</data>
+    </node>
+    <node id="6T5tfhQCknKG4UnH90qGnz">
+      <data key="d0">DNCE</data>
+      <data key="d1">4526684</data>
+      <data key="d2">65</data>
+      <data key="d3">dance pop, pop</data>
+    </node>
+    <node id="4m4SfDVbF5wxrwEjDKgi4k">
+      <data key="d0">Cher Lloyd</data>
+      <data key="d1">2593798</data>
+      <data key="d2">56</data>
+      <data key="d3">dance pop, pop, post-teen pop, talent show</data>
+    </node>
+    <node id="04abdnqPQe2N4fjztDea6z">
+      <data key="d0">Austin Mahone</data>
+      <data key="d1">1928463</data>
+      <data key="d2">53</data>
+      <data key="d3">pop, post-teen pop</data>
+    </node>
+    <node id="6Dd3NScHWwnW6obMFbl1BH">
+      <data key="d0">Daya</data>
+      <data key="d1">1617370</data>
+      <data key="d2">71</data>
+      <data key="d3">alt z, pop</data>
+    </node>
+    <node id="1MIVXf74SZHmTIp4V4paH4">
+      <data key="d0">Mabel</data>
+      <data key="d1">2004092</data>
+      <data key="d2">63</data>
+      <data key="d3">pop, uk pop</data>
+    </node>
+    <node id="25uiPmTg16RbhZWAqwLBy5">
+      <data key="d0">Charli xcx</data>
+      <data key="d1">3181185</data>
+      <data key="d2">75</data>
+      <data key="d3">art pop, candy pop, metropopolis, pop, uk pop</data>
+    </node>
+    <node id="4ScCswdRlyA23odg9thgIO">
+      <data key="d0">Jess Glynne</data>
+      <data key="d1">3038835</data>
+      <data key="d2">71</data>
+      <data key="d3">dance pop, pop, uk pop</data>
+    </node>
+    <node id="1HBjj22wzbscIZ9sEb5dyf">
+      <data key="d0">Jonas Blue</data>
+      <data key="d1">3739988</data>
+      <data key="d2">72</data>
+      <data key="d3">pop, pop dance, tropical house, uk dance</data>
+    </node>
+    <node id="3whuHq0yGx60atvA2RCVRW">
+      <data key="d0">Olly Murs</data>
+      <data key="d1">3188916</data>
+      <data key="d2">63</data>
+      <data key="d3">dance pop, pop, talent show, uk pop</data>
+    </node>
+    <node id="1BhWF9W2PngtPSyobKg0rP">
+      <data key="d0">Pia Mia</data>
+      <data key="d1">1946235</data>
+      <data key="d2">54</data>
+      <data key="d3">dance pop, pop, post-teen pop</data>
+    </node>
+    <node id="3AVfmawzu83sp94QW7CEGm">
+      <data key="d0">Astrid S</data>
+      <data key="d1">1346178</data>
+      <data key="d2">62</data>
+      <data key="d3">alt z, norwegian pop, pop, uk pop</data>
+    </node>
+    <node id="2qxJFvFYMEDqd7ui6kSAcq">
+      <data key="d0">Zedd</data>
+      <data key="d1">5899171</data>
+      <data key="d2">71</data>
+      <data key="d3">complextro, edm, german techno, pop, pop dance</data>
+    </node>
+    <node id="28y6CyJNkGNjJQKrlx4AmN">
+      <data key="d0">HRVY</data>
+      <data key="d1">1688391</data>
+      <data key="d2">55</data>
+      <data key="d3">pop</data>
+    </node>
+    <node id="0uGk2czvcpWQA383Im6ajf">
+      <data key="d0">Maggie Lindemann</data>
+      <data key="d1">2018059</data>
+      <data key="d2">60</data>
+      <data key="d3">alt z, dark pop, pop</data>
+    </node>
+    <node id="1QRj3hoop9Mv5VvHQkwPEp">
+      <data key="d0">Olivia O'Brien</data>
+      <data key="d1">2035095</data>
+      <data key="d2">62</data>
+      <data key="d3">alt z, pop</data>
+    </node>
+    <node id="2OTfr6S2kuHRYStjt1IkY6">
+      <data key="d0">Victoria Justice</data>
+      <data key="d1">944481</data>
+      <data key="d2">56</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="2ftL3sXW7KDOBfVda7IXyA">
+      <data key="d0">Debby Ryan</data>
+      <data key="d1">526881</data>
+      <data key="d2">29</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="6SvFyXN6qzhw95Bj4HoevV">
+      <data key="d0">China Anne McClain</data>
+      <data key="d1">685880</data>
+      <data key="d2">57</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="6oW9KRAZbC1xOlmg2RRyFL">
+      <data key="d0">McClain Sisters</data>
+      <data key="d1">313012</data>
+      <data key="d2">30</data>
+      <data key="d3">movie tunes, post-teen pop</data>
+    </node>
+    <node id="6U1dBXJhC8gXFjamvFTmHg">
+      <data key="d0">Zac Efron</data>
+      <data key="d1">826452</data>
+      <data key="d2">66</data>
+      <data key="d3">hollywood, movie tunes, post-teen pop</data>
+    </node>
+    <node id="4gWAItIMhYCdD82T8tvv3T">
+      <data key="d0">Lucy Hale</data>
+      <data key="d1">611505</data>
+      <data key="d2">39</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="1eBGyqw9kLsidL0q2dimWF">
+      <data key="d0">Austin Moon</data>
+      <data key="d1">514960</data>
+      <data key="d2">49</data>
+      <data key="d3">movie tunes, post-teen pop</data>
+    </node>
+    <node id="1xVYxkSq6IWhFpSW1OMe41">
+      <data key="d0">The Girl and The Dreamcatcher</data>
+      <data key="d1">518332</data>
+      <data key="d2">39</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="60wslYioiBcxSTInM4nIy2">
+      <data key="d0">Jordan Fisher</data>
+      <data key="d1">436595</data>
+      <data key="d2">55</data>
+      <data key="d3">movie tunes, post-teen pop</data>
+    </node>
+    <node id="79AyR6ATpj2LTPxfb6FX50">
+      <data key="d0">Lauren Spencer Smith</data>
+      <data key="d1">1413801</data>
+      <data key="d2">65</data>
+      <data key="d3">alt z, gen z singer-songwriter, singer-songwriter pop</data>
+    </node>
+    <node id="22wbnEMDvgVIAGdFeek6ET">
+      <data key="d0">Benson Boone</data>
+      <data key="d1">2694225</data>
+      <data key="d2">84</data>
+      <data key="d3">singer-songwriter pop</data>
+    </node>
+    <node id="2WzaAvm2bBCf4pEhyuDgCY">
+      <data key="d0">Ruth B.</data>
+      <data key="d1">3482259</data>
+      <data key="d2">71</data>
+      <data key="d3">alt z, canadian contemporary r&amp;b, canadian pop, pop</data>
+    </node>
+    <node id="3GxKJzJK4LpsYGXQrw77wz">
+      <data key="d0">Mimi Webb</data>
+      <data key="d1">365870</data>
+      <data key="d2">57</data>
+      <data key="d3">alt z, gen z singer-songwriter, uk pop</data>
+    </node>
+    <node id="4xnihxcoXWK3UqryOSnbw5">
+      <data key="d0">Sasha Alex Sloan</data>
+      <data key="d1">1477395</data>
+      <data key="d2">66</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="2yLzlEFtIS0Q9UkyBZdQA7">
+      <data key="d0">Jessie Murph</data>
+      <data key="d1">971623</data>
+      <data key="d2">71</data>
+      <data key="d3">modern country pop, singer-songwriter pop</data>
+    </node>
+    <node id="3QSQFmccmX81fWCUSPTS7y">
+      <data key="d0">Dean Lewis</data>
+      <data key="d1">3153548</data>
+      <data key="d2">72</data>
+      <data key="d3">australian pop, pop</data>
+    </node>
+    <node id="0sMAHzxguan2KpnKFZPW2d">
+      <data key="d0">Sadie Jean</data>
+      <data key="d1">227848</data>
+      <data key="d2">60</data>
+      <data key="d3">alt z, singer-songwriter pop</data>
+    </node>
+    <node id="7LImGq5KnzQobZciDJpeJb">
+      <data key="d0">Charlotte Lawrence</data>
+      <data key="d1">1184131</data>
+      <data key="d2">54</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="181bsRPaVXVlUKXrxwZfHK">
+      <data key="d0">Megan Thee Stallion</data>
+      <data key="d1">9107077</data>
+      <data key="d2">77</data>
+      <data key="d3">houston rap, pop, r&amp;b, rap, trap queen</data>
+    </node>
+    <node id="3LZZPxNDGDFVSIPqf4JuEf">
+      <data key="d0">Ice Spice</data>
+      <data key="d1">3616489</data>
+      <data key="d2">72</data>
+      <data key="d3">bronx drill</data>
+    </node>
+    <node id="0cGUm45nv7Z6M6qdXYQGTX">
+      <data key="d0">Kehlani</data>
+      <data key="d1">7664719</data>
+      <data key="d2">73</data>
+      <data key="d3">pop, r&amp;b, rap</data>
+    </node>
+    <node id="6cK3NBO6uP7hh0oyuVELFl">
+      <data key="d0">Saweetie</data>
+      <data key="d1">2221962</data>
+      <data key="d2">68</data>
+      <data key="d3">cali rap, trap queen</data>
+    </node>
+    <node id="57LYzLEk2LcFghVwuWbcuS">
+      <data key="d0">Summer Walker</data>
+      <data key="d1">6429714</data>
+      <data key="d2">78</data>
+      <data key="d3">r&amp;b, rap</data>
+    </node>
+    <node id="3PyJHH2wyfQK3WZrk9rpmP">
+      <data key="d0">Ashnikko</data>
+      <data key="d1">2299068</data>
+      <data key="d2">65</data>
+      <data key="d3">alt z, escape room</data>
+    </node>
+    <node id="78rUTD7y6Cy67W1RVzYs7t">
+      <data key="d0">PinkPantheress</data>
+      <data key="d1">3344969</data>
+      <data key="d2">74</data>
+      <data key="d3">bedroom pop</data>
+    </node>
+    <node id="3Y7RZ31TRPVadSFVy1o8os">
+      <data key="d0">H.E.R.</data>
+      <data key="d1">7586759</data>
+      <data key="d2">73</data>
+      <data key="d3">r&amp;b, rap</data>
+    </node>
+    <node id="1GmsPCcpKgF9OhlNXjOsbS">
+      <data key="d0">Lizzy McAlpine</data>
+      <data key="d1">930120</data>
+      <data key="d2">70</data>
+      <data key="d3">alt z, boston folk, indie pop, singer-songwriter pop</data>
+    </node>
+    <node id="1hLiboQ98IQWhpKeP9vRFw">
+      <data key="d0">boygenius</data>
+      <data key="d1">896412</data>
+      <data key="d2">65</data>
+      <data key="d3">indie pop</data>
+    </node>
+    <node id="69761NObDw2KwmmFgZmxzC">
+      <data key="d0">Lexi Jayde</data>
+      <data key="d1">173412</data>
+      <data key="d2">50</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="2RVvqRBon9NgaGXKfywDSs">
+      <data key="d0">Maisie Peters</data>
+      <data key="d1">610905</data>
+      <data key="d2">59</data>
+      <data key="d3">alt z, uk pop</data>
+    </node>
+    <node id="7Lk9V7E1u5gqSHmtcKlOqH">
+      <data key="d0">Sara Kays</data>
+      <data key="d1">422800</data>
+      <data key="d2">56</data>
+      <data key="d3">alt z, gen z singer-songwriter, modern indie pop</data>
+    </node>
+    <node id="5GGJosGMs08YEmKTZJe1fL">
+      <data key="d0">Suki Waterhouse</data>
+      <data key="d1">681202</data>
+      <data key="d2">67</data>
+      <data key="d3">indie pop</data>
+    </node>
+    <node id="7GlBOeep6PqTfFi59PTUUN">
+      <data key="d0">Chappell Roan</data>
+      <data key="d1">1001411</data>
+      <data key="d2">80</data>
+      <data key="d3">indie pop, pov: indie, springfield mo indie</data>
+    </node>
+    <node id="2RQXRUsr4IW1f3mKyKsy4B">
+      <data key="d0">Noah Kahan</data>
+      <data key="d1">2852663</data>
+      <data key="d2">83</data>
+      <data key="d3">pov: indie</data>
+    </node>
+    <node id="0nnYdIpahs41QiZ9MWp5Wx">
+      <data key="d0">Holly Humberstone</data>
+      <data key="d1">246840</data>
+      <data key="d2">57</data>
+      <data key="d3">alt z, indie pop, modern alternative pop, uk pop</data>
+    </node>
+    <node id="0uqrdF1UCmMshSk6veOa5K">
+      <data key="d0">Sarah Jeffery</data>
+      <data key="d1">201750</data>
+      <data key="d2">49</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="4uBD3fsHzb3IpOTGpicsbH">
+      <data key="d0">Cameron Boyce</data>
+      <data key="d1">82671</data>
+      <data key="d2">59</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="4A6cd63FWHbCLqk9mtGUZZ">
+      <data key="d0">Booboo Stewart</data>
+      <data key="d1">46785</data>
+      <data key="d2">59</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="0jcl46xRBm9LKIwrKGQPE6">
+      <data key="d0">Meg Donnelly</data>
+      <data key="d1">206444</data>
+      <data key="d2">54</data>
+      <data key="d3">movie tunes, nyc pop</data>
+    </node>
+    <node id="43niWwvn8OX1HmJLXu4aLV">
+      <data key="d0">Monster High</data>
+      <data key="d1">399402</data>
+      <data key="d2">54</data>
+      <data key="d3">movie tunes, otacore</data>
+    </node>
+    <node id="6blEmsLU25ewy8hHtgZaSL">
+      <data key="d0">Jazmin Bean</data>
+      <data key="d1">655800</data>
+      <data key="d2">53</data>
+      <data key="d3">pov: indie</data>
+    </node>
+    <node id="1yNIb413Bmfs2ZBVuPp9kC">
+      <data key="d0">Jack Stauber's Micropop</data>
+      <data key="d1">1804944</data>
+      <data key="d2">63</data>
+      <data key="d3">pov: indie, weirdcore</data>
+    </node>
+    <node id="3u6lPufHw4Oww6D88rv6sB">
+      <data key="d0">Penelope Scott</data>
+      <data key="d1">1075129</data>
+      <data key="d2">59</data>
+      <data key="d3">alt z, modern indie pop, pov: indie</data>
+    </node>
+    <node id="7M5pDtJpCdnftEQZtczYco">
+      <data key="d0">Ayesha Erotica</data>
+      <data key="d1">1024354</data>
+      <data key="d2">68</data>
+      <data key="d3" />
+    </node>
+    <node id="1oYXEVbGh1L7EWGm9C68cN">
+      <data key="d0">6arelyhuman</data>
+      <data key="d1">1177283</data>
+      <data key="d2">71</data>
+      <data key="d3">krushclub, scenecore</data>
+    </node>
+    <node id="7ITMCzIU9uII8gwRg8JAhc">
+      <data key="d0">Odetari</data>
+      <data key="d1">2885337</data>
+      <data key="d2">76</data>
+      <data key="d3">krushclub, sigilkore</data>
+    </node>
+    <node id="1YWJ1WjMkBCB1X3QOJ1Wdn">
+      <data key="d0">Cast of High School Musical: The Musical: The Series</data>
+      <data key="d1">218921</data>
+      <data key="d2">45</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="0K0YUvOFH3TVILvIPBfeYN">
+      <data key="d0">Sofia Wylie</data>
+      <data key="d1">77639</data>
+      <data key="d2">37</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="5aTwY2xyrJy4cS1jlFg1oG">
+      <data key="d0">Julia Lester</data>
+      <data key="d1">67312</data>
+      <data key="d2">45</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="6fu9TecMw6TInkRRyXObeu">
+      <data key="d0">Joe Serafini</data>
+      <data key="d1">43789</data>
+      <data key="d2">29</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="61lrTfBVPrE3DOTu9MGmhQ">
+      <data key="d0">Matt Cornett</data>
+      <data key="d1">59698</data>
+      <data key="d2">35</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="4c1j4vQueDvjOFPNr2aJ2e">
+      <data key="d0">Frankie Rodriguez</data>
+      <data key="d1">25076</data>
+      <data key="d2">27</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="3kVNx1UKVbk2KGkFECQRf0">
+      <data key="d0">Larry Saperstein</data>
+      <data key="d1">20227</data>
+      <data key="d2">14</data>
+      <data key="d3" />
+    </node>
+    <node id="7BtVR5EyH1mjLM5bjXUD5s">
+      <data key="d0">Dara Reneé</data>
+      <data key="d1">28260</data>
+      <data key="d2">30</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="5iEmISzYjAAPXDheLBOmM2">
+      <data key="d0">Kate Reinders</data>
+      <data key="d1">25426</data>
+      <data key="d2">28</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="3R5yFx0z6UkzAiNHCeBqUY">
+      <data key="d0">Adrian Lyles</data>
+      <data key="d1">12868</data>
+      <data key="d2">26</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="5wcXTMooUetMp8uUNqC03W">
+      <data key="d0">Jeremy Shada</data>
+      <data key="d1">89663</data>
+      <data key="d2">52</data>
+      <data key="d3" />
+    </node>
+    <node id="3aHe9rMa5HFTjXHw8tEz0A">
+      <data key="d0">Jenna Raine</data>
+      <data key="d1">207626</data>
+      <data key="d2">53</data>
+      <data key="d3">alt z, singer-songwriter pop</data>
+    </node>
+    <node id="5bmqhxWk9SEFDGIzWpSjVJ">
+      <data key="d0">THE DRIVER ERA</data>
+      <data key="d1">702169</data>
+      <data key="d2">56</data>
+      <data key="d3">modern alternative rock</data>
+    </node>
+    <node id="52OQXvCMAJ0zqE2ZQrBTqC">
+      <data key="d0">Julie and the Phantoms Cast</data>
+      <data key="d1">432812</data>
+      <data key="d2">57</data>
+      <data key="d3" />
+    </node>
+    <node id="6aX6KqXgEcARRHwvWxHcFW">
+      <data key="d0">Johnny Orlando</data>
+      <data key="d1">839549</data>
+      <data key="d2">54</data>
+      <data key="d3">canadian pop, singer-songwriter pop, social media pop, teen pop</data>
+    </node>
+    <node id="5ZS223C6JyBfXasXxrRqOk">
+      <data key="d0">Jhené Aiko</data>
+      <data key="d1">7730221</data>
+      <data key="d2">75</data>
+      <data key="d3">r&amp;b</data>
+    </node>
+    <node id="3tlXnStJ1fFhdScmQeLpuG">
+      <data key="d0">Brent Faiyaz</data>
+      <data key="d1">5977731</data>
+      <data key="d2">81</data>
+      <data key="d3">r&amp;b, rap</data>
+    </node>
+    <node id="20wkVLutqVOYrc0kxFs7rA">
+      <data key="d0">Daniel Caesar</data>
+      <data key="d1">5892959</data>
+      <data key="d2">78</data>
+      <data key="d3">canadian contemporary r&amp;b</data>
+    </node>
+    <node id="2h93pZq0e7k5yf4dywlkpM">
+      <data key="d0">Frank Ocean</data>
+      <data key="d1">14026462</data>
+      <data key="d2">84</data>
+      <data key="d3">lgbtq+ hip hop, neo soul</data>
+    </node>
+    <node id="2EMAnMvWE2eb56ToJVfCWs">
+      <data key="d0">Bryson Tiller</data>
+      <data key="d1">8464361</data>
+      <data key="d2">81</data>
+      <data key="d3">kentucky hip hop, r&amp;b, rap</data>
+    </node>
+    <node id="2HPaUgqeutzr3jx5a9WyDV">
+      <data key="d0">PARTYNEXTDOOR</data>
+      <data key="d1">6598840</data>
+      <data key="d2">78</data>
+      <data key="d3">r&amp;b, rap, urban contemporary</data>
+    </node>
+    <node id="57vWImR43h4CaDao012Ofp">
+      <data key="d0">Steve Lacy</data>
+      <data key="d1">4628819</data>
+      <data key="d2">78</data>
+      <data key="d3">afrofuturism</data>
+    </node>
+    <node id="7HkdQ0gt53LP4zmHsL0nap">
+      <data key="d0">Ella Mai</data>
+      <data key="d1">5488105</data>
+      <data key="d2">65</data>
+      <data key="d3">r&amp;b, rap, uk contemporary r&amp;b</data>
+    </node>
+    <node id="4fxd5Ee7UefO4CUXgwJ7IP">
+      <data key="d0">Giveon</data>
+      <data key="d1">3804066</data>
+      <data key="d2">74</data>
+      <data key="d3">r&amp;b</data>
+    </node>
+    <node id="4V8LLVI7PbaPR0K2TGSxFF">
+      <data key="d0">Tyler, The Creator</data>
+      <data key="d1">15158668</data>
+      <data key="d2">83</data>
+      <data key="d3">hip hop, rap</data>
+    </node>
+    <node id="360IAlyVv4PCEVjgyMZrxK">
+      <data key="d0">Miguel</data>
+      <data key="d1">5063269</data>
+      <data key="d2">77</data>
+      <data key="d3">r&amp;b, urban contemporary</data>
+    </node>
+    <node id="2ICR2m4hOBPhaYiZB3rnLW">
+      <data key="d0">Sonder</data>
+      <data key="d1">1175610</data>
+      <data key="d2">67</data>
+      <data key="d3">experimental r&amp;b</data>
+    </node>
+    <node id="6rniTPs9zN26kYnkPdFl1U">
+      <data key="d0">Sir Chloe</data>
+      <data key="d1">763068</data>
+      <data key="d2">60</data>
+      <data key="d3">indie pop, pov: indie</data>
+    </node>
+    <node id="3P4vW5tzQvmuoNaFQqzy9q">
+      <data key="d0">chloe moriondo</data>
+      <data key="d1">679363</data>
+      <data key="d2">53</data>
+      <data key="d3">alt z, bedroom pop, indie pop, pov: indie</data>
+    </node>
+    <node id="3XxNRirzbjfLdDli06zMaB">
+      <data key="d0">Eyedress</data>
+      <data key="d1">1945984</data>
+      <data key="d2">73</data>
+      <data key="d3">noise pop, pov: indie</data>
+    </node>
+    <node id="0m5FakHKCQdA7UN0PIzMcL">
+      <data key="d0">Current Joys</data>
+      <data key="d1">1281888</data>
+      <data key="d2">67</data>
+      <data key="d3">lo-fi indie, pov: indie</data>
+    </node>
+    <node id="0pg0Zm8FsGAYy5kdHuBnSo">
+      <data key="d0">salvia palth</data>
+      <data key="d1">1143325</data>
+      <data key="d2">67</data>
+      <data key="d3">countrygaze, lo-fi emo, lo-fi indie, pov: indie, slowcore, small room</data>
+    </node>
+    <node id="0uq5PttqEjj3IH1bzwcrXF">
+      <data key="d0">Spice Girls</data>
+      <data key="d1">3613766</data>
+      <data key="d2">66</data>
+      <data key="d3">dance pop, girl group, pop</data>
+    </node>
+    <node id="4yiQZ8tQPux8cPriYMWUFP">
+      <data key="d0">Gwen Stefani</data>
+      <data key="d1">6487115</data>
+      <data key="d2">71</data>
+      <data key="d3">dance pop, pop</data>
+    </node>
+    <node id="6wPhSqRtPu1UhRCDX5yaDJ">
+      <data key="d0">The Pussycat Dolls</data>
+      <data key="d1">5619284</data>
+      <data key="d2">66</data>
+      <data key="d3">dance pop, girl group, pop</data>
+    </node>
+    <node id="3r17AfJCCUqC9Lf0OAc73G">
+      <data key="d0">Fergie</data>
+      <data key="d1">5697282</data>
+      <data key="d2">67</data>
+      <data key="d3">dance pop, pop</data>
+    </node>
+    <node id="2jw70GZXlAI8QzWeY2bgRc">
+      <data key="d0">Nelly Furtado</data>
+      <data key="d1">3869757</data>
+      <data key="d2">75</data>
+      <data key="d3">canadian latin, canadian pop, dance pop, pop</data>
+    </node>
+    <node id="6tbjWDEIzxoDsBA1FuhfPW">
+      <data key="d0">Madonna</data>
+      <data key="d1">7918287</data>
+      <data key="d2">78</data>
+      <data key="d3">dance pop, pop</data>
+    </node>
+    <node id="1Y8cdNmUJH7yBTd9yOvr5i">
+      <data key="d0">Destiny's Child</data>
+      <data key="d1">7180864</data>
+      <data key="d2">69</data>
+      <data key="d3">dance pop, girl group, pop, r&amp;b, urban contemporary</data>
+    </node>
+    <node id="6Ff53KvcvAj5U7Z1vojB5o">
+      <data key="d0">*NSYNC</data>
+      <data key="d1">2377734</data>
+      <data key="d2">67</data>
+      <data key="d3">boy band, dance pop, pop</data>
+    </node>
+    <node id="2tFN9ubMXEhdAQvdQxcsma">
+      <data key="d0">Jessica Simpson</data>
+      <data key="d1">1287664</data>
+      <data key="d2">44</data>
+      <data key="d3">dance pop, post-teen pop</data>
+    </node>
+    <node id="1yxSLGMDHlW21z4YXirZDS">
+      <data key="d0">Black Eyed Peas</data>
+      <data key="d1">8132799</data>
+      <data key="d2">78</data>
+      <data key="d3">dance pop, pop, pop rap</data>
+    </node>
+    <node id="6vWDO969PvNqNYHIOW5v0m">
+      <data key="d0">Beyoncé</data>
+      <data key="d1">37611630</data>
+      <data key="d2">86</data>
+      <data key="d3">pop, r&amp;b</data>
+    </node>
+    <node id="6sFIWsNpZYqfjUpaCgueju">
+      <data key="d0">Carly Rae Jepsen</data>
+      <data key="d1">4871575</data>
+      <data key="d2">70</data>
+      <data key="d3">canadian pop, dance pop, pop</data>
+    </node>
+    <node id="085pc2PYOi8bGKj0PNjekA">
+      <data key="d0">will.i.am</data>
+      <data key="d1">4127107</data>
+      <data key="d2">71</data>
+      <data key="d3">dance pop, pop</data>
+    </node>
+    <node id="0FWzNDaEu9jdgcYTbcOa4F">
+      <data key="d0">3OH!3</data>
+      <data key="d1">976463</data>
+      <data key="d2">61</data>
+      <data key="d3">dance pop, electropowerpop, pop punk, pop rap, post-teen pop</data>
+    </node>
+    <node id="6MF9fzBmfXghAz953czmBC">
+      <data key="d0">Taio Cruz</data>
+      <data key="d1">2207724</data>
+      <data key="d2">68</data>
+      <data key="d3">dance pop, pop, pop rap</data>
+    </node>
+    <node id="74XFHRwlV6OrjEM0A2NCMF">
+      <data key="d0">Paramore</data>
+      <data key="d1">8498022</data>
+      <data key="d2">75</data>
+      <data key="d3">candy pop, modern rock, pixie, pop, pop emo, pop punk, rock</data>
+    </node>
+    <node id="1dIdBZaaHRW2bDTkHNfWln">
+      <data key="d0">The Veronicas</data>
+      <data key="d1">955864</data>
+      <data key="d2">54</data>
+      <data key="d3">australian pop, candy pop, dance pop, girl group, post-teen pop</data>
+    </node>
+    <node id="7H55rcKCfwqkyDFH9wpKM6">
+      <data key="d0">Christina Perri</data>
+      <data key="d1">3781449</data>
+      <data key="d2">69</data>
+      <data key="d3">pop</data>
+    </node>
+    <node id="2p4FqHnazRucYQHyDCdBrJ">
+      <data key="d0">Simple Plan</data>
+      <data key="d1">3559085</data>
+      <data key="d2">66</data>
+      <data key="d3">canadian pop punk, canadian punk, canadian rock, modern rock, neon pop punk, pop punk, pop rock</data>
+    </node>
+    <node id="5xuNBZoM7z1Vv8IQ6uM0p6">
+      <data key="d0">JoJo</data>
+      <data key="d1">2359308</data>
+      <data key="d2">59</data>
+      <data key="d3">dance pop, pop, post-teen pop</data>
+    </node>
+    <node id="4hqDqHtBlgxXpLXVYf7c8L">
+      <data key="d0">Ashlee Simpson</data>
+      <data key="d1">968780</data>
+      <data key="d2">44</data>
+      <data key="d3">dance pop, post-teen pop</data>
+    </node>
+    <node id="5lKZWd6HiSCLfnDGrq9RAm">
+      <data key="d0">Leona Lewis</data>
+      <data key="d1">3542679</data>
+      <data key="d2">62</data>
+      <data key="d3">british soul, dance pop, pop, talent show</data>
+    </node>
+    <node id="40xbWSB4JPdOkRyuTDy1oP">
+      <data key="d0">Nicole Scherzinger</data>
+      <data key="d1">2399120</data>
+      <data key="d2">59</data>
+      <data key="d3">dance pop, pop, post-teen pop</data>
+    </node>
+    <node id="2AQjGvtT0pFYfxR3neFcvz">
+      <data key="d0">Jordin Sparks</data>
+      <data key="d1">2387158</data>
+      <data key="d2">59</data>
+      <data key="d3">dance pop, pop, post-teen pop, urban contemporary</data>
+    </node>
+    <node id="4xFUf1FHVy696Q1JQZMTRj">
+      <data key="d0">Carrie Underwood</data>
+      <data key="d1">5920351</data>
+      <data key="d2">68</data>
+      <data key="d3">classic oklahoma country, contemporary country, country, country dawn, dance pop, pop</data>
+    </node>
+    <node id="7o95ZoZt5ZYn31e9z1Hc0a">
+      <data key="d0">Natasha Bedingfield</data>
+      <data key="d1">1766018</data>
+      <data key="d2">74</data>
+      <data key="d3">dance pop, pop, post-teen pop</data>
+    </node>
+    <node id="6aZyMrc4doVtZyKNilOmwu">
+      <data key="d0">Colbie Caillat</data>
+      <data key="d1">2489866</data>
+      <data key="d2">65</data>
+      <data key="d3">dance pop, neo mellow, pop</data>
+    </node>
+    <node id="25NQNriVT2YbSW80ILRWJa">
+      <data key="d0">Faith Hill</data>
+      <data key="d1">1832020</data>
+      <data key="d2">59</data>
+      <data key="d3">contemporary country, country, country dawn, country road</data>
+    </node>
+    <node id="72OaDtakiy6yFqkt4TsiFt">
+      <data key="d0">Cher</data>
+      <data key="d1">3337589</data>
+      <data key="d2">66</data>
+      <data key="d3">dance pop, pop</data>
+    </node>
+    <node id="6prmLEyn4LfHlD9NnXWlf7">
+      <data key="d0">Adam Lambert</data>
+      <data key="d1">1600587</data>
+      <data key="d2">59</data>
+      <data key="d3">dance pop, idol, pop, post-teen pop</data>
+    </node>
+    <node id="31TPClRtHm23RisEBtV3X7">
+      <data key="d0">Justin Timberlake</data>
+      <data key="d1">14072843</data>
+      <data key="d2">79</data>
+      <data key="d3">dance pop, pop</data>
+    </node>
+    <node id="2NdeV5rLm47xAvogXrYhJX">
+      <data key="d0">Ciara</data>
+      <data key="d1">6538909</data>
+      <data key="d2">68</data>
+      <data key="d3">dance pop, hip pop, pop, r&amp;b, urban contemporary</data>
+    </node>
+    <node id="37hAfseJWi0G3Scife12Il">
+      <data key="d0">City Girls</data>
+      <data key="d1">2588060</data>
+      <data key="d2">61</data>
+      <data key="d3">scam rap, trap queen</data>
+    </node>
+    <node id="2cWZOOzeOm4WmBJRnD5R7I">
+      <data key="d0">Normani</data>
+      <data key="d1">2693006</data>
+      <data key="d2">67</data>
+      <data key="d3">pop, r&amp;b</data>
+    </node>
+    <node id="7DuTB6wdzqFJGFLSH17k8e">
+      <data key="d0">Bhad Bhabie</data>
+      <data key="d1">3376848</data>
+      <data key="d2">53</data>
+      <data key="d3">trap queen, viral rap</data>
+    </node>
+    <node id="3MdXrJWsbVzdn6fe5JYkSQ">
+      <data key="d0">Latto</data>
+      <data key="d1">1627152</data>
+      <data key="d2">75</data>
+      <data key="d3">trap queen</data>
+    </node>
+    <node id="56oDRnqbIiwx4mymNEv7dS">
+      <data key="d0">Lizzo</data>
+      <data key="d1">5713739</data>
+      <data key="d2">68</data>
+      <data key="d3">escape room, minnesota hip hop, pop, trap queen</data>
+    </node>
+    <node id="3nViOFa3kZW8OMSNOzwr98">
+      <data key="d0">Queen Naija</data>
+      <data key="d1">3054831</data>
+      <data key="d2">56</data>
+      <data key="d3">pop r&amp;b, r&amp;b</data>
+    </node>
+    <node id="2ExGrw6XpbtUAJHTLtUXUD">
+      <data key="d0">Stefflon Don</data>
+      <data key="d1">1179038</data>
+      <data key="d2">65</data>
+      <data key="d3">dancehall, dancehall queen, uk dancehall, uk hip hop</data>
+    </node>
+    <node id="3u579Gdap91lMptBSdXTpf">
+      <data key="d0">Kash Doll</data>
+      <data key="d1">1306080</data>
+      <data key="d2">47</data>
+      <data key="d3">detroit hip hop, trap queen</data>
+    </node>
+    <node id="3DiDSECUqqY1AuBP8qtaIa">
+      <data key="d0">Alicia Keys</data>
+      <data key="d1">11733008</data>
+      <data key="d2">75</data>
+      <data key="d3">neo soul, pop, r&amp;b</data>
+    </node>
+    <node id="23zg3TcAtWQy7J6upgbUnj">
+      <data key="d0">USHER</data>
+      <data key="d1">11472331</data>
+      <data key="d2">79</data>
+      <data key="d3">atl hip hop, contemporary r&amp;b, dance pop, pop, r&amp;b, rap, south carolina hip hop, urban contemporary</data>
+    </node>
+    <node id="4UFShyUQuA8dguoZrqX0jQ">
+      <data key="d0">Luke Hemmings</data>
+      <data key="d1">507388</data>
+      <data key="d2">57</data>
+      <data key="d3" />
+    </node>
+    <node id="3zOKGDS77tYdGFQ6UJMC4E">
+      <data key="d0">Ashton Irwin</data>
+      <data key="d1">248229</data>
+      <data key="d2">32</data>
+      <data key="d3" />
+    </node>
+    <node id="2jnIB6XdLvnJUeNTy5A0J2">
+      <data key="d0">Why Don't We</data>
+      <data key="d1">3688739</data>
+      <data key="d2">64</data>
+      <data key="d3">boy band, pop</data>
+    </node>
+    <node id="2WuKU0SYZOQyY3MmE4vtez">
+      <data key="d0">New Hope Club</data>
+      <data key="d1">1011136</data>
+      <data key="d2">47</data>
+      <data key="d3">boy band</data>
+    </node>
+    <node id="46gyXjRIvN1NL1eCB8GBxo">
+      <data key="d0">All Time Low</data>
+      <data key="d1">3012554</data>
+      <data key="d2">66</data>
+      <data key="d3">modern rock, neon pop punk, pop emo, pop punk</data>
+    </node>
+    <node id="2gUMs9PE8XZVQyzCDqaYmW">
+      <data key="d0">High School Musical Cast</data>
+      <data key="d1">1383937</data>
+      <data key="d2">59</data>
+      <data key="d3">movie tunes, post-teen pop</data>
+    </node>
+    <node id="2Hjj68yyUPiC0HKEOigcEp">
+      <data key="d0">Jesse McCartney</data>
+      <data key="d1">1019373</data>
+      <data key="d2">57</data>
+      <data key="d3">dance pop, pop, post-teen pop</data>
+    </node>
+    <node id="0GWCNkPi54upO9WLlwjAHd">
+      <data key="d0">Big Time Rush</data>
+      <data key="d1">2629048</data>
+      <data key="d2">61</data>
+      <data key="d3">boy band, pop, post-teen pop</data>
+    </node>
+    <node id="5xkAtLTf309LAGZTbvULBn">
+      <data key="d0">Ruel</data>
+      <data key="d1">1914918</data>
+      <data key="d2">60</data>
+      <data key="d3">alt z, australian alternative pop, singer-songwriter pop</data>
+    </node>
+    <node id="3gIRvgZssIb9aiirIg0nI3">
+      <data key="d0">Jeremy Zucker</data>
+      <data key="d1">2257572</data>
+      <data key="d2">66</data>
+      <data key="d3">alt z, electropop, pop</data>
+    </node>
+    <node id="3mIj9lX2MWuHmhNCA7LSCW">
+      <data key="d0">The 1975</data>
+      <data key="d1">7189647</data>
+      <data key="d2">74</data>
+      <data key="d3">modern alternative rock, modern rock, pop, pov: indie, rock</data>
+    </node>
+    <node id="5vBSrE1xujD2FXYRarbAXc">
+      <data key="d0">Olly Alexander (Years &amp; Years)</data>
+      <data key="d1">1966825</data>
+      <data key="d2">66</data>
+      <data key="d3">dance pop, gauze pop, pop, pop dance, uk pop</data>
+    </node>
+    <node id="49tQo2QULno7gxHutgccqF">
+      <data key="d0">LANY</data>
+      <data key="d1">5786989</data>
+      <data key="d2">71</data>
+      <data key="d3">la pop</data>
+    </node>
+    <node id="1INuLZXjjVbcJRyWvD1iSq">
+      <data key="d0">Jack &amp; Jack</data>
+      <data key="d1">1408901</data>
+      <data key="d2">56</data>
+      <data key="d3">pop, teen pop</data>
+    </node>
+    <node id="0kkxsdcaWmWU2yWAqclDh4">
+      <data key="d0">Rixton</data>
+      <data key="d1">742954</data>
+      <data key="d2">57</data>
+      <data key="d3">post-teen pop, talent show, teen pop, viral pop</data>
+    </node>
+    <node id="5Y8eJDj37KhaEeqbVO7Ag1">
+      <data key="d0">PRETTYMUCH</data>
+      <data key="d1">1270416</data>
+      <data key="d2">52</data>
+      <data key="d3">boy band, post-teen pop, teen pop</data>
+    </node>
+    <node id="6dn6x1XOng3LOAnfTjUn77">
+      <data key="d0">AJ Mitchell</data>
+      <data key="d1">905264</data>
+      <data key="d2">52</data>
+      <data key="d3">alt z, singer-songwriter pop, teen pop</data>
+    </node>
+    <node id="2l35CQqtYRh3d8ZIiBep4v">
+      <data key="d0">MKTO</data>
+      <data key="d1">1060898</data>
+      <data key="d2">65</data>
+      <data key="d3">pop, post-teen pop</data>
+    </node>
+    <node id="79Xp2rRN7wdsaTJgttdX3K">
+      <data key="d0">Cody Simpson</data>
+      <data key="d1">1367934</data>
+      <data key="d2">52</data>
+      <data key="d3">australian pop, pop, post-teen pop</data>
+    </node>
+    <node id="2NhdGz9EDv2FeUw6udu2g1">
+      <data key="d0">The Wanted</data>
+      <data key="d1">2487184</data>
+      <data key="d2">61</data>
+      <data key="d3">boy band, dance pop, pop, post-teen pop</data>
+    </node>
+    <node id="7nDsS0l5ZAzMedVRKPP8F1">
+      <data key="d0">Ella Henderson</data>
+      <data key="d1">1612638</data>
+      <data key="d2">71</data>
+      <data key="d3">dance pop, pop dance, talent show, uk pop</data>
+    </node>
+    <node id="4Q6nIcaBED8qUel8bBx6Cr">
+      <data key="d0">Jax Jones</data>
+      <data key="d1">1174330</data>
+      <data key="d2">71</data>
+      <data key="d3">dance pop, edm, house, pop dance, uk dance, uk pop</data>
+    </node>
+    <node id="6ydoSd3N2mwgwBHtF6K7eX">
+      <data key="d0">Calum Scott</data>
+      <data key="d1">5594321</data>
+      <data key="d2">73</data>
+      <data key="d3">pop</data>
+    </node>
+    <node id="543ccHFPnZfJMD8tRGPtu7">
+      <data key="d0">James Smith</data>
+      <data key="d1">937514</data>
+      <data key="d2">51</data>
+      <data key="d3">uk pop</data>
+    </node>
+    <node id="4GNC7GD6oZMSxPGyXy4MNB">
+      <data key="d0">Lewis Capaldi</data>
+      <data key="d1">12523845</data>
+      <data key="d2">78</data>
+      <data key="d3">pop, uk pop</data>
+    </node>
+    <node id="4EzkuveR9pLvDVFNx6foYD">
+      <data key="d0">James Bay</data>
+      <data key="d1">3993165</data>
+      <data key="d2">66</data>
+      <data key="d3">neo mellow, pop, uk pop</data>
+    </node>
+    <node id="3AQRLZ9PuTAozP28Skbq8V">
+      <data key="d0">The Script</data>
+      <data key="d1">7991830</data>
+      <data key="d2">73</data>
+      <data key="d3">celtic rock, pop</data>
+    </node>
+    <node id="0B3N0ZINFWvizfa8bKiz4v">
+      <data key="d0">James TW</data>
+      <data key="d1">1360690</data>
+      <data key="d2">60</data>
+      <data key="d3">british singer-songwriter, uk pop</data>
+    </node>
+    <node id="5GuEFqVXxQsqJtjGqoFWvf">
+      <data key="d0">Corbin Bleu</data>
+      <data key="d1">523692</data>
+      <data key="d2">46</data>
+      <data key="d3">movie tunes, post-teen pop</data>
+    </node>
+    <node id="6kUQJlewgd3UFKVYrrmILh">
+      <data key="d0">Raven-Symoné</data>
+      <data key="d1">318115</data>
+      <data key="d2">33</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="3IcF2f5vEkY6HPQfLlQDlw">
+      <data key="d0">Mitchel Musso</data>
+      <data key="d1">355675</data>
+      <data key="d2">29</data>
+      <data key="d3">post-teen pop</data>
+    </node>
+    <node id="0NIIxcxNHmOoyBx03SfTCD">
+      <data key="d0">Tinashe</data>
+      <data key="d1">2711580</data>
+      <data key="d2">67</data>
+      <data key="d3">alternative r&amp;b, dance pop, metropopolis, pop, r&amp;b, urban contemporary</data>
+    </node>
+    <node id="2wIVse2owClT7go1WT98tk">
+      <data key="d0">Missy Elliott</data>
+      <data key="d1">2463332</data>
+      <data key="d2">68</data>
+      <data key="d3">dance pop, hip hop, hip pop, neo soul, pop rap, r&amp;b, rap, urban contemporary, virginia hip hop</data>
+    </node>
+    <node id="5Y5TRrQiqgUO4S36tzjIRZ">
+      <data key="d0">Timbaland</data>
+      <data key="d1">2845248</data>
+      <data key="d2">75</data>
+      <data key="d3">dance pop, pop, pop rap</data>
+    </node>
+    <node id="6aBoKzSTjuIi0sY69XHLk3">
+      <data key="d0">Karol Sevilla</data>
+      <data key="d1">655555</data>
+      <data key="d2">44</data>
+      <data key="d3">latin viral pop</data>
+    </node>
+    <node id="2uTXJwJ1Q9PA2ji51RWeQm">
+      <data key="d0">Mitchell Hope</data>
+      <data key="d1">32012</data>
+      <data key="d2">56</data>
+      <data key="d3">movie tunes</data>
+    </node>
+    <node id="1Yq3rS7K1SQKqjMOHXpqqt">
+      <data key="d0">Towa Bird</data>
+      <data key="d1">52500</data>
+      <data key="d2">47</data>
+      <data key="d3" />
+    </node>
+    <node id="5qa31A9HySw3T7MKWI9bGg">
+      <data key="d0">FLETCHER</data>
+      <data key="d1">920691</data>
+      <data key="d2">66</data>
+      <data key="d3">alt z, pop</data>
+    </node>
+    <node id="6Ve5oEOT8RbNXWHfsZpICN">
+      <data key="d0">Cast of Mean Girls</data>
+      <data key="d1">6410</data>
+      <data key="d2">46</data>
+      <data key="d3" />
+    </node>
+    <node id="6xdRb2GypJ7DqnWAI2mHGn">
+      <data key="d0">MUNA</data>
+      <data key="d1">383742</data>
+      <data key="d2">56</data>
+      <data key="d3">indie pop, indie poptimism, la pop, metropopolis</data>
+    </node>
+    <node id="07D1Bjaof0NFlU32KXiqUP">
+      <data key="d0">Lucy Dacus</data>
+      <data key="d1">500341</data>
+      <data key="d2">66</data>
+      <data key="d3">indie pop</data>
+    </node>
+    <node id="4e9vQfyvvDlcQAkjSdFE4x">
+      <data key="d0">Maya Hawke</data>
+      <data key="d1">457408</data>
+      <data key="d2">50</data>
+      <data key="d3">indie pop</data>
+    </node>
+    <node id="0avMDS4HyoCEP6RqZJWpY2">
+      <data key="d0">Ethel Cain</data>
+      <data key="d1">562288</data>
+      <data key="d2">62</data>
+      <data key="d3">countrygaze, indie pop, modern dream pop</data>
+    </node>
+    <node id="7poQNrOwZoUcoqihg4Xex0">
+      <data key="d0">Wasia Project</data>
+      <data key="d1">240444</data>
+      <data key="d2">54</data>
+      <data key="d3" />
+    </node>
+    <node id="3gBjSrNsYzzbeo0nwsL21J">
+      <data key="d0">ella jane</data>
+      <data key="d1">110088</data>
+      <data key="d2">39</data>
+      <data key="d3">alt z, gen z singer-songwriter, modern indie pop</data>
+    </node>
+    <node id="12zbUHbPHL5DGuJtiUfsip">
+      <data key="d0">Julien Baker</data>
+      <data key="d1">479233</data>
+      <data key="d2">65</data>
+      <data key="d3">ambient folk, indie pop</data>
+    </node>
+    <node id="5dtPlx7yKOo7KdZGyrfFIq">
+      <data key="d0">Maddie Zahm</data>
+      <data key="d1">314146</data>
+      <data key="d2">51</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="542yUd4rGzUEOLd1diV94f">
+      <data key="d0">Rocky</data>
+      <data key="d1">17988</data>
+      <data key="d2">46</data>
+      <data key="d3" />
+    </node>
+    <node id="5aptPwTkTKmlPx6csmNJLA">
+      <data key="d0">R5</data>
+      <data key="d1">645097</data>
+      <data key="d2">47</data>
+      <data key="d3">post-teen pop, teen pop</data>
+    </node>
+    <node id="4VhL8KLjVso4vLfOLVViTb">
+      <data key="d0">Bridgit Mendler</data>
+      <data key="d1">1324835</data>
+      <data key="d2">58</data>
+      <data key="d3">pop, post-teen pop</data>
+    </node>
+    <node id="2Zi3RrdQqk63Xj0914STkS">
+      <data key="d0">Naomi Scott</data>
+      <data key="d1">344315</data>
+      <data key="d2">57</data>
+      <data key="d3">movie tunes, post-teen pop, vapor pop</data>
+    </node>
+    <node id="6Y64EaNqpqcZYTgs4c76gF">
+      <data key="d0">jxdn</data>
+      <data key="d1">1006255</data>
+      <data key="d2">59</data>
+      <data key="d3">pop punk, social media pop</data>
+    </node>
+    <node id="3BxsweDMcgp9gNWmG40u6f">
+      <data key="d0">Huddy</data>
+      <data key="d1">366679</data>
+      <data key="d2">44</data>
+      <data key="d3">social media pop</data>
+    </node>
+    <node id="0wrbaNL900CWaR5DYERLze">
+      <data key="d0">payton</data>
+      <data key="d1">333884</data>
+      <data key="d2">42</data>
+      <data key="d3">social media pop</data>
+    </node>
+    <node id="4NFJfKlf2A6rkLag0MesjU">
+      <data key="d0">Josh Richards</data>
+      <data key="d1">121581</data>
+      <data key="d2">26</data>
+      <data key="d3">social media pop</data>
+    </node>
+    <node id="3DKkhRCGOG4e8IUPYFPfWs">
+      <data key="d0">Dixie</data>
+      <data key="d1">919424</data>
+      <data key="d2">39</data>
+      <data key="d3">social media pop</data>
+    </node>
+    <node id="7j6liwxutWe54EZmbPylkB">
+      <data key="d0">Bryce Hall</data>
+      <data key="d1">77624</data>
+      <data key="d2">26</data>
+      <data key="d3" />
+    </node>
+    <node id="49gybyXyHSReIroJ8CpriJ">
+      <data key="d0">vinnie</data>
+      <data key="d1">95448</data>
+      <data key="d2">25</data>
+      <data key="d3" />
+    </node>
+    <node id="5Hz3IW691fbgGqLk4yvlNN">
+      <data key="d0">Tayler Holder</data>
+      <data key="d1">139195</data>
+      <data key="d2">40</data>
+      <data key="d3">social media pop</data>
+    </node>
+    <node id="0ZdLS8EfYknjiTEBHbJt9n">
+      <data key="d0">Quinton Griggs</data>
+      <data key="d1">27289</data>
+      <data key="d2">18</data>
+      <data key="d3" />
+    </node>
+    <node id="4gvjmrtzydbMpyJaXUtwvP">
+      <data key="d0">Addison Rae</data>
+      <data key="d1">293843</data>
+      <data key="d2">52</data>
+      <data key="d3">social media pop</data>
+    </node>
+    <node id="2TvEkqxJRNAZ2XLqKVQMld">
+      <data key="d0">Griffin Johnson</data>
+      <data key="d1">28047</data>
+      <data key="d2">12</data>
+      <data key="d3" />
+    </node>
+    <node id="6oWOHAOyBUn6aJlKIPJK9r">
+      <data key="d0">Leah Kate</data>
+      <data key="d1">225380</data>
+      <data key="d2">55</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="2S054G7qnCK45KY0XzpX30">
+      <data key="d0">Dylan Conrique</data>
+      <data key="d1">302373</data>
+      <data key="d2">53</data>
+      <data key="d3">alt z, singer-songwriter pop, social media pop</data>
+    </node>
+    <node id="0HPOJQqAEKEXOrGUaoRlsH">
+      <data key="d0">Ondreaz</data>
+      <data key="d1">70941</data>
+      <data key="d2">14</data>
+      <data key="d3" />
+    </node>
+    <node id="4Xt0mNxZEZWjgJwsZKDuvQ">
+      <data key="d0">Skylar Simone</data>
+      <data key="d1">189919</data>
+      <data key="d2">29</data>
+      <data key="d3" />
+    </node>
+    <node id="2FYOI01brbNN7gtT58DElr">
+      <data key="d0">Stefanie Scott</data>
+      <data key="d1">96034</data>
+      <data key="d2">26</data>
+      <data key="d3" />
+    </node>
+    <node id="1tOfjxtFVtMBiJeI5ccH8o">
+      <data key="d0">G Hannelius</data>
+      <data key="d1">58014</data>
+      <data key="d2">10</data>
+      <data key="d3" />
+    </node>
+    <node id="4bDyYcqEkVNwrHfljpOtLV">
+      <data key="d0">Cast of The Lodge</data>
+      <data key="d1">146725</data>
+      <data key="d2">23</data>
+      <data key="d3" />
+    </node>
+    <node id="0TnOYISbd1XYRBk9myaseg">
+      <data key="d0">Pitbull</data>
+      <data key="d1">10371934</data>
+      <data key="d2">82</data>
+      <data key="d3">dance pop, miami hip hop, pop</data>
+    </node>
+    <node id="4eAOcbAXIF4BmbN6E1QIlw">
+      <data key="d0">Christina Milian</data>
+      <data key="d1">1375112</data>
+      <data key="d2">49</data>
+      <data key="d3">dance pop, hip pop, r&amp;b, urban contemporary</data>
+    </node>
+    <node id="7DMveApC7UnC2NPfPvlHSU">
+      <data key="d0">Cheat Codes</data>
+      <data key="d1">2108449</data>
+      <data key="d2">64</data>
+      <data key="d3">edm, pop, pop dance</data>
+    </node>
+    <node id="1IueXOQyABrMOprrzwQJWN">
+      <data key="d0">Sigala</data>
+      <data key="d1">1556918</data>
+      <data key="d2">66</data>
+      <data key="d3">dance pop, edm, pop dance, uk dance</data>
+    </node>
+    <node id="4WN5naL3ofxrVBgFpguzKo">
+      <data key="d0">Rudimental</data>
+      <data key="d1">1355861</data>
+      <data key="d2">70</data>
+      <data key="d3">pop dance, uk dance, uk funky</data>
+    </node>
+    <node id="4sTQVOfp9vEMCemLw50sbu">
+      <data key="d0">Galantis</data>
+      <data key="d1">3347754</data>
+      <data key="d2">71</data>
+      <data key="d3">dance pop, edm, pop, pop dance</data>
+    </node>
+    <node id="23fqKkggKUBHNkbKtXEls4">
+      <data key="d0">Kygo</data>
+      <data key="d1">8344385</data>
+      <data key="d2">79</data>
+      <data key="d3">edm, pop, pop dance, tropical house</data>
+    </node>
+    <node id="64KEffDW9EtZ1y2vBYgq8T">
+      <data key="d0">Marshmello</data>
+      <data key="d1">33630373</data>
+      <data key="d2">81</data>
+      <data key="d3">brostep, edm, pop, progressive electro house</data>
+    </node>
+    <node id="60d24wfXkVzDSfLS6hyCjZ">
+      <data key="d0">Martin Garrix</data>
+      <data key="d1">15003591</data>
+      <data key="d2">73</data>
+      <data key="d3">dutch edm, edm, pop, pop dance, progressive house</data>
+    </node>
+    <node id="540vIaP2JwjQb9dm3aArA4">
+      <data key="d0">DJ Snake</data>
+      <data key="d1">8621235</data>
+      <data key="d2">76</data>
+      <data key="d3">edm, electronic trap, pop, pop dance</data>
+    </node>
+    <node id="1vCWHaC5f2uS3yhpwWbIA6">
+      <data key="d0">Avicii</data>
+      <data key="d1">22761370</data>
+      <data key="d2">79</data>
+      <data key="d3">dance pop, edm, pop, pop dance</data>
+    </node>
+    <node id="2xW3pBjCngD69hC1wIUgjA">
+      <data key="d0">Axel Johansson</data>
+      <data key="d1">744237</data>
+      <data key="d2">44</data>
+      <data key="d3">pop edm</data>
+    </node>
+    <node id="6lB8vOoI4DRrrVxXwuV19c">
+      <data key="d0">Mike Perry</data>
+      <data key="d1">1439682</data>
+      <data key="d2">60</data>
+      <data key="d3">pop dance, swedish tropical house</data>
+    </node>
+    <node id="53XhwfbYqKCa1cC15pYq2q">
+      <data key="d0">Imagine Dragons</data>
+      <data key="d1">52688448</data>
+      <data key="d2">85</data>
+      <data key="d3">modern rock, pop, rock</data>
+    </node>
+    <node id="7CajNmpbOovFoOoasH2HaY">
+      <data key="d0">Calvin Harris</data>
+      <data key="d1">22577090</data>
+      <data key="d2">84</data>
+      <data key="d3">dance pop, edm, electro house, house, pop, pop dance, progressive house, uk dance</data>
+    </node>
+    <node id="5Pwc4xIPtQLFEnJriah9YJ">
+      <data key="d0">OneRepublic</data>
+      <data key="d1">17010658</data>
+      <data key="d2">82</data>
+      <data key="d3">piano rock, pop</data>
+    </node>
+    <node id="0du5cEVh5yTK9QJze8zA0C">
+      <data key="d0">Bruno Mars</data>
+      <data key="d1">55820596</data>
+      <data key="d2">87</data>
+      <data key="d3">dance pop, pop</data>
+    </node>
+    <node id="4gzpq5DPGxSnKTe4SA8HAU">
+      <data key="d0">Coldplay</data>
+      <data key="d1">50725641</data>
+      <data key="d2">86</data>
+      <data key="d3">permanent wave, pop</data>
+    </node>
+    <node id="4phGZZrJZRo4ElhRtViYdl">
+      <data key="d0">Jason Mraz</data>
+      <data key="d1">7159433</data>
+      <data key="d2">69</data>
+      <data key="d3">acoustic pop, dance pop, neo mellow, pop</data>
+    </node>
+    <node id="3FUY2gzHeIiaesXtOAdB7A">
+      <data key="d0">Train</data>
+      <data key="d1">4231837</data>
+      <data key="d2">73</data>
+      <data key="d3">dance pop, neo mellow, pop, pop rock</data>
+    </node>
+    <node id="0jnsk9HBra6NMjO2oANoPY">
+      <data key="d0">Flo Rida</data>
+      <data key="d1">8495264</data>
+      <data key="d2">78</data>
+      <data key="d3">dance pop, miami hip hop, pop, pop rap</data>
+    </node>
+    <node id="07YZf4WDAMNwqr4jfgOZ8y">
+      <data key="d0">Jason Derulo</data>
+      <data key="d1">12013300</data>
+      <data key="d2">76</data>
+      <data key="d3">dance pop, pop</data>
+    </node>
+    <node id="7I3bkknknQkIiatWiupQgD">
+      <data key="d0">Beach Weather</data>
+      <data key="d1">612035</data>
+      <data key="d2">67</data>
+      <data key="d3">pov: indie</data>
+    </node>
+    <node id="5arKwJZEvT5uKq4o0JfqR4">
+      <data key="d0">Isabel LaRosa</data>
+      <data key="d1">1485648</data>
+      <data key="d2">76</data>
+      <data key="d3">dark r&amp;b, hyperpop, sped up</data>
+    </node>
+    <node id="5nvWOyAkfNgVLKESq4fOj2">
+      <data key="d0">Montell Fish</data>
+      <data key="d1">1516801</data>
+      <data key="d2">73</data>
+      <data key="d3">pittsburgh rap</data>
+    </node>
+    <node id="6lcwlkAjBPSKnFBZjjZFJs">
+      <data key="d0">Alex G</data>
+      <data key="d1">2048135</data>
+      <data key="d2">73</data>
+      <data key="d3">philly indie, pov: indie, slacker rock</data>
+    </node>
+    <node id="7gW0r5CkdEUMm42w9XpyZO">
+      <data key="d0">Laufey</data>
+      <data key="d1">4125040</data>
+      <data key="d2">79</data>
+      <data key="d3">gen z singer-songwriter</data>
+    </node>
+    <node id="5szilpXHcwOqnyKLqGco5j">
+      <data key="d0">Faye Webster</data>
+      <data key="d1">1264036</data>
+      <data key="d2">69</data>
+      <data key="d3">atlanta indie, indie pop</data>
+    </node>
+    <node id="5jTtGLk1mGFMY5lQOvJYUj">
+      <data key="d0">bôa</data>
+      <data key="d1">782161</data>
+      <data key="d2">66</data>
+      <data key="d3">pov: indie</data>
+    </node>
+    <node id="7dIpKWlEeAljA20vFJ82RD">
+      <data key="d0">Roar</data>
+      <data key="d1">977896</data>
+      <data key="d2">64</data>
+      <data key="d3">pov: indie, weirdcore</data>
+    </node>
+    <node id="0rFHElzeddB9ymDjgpBENX">
+      <data key="d0">Lamp</data>
+      <data key="d1">1118135</data>
+      <data key="d2">62</data>
+      <data key="d3">japanese alternative pop</data>
+    </node>
+    <node id="1AbJ2cmwK400LSvdvBL5Jc">
+      <data key="d0">Strawberry Guy</data>
+      <data key="d1">814853</data>
+      <data key="d2">66</data>
+      <data key="d3">bedroom pop</data>
+    </node>
+    <node id="3zmfs9cQwzJl575W1ZYXeT">
+      <data key="d0">Men I Trust</data>
+      <data key="d1">1830732</data>
+      <data key="d2">68</data>
+      <data key="d3">indie pop, pov: indie</data>
+    </node>
+    <node id="56ZTgzPBDge0OvCGgMO3OY">
+      <data key="d0">Beach House</data>
+      <data key="d1">2205256</data>
+      <data key="d2">70</data>
+      <data key="d3">baltimore indie, dream pop, dreamo, indie rock, indietronica, modern dream pop, pov: indie</data>
+    </node>
+    <node id="0bC6e2YtIRLbKx2txHFmEo">
+      <data key="d0">alex_g_offline</data>
+      <data key="d1">534082</data>
+      <data key="d2">64</data>
+      <data key="d3" />
+    </node>
+    <node id="5AyEXCtu3xnnsTGCo4RVZh">
+      <data key="d0">Duster</data>
+      <data key="d1">1007844</data>
+      <data key="d2">65</data>
+      <data key="d3">corecore, pov: indie, slowcore</data>
+    </node>
+    <node id="0U7iI0Dk4Ojvi17nZboNO4">
+      <data key="d0">Vacations</data>
+      <data key="d1">1030389</data>
+      <data key="d2">70</data>
+      <data key="d3">newcastle nsw indie, pov: indie</data>
+    </node>
+    <node id="02vrwnrNEeDRV96o9iPSYP">
+      <data key="d0">sign crushes motorist</data>
+      <data key="d1">412030</data>
+      <data key="d2">65</data>
+      <data key="d3">corecore</data>
+    </node>
+    <node id="0epOFNiUfyON9EYx7Tpr6V">
+      <data key="d0">The Strokes</data>
+      <data key="d1">5663434</data>
+      <data key="d2">75</data>
+      <data key="d3">alternative rock, garage rock, modern rock, permanent wave, rock</data>
+    </node>
+    <node id="26T3LtbuGT1Fu9m0eRq5X3">
+      <data key="d0">Cage The Elephant</data>
+      <data key="d1">3717049</data>
+      <data key="d2">73</data>
+      <data key="d3">modern alternative rock, modern rock, pov: indie, punk blues, rock</data>
+    </node>
+    <node id="5INjqkS1o8h1imAzPqGZBb">
+      <data key="d0">Tame Impala</data>
+      <data key="d1">7791679</data>
+      <data key="d2">78</data>
+      <data key="d3">australian psych, modern rock, neo-psychedelic, rock</data>
+    </node>
+    <node id="1GLtl8uqKmnyCWxHmw9tL4">
+      <data key="d0">The Kooks</data>
+      <data key="d1">2533927</data>
+      <data key="d2">66</data>
+      <data key="d3">brighton indie, garage rock, modern rock, rock</data>
+    </node>
+    <node id="2Z7UcsdweVlRbAk5wH5fsf">
+      <data key="d0">The Last Shadow Puppets</data>
+      <data key="d1">1119523</data>
+      <data key="d2">56</data>
+      <data key="d3">baroque pop, modern rock, sheffield indie</data>
+    </node>
+    <node id="1ctkBmvz80MGyi72Ix055S">
+      <data key="d0">Alex Turner</data>
+      <data key="d1">932326</data>
+      <data key="d2">55</data>
+      <data key="d3">sheffield indie</data>
+    </node>
+    <node id="3AA28KZvwAUcZuOKwyblJQ">
+      <data key="d0">Gorillaz</data>
+      <data key="d1">11662532</data>
+      <data key="d2">77</data>
+      <data key="d3">alternative hip hop, modern rock, rock</data>
+    </node>
+    <node id="4Z8W4fKeB5YxbusRsdQVPb">
+      <data key="d0">Radiohead</data>
+      <data key="d1">9936582</data>
+      <data key="d2">79</data>
+      <data key="d3">alternative rock, art rock, melancholia, oxford indie, permanent wave, rock</data>
+    </node>
+    <node id="6olE6TJLqED3rqDCT0FyPh">
+      <data key="d0">Nirvana</data>
+      <data key="d1">19451603</data>
+      <data key="d2">80</data>
+      <data key="d3">grunge, permanent wave, rock</data>
+    </node>
+    <node id="5mlbvTfWUOfDrUIK6dkNzv">
+      <data key="d0">Poppy</data>
+      <data key="d1">1401707</data>
+      <data key="d2">61</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="2KEqzdPS7M5YwGmiuPTdr5">
+      <data key="d0">Rina Sawayama</data>
+      <data key="d1">1022035</data>
+      <data key="d2">58</data>
+      <data key="d3">art pop, electropop, escape room, indie pop</data>
+    </node>
+    <node id="053q0ukIDRgzwTr4vNSwab">
+      <data key="d0">Grimes</data>
+      <data key="d1">2357549</data>
+      <data key="d2">66</data>
+      <data key="d3">art pop, canadian electropop, grave wave, indietronica, metropopolis, neo-synthpop</data>
+    </node>
+    <node id="0wnYgCeP013HkKoOyC5V32">
+      <data key="d0">Allie X</data>
+      <data key="d1">855996</data>
+      <data key="d2">51</data>
+      <data key="d3">alt z, canadian electropop, canadian pop, dark pop, electropop, metropopolis</data>
+    </node>
+    <node id="1vVHevk2PD45epYnDi9CCc">
+      <data key="d0">Jack Stauber</data>
+      <data key="d1">1921716</data>
+      <data key="d2">57</data>
+      <data key="d3">hypnagogic pop, pittsburgh indie, pov: indie</data>
+    </node>
+    <node id="4vo5IKFugn33ytkc7xHvEk">
+      <data key="d0">Daniel Di Angelo</data>
+      <data key="d1">195104</data>
+      <data key="d2">56</data>
+      <data key="d3">dark r&amp;b</data>
+    </node>
+    <node id="25jJ6vyXwTRa0e6XCcdR6U">
+      <data key="d0">Ari Abdul</data>
+      <data key="d1">452540</data>
+      <data key="d2">63</data>
+      <data key="d3">dark r&amp;b, sped up</data>
+    </node>
+    <node id="3pc0bOVB5whxmD50W79wwO">
+      <data key="d0">keshi</data>
+      <data key="d1">3524599</data>
+      <data key="d2">70</data>
+      <data key="d3">chill r&amp;b</data>
+    </node>
+    <node id="3rWZHrfrsPBxVy692yAIxF">
+      <data key="d0">WILLOW</data>
+      <data key="d1">2582984</data>
+      <data key="d2">70</data>
+      <data key="d3">afrofuturism, pop, post-teen pop, pov: indie</data>
+    </node>
+    <node id="2sSGPbdZJkaSE2AbcGOACx">
+      <data key="d0">The Marías</data>
+      <data key="d1">1280845</data>
+      <data key="d2">71</data>
+      <data key="d3">bedroom pop, la indie</data>
+    </node>
+    <node id="5FxD8fkQZ6KcsSYupDVoSO">
+      <data key="d0">Omar Apollo</data>
+      <data key="d1">993299</data>
+      <data key="d2">66</data>
+      <data key="d3">bedroom pop, bedroom soul</data>
+    </node>
+    <node id="7GN9PivdemQRKjDt4z5Zv8">
+      <data key="d0">The Internet</data>
+      <data key="d1">1412152</data>
+      <data key="d2">57</data>
+      <data key="d3">alternative r&amp;b, lgbtq+ hip hop</data>
+    </node>
+    <node id="2Tglaf8nvDzwSQnpSrjLHP">
+      <data key="d0">Cuco</data>
+      <data key="d1">2827818</data>
+      <data key="d2">66</data>
+      <data key="d3">bedroom pop, dream pop</data>
+    </node>
+    <node id="73sIBHcqh3Z3NyqHKZ7FOL">
+      <data key="d0">Childish Gambino</data>
+      <data key="d1">12774595</data>
+      <data key="d2">78</data>
+      <data key="d3">atl hip hop, hip hop, rap</data>
+    </node>
+    <node id="77mJc3M7ZT5oOVM7gNdXim">
+      <data key="d0">Her's</data>
+      <data key="d1">923730</data>
+      <data key="d2">61</data>
+      <data key="d3">indie pop, liverpool indie, pov: indie</data>
+    </node>
+    <node id="7wbkl3zgDZEoZer357mVIw">
+      <data key="d0">boy pablo</data>
+      <data key="d1">1254009</data>
+      <data key="d2">58</data>
+      <data key="d3">bedroom pop, bergen indie, norwegian indie, pov: indie</data>
+    </node>
+    <node id="6eJa3zG1QZLRB3xgRuyxbm">
+      <data key="d0">Dayglow</data>
+      <data key="d1">984640</data>
+      <data key="d2">63</data>
+      <data key="d3">austindie, indie rock, pov: indie</data>
+    </node>
+    <node id="1moxjboGR7GNWYIMWsRjgG">
+      <data key="d0">Florence + The Machine</data>
+      <data key="d1">6687860</data>
+      <data key="d2">77</data>
+      <data key="d3">baroque pop, modern rock, neo mellow, uk alternative pop</data>
+    </node>
+    <node id="4Ui2kfOqGujY81UcPrb5KE">
+      <data key="d0">HAIM</data>
+      <data key="d1">1321264</data>
+      <data key="d2">61</data>
+      <data key="d3">indietronica, metropopolis</data>
+    </node>
+    <node id="6beUvFUlKliUYJdLOXNj9C">
+      <data key="d0">King Princess</data>
+      <data key="d1">1707337</data>
+      <data key="d2">54</data>
+      <data key="d3">alt z, indie pop, nyc pop</data>
+    </node>
+    <node id="0bdfiayQAKewqEvaU6rXCv">
+      <data key="d0">MØ</data>
+      <data key="d1">1447578</data>
+      <data key="d2">69</data>
+      <data key="d3">dance pop, danish pop, electropop, pop dance</data>
+    </node>
+    <node id="2FXC3k01G6Gw61bmprjgqS">
+      <data key="d0">Hozier</data>
+      <data key="d1">7198941</data>
+      <data key="d2">84</data>
+      <data key="d3">irish singer-songwriter, modern rock, pov: indie</data>
+    </node>
+    <node id="13saZpZnCDWOI9D4IJhp1f">
+      <data key="d0">Lily Allen</data>
+      <data key="d1">2029190</data>
+      <data key="d2">65</data>
+      <data key="d3">dance pop, electropop</data>
+    </node>
+    <node id="1KP6TWI40m7p3QBTU6u2xo">
+      <data key="d0">BØRNS</data>
+      <data key="d1">1266057</data>
+      <data key="d2">65</data>
+      <data key="d3">indie poptimism, modern alternative rock, modern rock, pov: indie</data>
+    </node>
+    <node id="6nB0iY1cjSY1KyhYyuIIKH">
+      <data key="d0">FKA twigs</data>
+      <data key="d1">1216424</data>
+      <data key="d2">57</data>
+      <data key="d3">afrofuturism, alternative r&amp;b, art pop, escape room, experimental r&amp;b, trip hop</data>
+    </node>
+    <node id="2WX2uTcsvV5OnS0inACecP">
+      <data key="d0">Birdy</data>
+      <data key="d1">3669000</data>
+      <data key="d2">67</data>
+      <data key="d3">neo mellow, uk pop, viral pop</data>
+    </node>
+    <node id="5069JTmv5ZDyPeZaCCXiCg">
+      <data key="d0">wave to earth</data>
+      <data key="d1">2376493</data>
+      <data key="d2">71</data>
+      <data key="d3">korean city pop</data>
+    </node>
+    <node id="73BLwSX6gsNeVzS7DgI4xe">
+      <data key="d0">grentperez</data>
+      <data key="d1">602287</data>
+      <data key="d2">60</data>
+      <data key="d3">bedroom r&amp;b</data>
+    </node>
+    <node id="30gZlVVUt3gwNXlLorZjuq">
+      <data key="d0">Rocco</data>
+      <data key="d1">242916</data>
+      <data key="d2">54</data>
+      <data key="d3">bedroom r&amp;b</data>
+    </node>
+    <node id="12j6dJrPXanCBwY599pZxf">
+      <data key="d0">Matt Maltese</data>
+      <data key="d1">560532</data>
+      <data key="d2">66</data>
+      <data key="d3">indie anthem-folk, indie pop, pov: indie</data>
+    </node>
+    <node id="6ignRjbPmLvKdtMLj9a5Xs">
+      <data key="d0">Ichiko Aoba</data>
+      <data key="d1">697455</data>
+      <data key="d2">59</data>
+      <data key="d3">j-acoustic</data>
+    </node>
+    <node id="3iTsJGG39nMg9YiolUgLMQ">
+      <data key="d0">Morrissey</data>
+      <data key="d1">1114814</data>
+      <data key="d2">56</data>
+      <data key="d3">madchester, new wave, permanent wave, solo wave</data>
+    </node>
+    <node id="432R46LaYsJZV2Gmc4jUV5">
+      <data key="d0">Joy Division</data>
+      <data key="d1">2429480</data>
+      <data key="d2">60</data>
+      <data key="d3">alternative rock, indie rock, madchester, new wave, post-punk, punk, rock, uk post-punk</data>
+    </node>
+    <node id="7bu3H8JO7d0UbMoVzbo70s">
+      <data key="d0">The Cure</data>
+      <data key="d1">5440595</data>
+      <data key="d2">73</data>
+      <data key="d3">new wave, permanent wave, rock, uk post-punk</data>
+    </node>
+    <node id="6zvul52xwTWzilBZl6BUbT">
+      <data key="d0">Pixies</data>
+      <data key="d1">2955471</data>
+      <data key="d2">68</data>
+      <data key="d3">alternative rock, boston rock, permanent wave, rock</data>
+    </node>
+    <node id="72X6FHxaShda0XeQw3vbeF">
+      <data key="d0">Slowdive</data>
+      <data key="d1">1048132</data>
+      <data key="d2">61</data>
+      <data key="d3">alternative rock, dream pop, reading indie, shoegaze</data>
+    </node>
+    <node id="0yNLKJebCb8Aueb54LYya3">
+      <data key="d0">New Order</data>
+      <data key="d1">2174476</data>
+      <data key="d2">63</data>
+      <data key="d3">alternative rock, dance rock, madchester, new romantic, new wave, permanent wave, post-punk, synthpop, uk post-punk</data>
+    </node>
+    <node id="3G3Gdm0ZRAOxLrbyjfhii5">
+      <data key="d0">my bloody valentine</data>
+      <data key="d1">929169</data>
+      <data key="d2">54</data>
+      <data key="d3">alternative rock, dream pop, irish shoegaze, noise pop, shoegaze</data>
+    </node>
+    <node id="5Wabl1lPdNOeIn0SQ5A1mp">
+      <data key="d0">Cocteau Twins</data>
+      <data key="d1">1012593</data>
+      <data key="d2">61</data>
+      <data key="d3">alternative rock, art pop, dream pop, ethereal wave, melancholia, new wave, scottish indie, scottish shoegaze, shoegaze, synthpop</data>
+    </node>
+    <node id="0fgYKF9Avljex0L9Wt5b8Z">
+      <data key="d0">Echo &amp; the Bunnymen</data>
+      <data key="d1">918549</data>
+      <data key="d2">54</data>
+      <data key="d3">alternative rock, new romantic, new wave, permanent wave, uk post-punk</data>
+    </node>
+    <node id="1n65zfwYIj5kKEtNgxUlWb">
+      <data key="d0">Siouxsie and the Banshees</data>
+      <data key="d1">1109228</data>
+      <data key="d2">56</data>
+      <data key="d3">alternative rock, dream pop, new romantic, new wave, post-punk, punk, uk post-punk</data>
+    </node>
+    <node id="37w38cCSGgKLdayTRjna4W">
+      <data key="d0">Mazzy Star</data>
+      <data key="d1">1279675</data>
+      <data key="d2">66</data>
+      <data key="d3">dream pop, melancholia, shoegaze, slowcore</data>
+    </node>
+    <node id="5UqTO8smerMvxHYA5xsXb6">
+      <data key="d0">Sonic Youth</data>
+      <data key="d1">1167362</data>
+      <data key="d2">55</data>
+      <data key="d3">alternative rock, noise pop, noise rock, rock, shoegaze</data>
+    </node>
+    <node id="1nJvji2KIlWSseXRSlNYsC">
+      <data key="d0">The Velvet Underground</data>
+      <data key="d1">1929806</data>
+      <data key="d2">61</data>
+      <data key="d3">alternative rock, melancholia, permanent wave, protopunk, rock</data>
+    </node>
+    <node id="7MhMgCo0Bl0Kukl93PZbYS">
+      <data key="d0">Blur</data>
+      <data key="d1">3326711</data>
+      <data key="d2">67</data>
+      <data key="d3">alternative rock, britpop, madchester, permanent wave, rock</data>
+    </node>
+    <node id="3TVXtAsR1Inumwj472S9r4">
+      <data key="d0">Drake</data>
+      <data key="d1">90123038</data>
+      <data key="d2">93</data>
+      <data key="d3">canadian hip hop, canadian pop, hip hop, pop rap, rap</data>
+    </node>
+    <node id="2YZyLoL8N0Wb9xBt1NhZWg">
+      <data key="d0">Kendrick Lamar</data>
+      <data key="d1">29685506</data>
+      <data key="d2">91</data>
+      <data key="d3">conscious hip hop, hip hop, rap, west coast rap</data>
+    </node>
+    <node id="0Y5tJX1MQlPlqiwlOH1tJY">
+      <data key="d0">Travis Scott</data>
+      <data key="d1">29802597</data>
+      <data key="d2">91</data>
+      <data key="d3">rap, slap house</data>
+    </node>
+    <node id="246dkjvS1zLTtiykXe5h60">
+      <data key="d0">Post Malone</data>
+      <data key="d1">44098841</data>
+      <data key="d2">89</data>
+      <data key="d3">dfw rap, melodic rap, pop, rap</data>
+    </node>
+    <node id="5K4W6rqBFWDnAN6FQUkS6x">
+      <data key="d0">Kanye West</data>
+      <data key="d1">25542490</data>
+      <data key="d2">90</data>
+      <data key="d3">chicago rap, hip hop, rap</data>
+    </node>
+    <node id="13ubrt8QOOCPljQ2FL1Kca">
+      <data key="d0">A$AP Rocky</data>
+      <data key="d1">14189281</data>
+      <data key="d2">82</data>
+      <data key="d3">east coast hip hop, hip hop, rap</data>
+    </node>
+    <node id="0iEtIxbK0KxaSlF7G42ZOp">
+      <data key="d0">Metro Boomin</data>
+      <data key="d1">8290088</data>
+      <data key="d2">90</data>
+      <data key="d3">rap</data>
+    </node>
+    <node id="66W9LaWS0DPdL7Sz8iYGYe">
+      <data key="d0">JP Saxe</data>
+      <data key="d1">511108</data>
+      <data key="d2">62</data>
+      <data key="d3">alt z, canadian contemporary r&amp;b, singer-songwriter pop</data>
+    </node>
+    <node id="55fhWPvDiMpLnE4ZzNXZyW">
+      <data key="d0">Noah Cyrus</data>
+      <data key="d1">1304636</data>
+      <data key="d2">71</data>
+      <data key="d3">alt z, pop</data>
+    </node>
+    <node id="2xe8IXgCTpwHE3eA9hTs4n">
+      <data key="d0">BANKS</data>
+      <data key="d1">1053889</data>
+      <data key="d2">54</data>
+      <data key="d3">art pop, electropop, indie poptimism, indietronica, shimmer pop</data>
+    </node>
+    <node id="4u5smJBskI6Adzv08PuiUP">
+      <data key="d0">Kiiara</data>
+      <data key="d1">920208</data>
+      <data key="d2">56</data>
+      <data key="d3">alt z, electropop</data>
+    </node>
+    <node id="3Xt3RrJMFv5SZkCfUE8C1J">
+      <data key="d0">Kim Petras</data>
+      <data key="d1">1093616</data>
+      <data key="d2">73</data>
+      <data key="d3">alt z, dance pop, pop, transpop</data>
+    </node>
+    <node id="7qRll6DYV06u2VuRPAVqug">
+      <data key="d0">Foxes</data>
+      <data key="d1">310130</data>
+      <data key="d2">57</data>
+      <data key="d3">electropop, metropopolis, uk pop</data>
+    </node>
+    <node id="7nnTzZ5tZrPx14iDnmjksU">
+      <data key="d0">Zolita</data>
+      <data key="d1">388778</data>
+      <data key="d2">47</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="4JNfz6aO9ZFz0gp5GY88am">
+      <data key="d0">Hey Violet</data>
+      <data key="d1">1073469</data>
+      <data key="d2">48</data>
+      <data key="d3">alt z, pixie</data>
+    </node>
+    <node id="21TinSsF5ytwsfdyz5VSVS">
+      <data key="d0">dodie</data>
+      <data key="d1">1049487</data>
+      <data key="d2">53</data>
+      <data key="d3">alt z, indie pop, pov: indie</data>
+    </node>
+    <node id="5Ev7qjDIU1wvhqt8nSsPrl">
+      <data key="d0">Ally Hills</data>
+      <data key="d1">56518</data>
+      <data key="d2">28</data>
+      <data key="d3" />
+    </node>
+    <node id="2AmfMGi3WZMxqFDHissIAe">
+      <data key="d0">The Aces</data>
+      <data key="d1">288758</data>
+      <data key="d2">46</data>
+      <data key="d3">alt z, indie pop, uk pop</data>
+    </node>
+    <node id="5DD5GZd4ElmQTy9NleMvKJ">
+      <data key="d0">Tessa Violet</data>
+      <data key="d1">676330</data>
+      <data key="d2">49</data>
+      <data key="d3">alt z, indie pop, pov: indie</data>
+    </node>
+    <node id="245PKF3hKjtxJKIG153kF0">
+      <data key="d0">Kailee Morgue</data>
+      <data key="d1">403618</data>
+      <data key="d2">47</data>
+      <data key="d3">alt z, dark pop</data>
+    </node>
+    <node id="4XX9YjNQrHTZfZz3DCX6DP">
+      <data key="d0">girli</data>
+      <data key="d1">234794</data>
+      <data key="d2">51</data>
+      <data key="d3">alt z, dark pop, escape room, proto-hyperpop</data>
+    </node>
+    <node id="06vRrrjT3DBRkhBlXoBdYj">
+      <data key="d0">Lauren Sanderson</data>
+      <data key="d1">214303</data>
+      <data key="d2">43</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="0tRFWXqKBBQcu5oFVOgVzX">
+      <data key="d0">Jaira Burns</data>
+      <data key="d1">454667</data>
+      <data key="d2">55</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="5JSXWmQO8csVUy6hSRu8TA">
+      <data key="d0">Maty Noyes</data>
+      <data key="d1">302634</data>
+      <data key="d2">49</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="5vBrKGOjN10BMwB0cJADj4">
+      <data key="d0">bülow</data>
+      <data key="d1">567167</data>
+      <data key="d2">47</data>
+      <data key="d3">alt z, indietronica</data>
+    </node>
+    <node id="2FovgCfOwN9iqbkCBlKFdT">
+      <data key="d0">Ellise</data>
+      <data key="d1">1665227</data>
+      <data key="d2">54</data>
+      <data key="d3">alt z, electropop</data>
+    </node>
+    <node id="1eMmoIprPDWeFdB1FxU6ZV">
+      <data key="d0">Au/Ra</data>
+      <data key="d1">551420</data>
+      <data key="d2">60</data>
+      <data key="d3">alt z, deep pop edm</data>
+    </node>
+    <node id="3mPc8WGusz2XF3Tvs3AKCR">
+      <data key="d0">Carlie Hanson</data>
+      <data key="d1">473020</data>
+      <data key="d2">46</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="2y9j8qUwBMGPYPQJJxmYzD">
+      <data key="d0">Anna Clendening</data>
+      <data key="d1">542463</data>
+      <data key="d2">48</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="5y2Xq6xcjJb2jVM54GHK3t">
+      <data key="d0">John Legend</data>
+      <data key="d1">6776692</data>
+      <data key="d2">73</data>
+      <data key="d3">neo soul, pop, pop soul, urban contemporary</data>
+    </node>
+    <node id="6LuN9FCkKOj5PcnpouEgny">
+      <data key="d0">Khalid</data>
+      <data key="d1">16153740</data>
+      <data key="d2">82</data>
+      <data key="d3">pop, pop r&amp;b</data>
+    </node>
+    <node id="4AVFqumd2ogHFlRbKIjp1t">
+      <data key="d0">Alesso</data>
+      <data key="d1">3885093</data>
+      <data key="d2">71</data>
+      <data key="d3">dance pop, edm, pop, pop dance, progressive electro house</data>
+    </node>
+    <node id="738wLrAtLtCtFOLvQBXOXp">
+      <data key="d0">Major Lazer</data>
+      <data key="d1">6143048</data>
+      <data key="d2">74</data>
+      <data key="d3">dance pop, edm, electro house, moombahton, pop, pop dance</data>
+    </node>
+    <node id="2XnBwblw31dfGnspMIwgWz">
+      <data key="d0">Axwell /\ Ingrosso</data>
+      <data key="d1">2440575</data>
+      <data key="d2">63</data>
+      <data key="d3">edm, pop dance, progressive electro house</data>
+    </node>
+    <node id="4D75GcNG95ebPtNvoNVXhz">
+      <data key="d0">AFROJACK</data>
+      <data key="d1">3890967</data>
+      <data key="d2">71</data>
+      <data key="d3">big room, dance pop, dutch house, edm, electro house, pop dance, progressive electro house</data>
+    </node>
+    <node id="0Vw76uk7P8yVtTClWyOhac">
+      <data key="d0">HONNE</data>
+      <data key="d1">1535435</data>
+      <data key="d2">60</data>
+      <data key="d3">uk pop</data>
+    </node>
+    <node id="1W7FNibLa0O0b572tB2w7t">
+      <data key="d0">Pink Sweat$</data>
+      <data key="d1">1841798</data>
+      <data key="d2">64</data>
+      <data key="d3">bedroom soul</data>
+    </node>
+    <node id="5JMLG56F1X5mFmWNmS0iAp">
+      <data key="d0">Chelsea Cutler</data>
+      <data key="d1">711888</data>
+      <data key="d2">63</data>
+      <data key="d3">alt z</data>
+    </node>
+    <node id="1bqxdqvUtPWZri43cKHac8">
+      <data key="d0">MAX</data>
+      <data key="d1">908757</data>
+      <data key="d2">66</data>
+      <data key="d3">singer-songwriter pop, teen pop, viral pop</data>
+    </node>
+    <node id="73eAAfRkS2Vi4hx68oTJJE">
+      <data key="d0">John K</data>
+      <data key="d1">279962</data>
+      <data key="d2">53</data>
+      <data key="d3">singer-songwriter pop</data>
+    </node>
+    <node id="3sKeaby6GMSJWgYueZaSjE">
+      <data key="d0">Mokita</data>
+      <data key="d1">204825</data>
+      <data key="d2">55</data>
+      <data key="d3">chill pop, singer-songwriter pop</data>
+    </node>
+    <node id="2kxP07DLgs4xlWz8YHlvfh">
+      <data key="d0">NIKI</data>
+      <data key="d1">3980939</data>
+      <data key="d2">72</data>
+      <data key="d3">indonesian r&amp;b</data>
+    </node>
+    <node id="3iri9nBFs9e4wN7PLIetAw">
+      <data key="d0">gnash</data>
+      <data key="d1">1565826</data>
+      <data key="d2">59</data>
+      <data key="d3">alt z, pop</data>
+    </node>
+    <node id="5CiGnKThu5ctn9pBxv7DGa">
+      <data key="d0">benny blanco</data>
+      <data key="d1">1155171</data>
+      <data key="d2">69</data>
+      <data key="d3">pop</data>
+    </node>
+    <node id="2cFrymmkijnjDg9SS92EPM">
+      <data key="d0">blackbear</data>
+      <data key="d1">4944634</data>
+      <data key="d2">71</data>
+      <data key="d3">alt z, pop</data>
+    </node>
+    <node id="2BL3PP6aTKJ1jqbRgfQa71">
+      <data key="d0">The Honeysticks</data>
+      <data key="d1">188298</data>
+      <data key="d2">41</data>
+      <data key="d3">indie pop, la indie, pov: indie</data>
+    </node>
+    <node id="6zQlhM6cyJRrzuqAbB8PlB">
+      <data key="d0">Egg</data>
+      <data key="d1">294011</data>
+      <data key="d2">45</data>
+      <data key="d3">pixel, pov: indie</data>
+    </node>
+    <node id="0Raaw7kr1Vzat4ZvHzjsJR">
+      <data key="d0">I DONT KNOW HOW BUT THEY FOUND ME</data>
+      <data key="d1">1056146</data>
+      <data key="d2">58</data>
+      <data key="d3">alt z, pov: indie</data>
+    </node>
+    <node id="1VQ8riQ31zVHtlxiCC9EZE">
+      <data key="d0">Will Wood</data>
+      <data key="d1">394586</data>
+      <data key="d2">59</data>
+      <data key="d3">pov: indie, weirdcore</data>
+    </node>
+    <node id="7lqaPghwYv2mE9baz5XQmL">
+      <data key="d0">Tally Hall</data>
+      <data key="d1">802234</data>
+      <data key="d2">63</data>
+      <data key="d3">ann arbor indie, pov: indie</data>
+    </node>
+    <node id="4llAOeA6kEF4ytaB2fsmcW">
+      <data key="d0">Lemon Demon</data>
+      <data key="d1">940306</data>
+      <data key="d2">60</data>
+      <data key="d3">indietronica, pov: indie</data>
+    </node>
+    <node id="33tFkBLsl6f8TjKkV0uF0C">
+      <data key="d0">Lovejoy</data>
+      <data key="d1">1247545</data>
+      <data key="d2">56</data>
+      <data key="d3">pixel, pov: indie</data>
+    </node>
+    <node id="2XzXLjXRSeFtsic4ieyLJy">
+      <data key="d0">Wilbur Soot</data>
+      <data key="d1">1427205</data>
+      <data key="d2">51</data>
+      <data key="d3">pixel, pov: indie</data>
+    </node>
+    <node id="7s3OoIocX1gTOnEvCg2VV8">
+      <data key="d0">McCafferty</data>
+      <data key="d1">375342</data>
+      <data key="d2">56</data>
+      <data key="d3">alternative emo, pov: indie</data>
+    </node>
+    <node id="2Waw2sSbqvAwK8NwACNjVo">
+      <data key="d0">Bo Burnham</data>
+      <data key="d1">1903771</data>
+      <data key="d2">65</data>
+      <data key="d3">comic, pov: indie</data>
+    </node>
     <edge source="06HL4z0CvFAxyc27GXpf02" target="0C8ZW7ezQVs4URX5aX7Kqx" />
     <edge source="06HL4z0CvFAxyc27GXpf02" target="1McMsnEElThX1knmY4oliG" />
     <edge source="06HL4z0CvFAxyc27GXpf02" target="6jJ0s89eD6GaHleKKya26X" />
