@@ -40,7 +40,7 @@ def most_and_less_similar_artist(graph, artist_name):
     return most_similar_artist, less_similar_artist
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
-def plot_degree_distribution(degree_dict: dict, normalized: bool = False, loglog: bool = False) -> None:
+def plot_degree_distribution(degree_dict: dict, normalized: bool = False, loglog: bool = False, title: str = None) -> None:
     """
     Plot degree distribution from dictionary of degree counts.
 
@@ -63,7 +63,7 @@ def plot_degree_distribution(degree_dict: dict, normalized: bool = False, loglog
         plt.xscale('log')
         plt.yscale('log')
     
-    plt.title('Degree Distribution')
+    plt.title(title)
     plt.xlabel('Degree')
     plt.ylabel('Probability' if normalized else 'Count')
     plt.grid(True)
@@ -138,7 +138,7 @@ def plot_similarity_heatmap(artist_audio_features_df: pd.DataFrame, similarity: 
 
     if out_filename:
         plt.savefig(out_filename)
-    #plt.show()
+    plt.show()
     # ----------------- END OF FUNCTION --------------------- #
 
 
@@ -151,25 +151,25 @@ if __name__ == "__main__":
 
     #Part a)
     gB_p_degree_dict = Lab3.get_degree_distribution(gB_p)
-    #plot_degree_distribution(gB_p_degree_dict, normalized=True, loglog=False)
+    #plot_degree_distribution(gB_p_degree_dict, normalized=True, loglog=False,title='Gb_p_Degree Distribution')
 
     gD_p_degree_dict = Lab3.get_degree_distribution(gD_p)
-    #plot_degree_distribution(gD_p_degree_dict, normalized=True, loglog=False)
+    #plot_degree_distribution(gD_p_degree_dict, normalized=True, loglog=False,title='Gd_p_Degree Distribution')
     
     gw_degree_dict = Lab3.get_degree_distribution(gw)
-    #plot_degree_distribution(gw_degree_dict, normalized=True, loglog=False)
+    #plot_degree_distribution(gw_degree_dict, normalized=True, loglog=False,title='Gw_Degree Distribution')
     
     #Part b)
     most_similar, less_similar = most_and_less_similar_artist(gw, 'Taylor Swift')
 
-    #plot_audio_features(artists_mean, 'Taylor Swift', most_similar)
+    plot_audio_features(artists_mean, 'Taylor Swift', most_similar)
     
     #Part c)
-    #plot_audio_features(artists_mean, 'Taylor Swift', less_similar)
+    plot_audio_features(artists_mean, 'Taylor Swift', less_similar)
     
     #Part d)
-    plot_similarity_heatmap(artists_mean, similarity='cosine', out_filename = 'Session 4/heatmap.png')
-    plot_similarity_heatmap(artists_mean, similarity='euclidean', out_filename = 'Session 4/heatmap2.png')
+    #plot_similarity_heatmap(artists_mean, similarity='cosine', out_filename = 'Session 4/heatmap.png')
+    #plot_similarity_heatmap(artists_mean, similarity='euclidean', out_filename = 'Session 4/heatmap2.png')
     
     #Part e)  
     pruned_gw = Lab2.prune_low_weight_edges(gw, min_weight=0.1)  # Adjust `min_weight` as needed
